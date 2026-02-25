@@ -1,5 +1,4 @@
 "use client";
-
 import type { ReactNode } from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "@/styles/globalStyles";

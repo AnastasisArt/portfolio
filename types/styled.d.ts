@@ -1,6 +1,6 @@
 import "styled-components";
-import type { AppTheme } from "styled-components";
+import type { Theme } from "@/styles/theme";
 
 declare module "styled-components" {
-  export interface DefaultTheme extends AppTheme {}
+  export interface DefaultTheme extends Theme {}
 }

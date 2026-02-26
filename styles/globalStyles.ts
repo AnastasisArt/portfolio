@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.colors.bg ?? "var(--background)"};
     color: ${({ theme }) => theme.colors.primary ?? "var(--foreground)"};
     font-family: var(--font-work), system-ui, sans-serif;
-    font-weight: ${({ theme }) => theme.typography.fontWeight.medium};
+    font-weight: ${({ theme }) => theme.typography.fw.medium};
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
@@ -31,8 +31,8 @@ export const GlobalStyles = createGlobalStyle`
   
   p {
     margin: 0;
-    font-size: ${({ theme }) => theme.typography.fontSize.sm};
-    font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
+    font-size: ${({ theme }) => theme.typography.fs.sm};
+    font-weight: ${({ theme }) => theme.typography.fw.regular};
     white-space: pre-line;
   }
   

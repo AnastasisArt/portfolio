@@ -1,0 +1,8 @@
+{
+  "title": "SWAP IT UP !",
+  "subtitle": "Solo dev challenge",
+  "intro": "Projet tutoré que j’ai vraiment pris plaisir à développer. Il m’a permis de mêler structure, réflexion et créativité, tout ce que j’aime dans le code.\n\n",
+  "development": "Derrière son apparence toute simple, il y a quand même pas mal de logique : \ndétection, réactions en chaîne, mise à jour dynamique… \nJ’ai commencé en React.js, avant de tout reprendre en TypeScript pour rendre le tout plus propre, dans l’espoir d’affiner son développement et le pousser plus loin.",
+  "fun": "Juste pour le fun",
+  "hint": "Un système de best hint analyse la grille et calcule le meilleur mouvement possible. \nIl reste encore à le rendre visible dans le jeu, et je prévois de pousser la logique avec un algo de backtracking pour optimiser la recherche des coups."
+}

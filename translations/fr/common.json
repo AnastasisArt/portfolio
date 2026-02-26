@@ -1,0 +1,25 @@
+{
+  "appName": "Anastasis",
+  "subtitle_role": "Développeuse full stack" ,
+  "comingSoon" : "À venir",
+
+  "sections": {
+    "about": "À propos",
+    "work": "Réalisations",
+    "skills_tools": "Compétences & Outils",
+    "get_in_touch": "Contact"
+  },
+
+  "about_text": {
+    "part1": "Ce que j’aime avant tout dans le développement, c’est partir d’un point A, imaginer le point B, puis construire tout ce qu’il y a entre les deux en anticipant chaque obstacle.",
+    "part2": "Une petite idée peut devenir un univers riche si on la traite avec soin, exigence et passion.",
+    "part3": "J’aime les systèmes qui s’imbriquent et les interfaces qui font sens. Curieuse de toutes les couches d’un projet, j’ai un faible pour le back end, là où se jouent sécurité et cohérence. Le front vient révéler ce travail et lui donner une forme tangible, avec une dimension artistique assumée.",
+    "part4": "Je cherche des solutions robustes, évolutives et maintenables, même si cela nécessite plus de travail."
+  },
+
+  "footer": {
+    "fun_quotes": [
+      "Créé avec ♥"
+    ]
+  }
+}

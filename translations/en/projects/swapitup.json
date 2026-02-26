@@ -1,0 +1,8 @@
+{
+  "title": "SWAP IT UP !",
+  "subtitle": "Solo dev challenge",
+  "intro": "A supervised project I really enjoyed developing. It allowed me to combine structure, problem-solving, and creativity — everything I love about coding.\n\n",
+  "development": "Behind its simple look, there’s actually a lot of logic: \ncombination detection, chain reactions, dynamic updates… \nI first built it in React.js, then rebuilt everything in TypeScript to make it cleaner and more optimized, with the idea of pushing it further.",
+  "fun": "Just for fun",
+  "hint": "A best-hint system analyzes the grid and calculates the most efficient move. \nThe visual indicator isn’t implemented yet, but I plan to enhance the logic with a proper backtracking algorithm to optimize move searching."
+}

@@ -1,0 +1,19 @@
+{
+  "description": "Agend’App est une plateforme en cours de développement pensée pour les professionnels de la beauté et du bien-être. Elle les accompagne dans la gestion quotidienne de leurs activités en centralisant la planification des ressources humaines et matérielles, l’organisation des rendez-vous et des congés.\n\nLe projet propose une interface d’administration web reliée à une application mobile, afin de rester proche du terrain. \nConçue pour évoluer, Agend’App a vocation à s’adapter à différents types de structures et à un usage international.",
+  "inProgress": "en pause...",
+  "roles": {
+    "graphic": "design graphique",
+    "backend": "back-end",
+    "mobile": "mobile",
+    "web": "interface web"
+  },
+  "intro": {
+    "everythingI" : "tout ce que j'ai",
+    "touched": "construit",
+    "bro" : "cas",
+    "ke" : "sé",
+    "and" : "et",
+    "fixed" : "debuggé",
+    "inThisProject" : "dans ce projet"
+  }
+}

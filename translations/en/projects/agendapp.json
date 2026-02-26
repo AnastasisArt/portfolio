@@ -1,0 +1,19 @@
+{
+  "description": "Agend’App is a platform currently in development, designed for beauty and wellness professionals. It supports them in the day-to-day management of their activities by centralising staff and equipment scheduling, as well as appointment and leave management.\n\nThe project offers a web-based administration interface connected to a mobile application, in order to stay close to what happens on the ground. Designed to evolve, Agend’App aims to adapt to different types of businesses and to international use.",
+  "inProgress": "temporarily on hold...",
+  "roles": {
+    "graphic": "graphic design",
+    "backend": "back-end",
+    "mobile": "mobile development",
+    "web": "web admin interface"
+  },
+  "intro": {
+    "everythingI" : "everything i",
+    "touched": "touched",
+    "bro" : "bro",
+    "ke" : "ke",
+    "and" : "and",
+    "fixed" : "fixed",
+    "inThisProject" : "in this project"
+  }
+}

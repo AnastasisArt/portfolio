@@ -25,11 +25,9 @@ export const DropdownWrap = styled.div`
   transform-origin: top center;
   width: 100vw;
   max-width: 100vw;
-  
   &.open {
     animation: ${slideDown} 0.35s cubic-bezier(.16,1,.3,1) forwards;
   }
-  
   &.close {
     animation: ${slideUp} 0.3s ease forwards;
   }
@@ -63,10 +61,9 @@ export const DropdownContent = styled.div`
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    background: ${COLORS.gradientMenuDevMobile};
+    background: ${COLORS.menuMobile};
     z-index: -2;
   }
-  
   &::after {
     content: '';
     position: absolute;
@@ -105,8 +102,4 @@ export const ContactLink = styled.a`
   @media (max-width: ${BP.md}) {
     font-size: ${TYPOGRAPHY.fs.md};
   }
-`;
-
-export const ContactIcon = styled.i`
-  font-size: ${TYPOGRAPHY.fs.lg};
 `;

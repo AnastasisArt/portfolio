@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "@/styles/globalStyles";
 import { theme } from "@/styles/theme";
 
-export default function Providers({ children }: { children: ReactNode }) {
+export default function Providers({ children }: { children: ReactNode; }) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />

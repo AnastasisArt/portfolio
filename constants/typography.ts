@@ -1,5 +1,5 @@
 export const TYPOGRAPHY = {
-  fontSize: {
+  fs: {
     xs: "clamp(12px, 1.4vw, 14px)",
     sm: "clamp(14px, 1.6vw, 16px)",
     md: "clamp(16px, 2vw, 20px)",
@@ -8,7 +8,7 @@ export const TYPOGRAPHY = {
     xxl: "clamp(28px, 4vw, 40px)",
     xxxl: "clamp(34px, 4.7vw, 52px)",
   },
-  fontWeight: {
+  fw: {
     light: "300",
     regular: "400",
     medium: "500",

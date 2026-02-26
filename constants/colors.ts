@@ -12,7 +12,7 @@ export const COLORS = {
   bluesky: "#8acbff",
   lilac: "#EEE8F6",
 
-  gradientMenuDevMobile: `linear-gradient(
+  menuMobile: `linear-gradient(
     135deg,
     #9adcf2,
     #f7b6d0,

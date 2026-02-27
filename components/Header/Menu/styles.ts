@@ -10,9 +10,11 @@ export const MenuWrap = styled.nav`
 `;
 
 export const MenuList = styled.ul`
-  gap:0;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  gap:0;
   list-style: inherit;
   margin: 0;
   padding: 0;

@@ -3,9 +3,11 @@ import Link from 'next/link';
 import { COLORS, TYPOGRAPHY, BP } from '@/constants';
 
 export const MenuList = styled.ul`
-  gap: 0;
+  display: flex;
+  flex-direction: column;
   align-items: start;
   justify-content: start;
+  gap: 0;
   flex-wrap: nowrap;
   list-style: none;
   margin: 0;

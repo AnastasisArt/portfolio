@@ -11,9 +11,11 @@ const slideUp = keyframes`
 `;
 
 export const DropdownWrap = styled.div`
-  gap: 0;
+  display: flex;
+  flex-direction: row;
   align-items: start;
   justify-content: center;
+  gap: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -44,9 +46,11 @@ export const DropdownWrap = styled.div`
 `;
 
 export const DropdownContent = styled.div`
-  gap: 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  gap: 0;
   flex-wrap: nowrap;
   position: relative;
   padding: 4px;
@@ -75,9 +79,11 @@ export const DropdownContent = styled.div`
 `;
 
 export const ContactBlock = styled.div`
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
+  gap: 8px;
   flex-wrap: nowrap;
   width: 100%;
   padding: 12px 12px;
@@ -86,9 +92,11 @@ export const ContactBlock = styled.div`
 `;
 
 export const ContactLink = styled.a`
-  gap: 8px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: start;
+  gap: 8px;
   flex-wrap: nowrap;
   font-family: var(--font-work), system-ui, sans-serif;
   font-weight: ${TYPOGRAPHY.fw.regular};

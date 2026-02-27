@@ -11,9 +11,11 @@ export const HeaderBar = styled.header`
 `;
 
 export const Row = styled.div`
-  gap: 0;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 0;
   flex-wrap: nowrap;
   width: 100%;
   padding: 0 12px;
@@ -39,6 +41,8 @@ export const Left = styled.div`
 
 export const Right = styled.nav`
   flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   flex-wrap: nowrap;

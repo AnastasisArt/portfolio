@@ -32,7 +32,7 @@ export const ItemWrap = styled.li`
     filter: brightness(1.18);
     margin: 0 18px;
     font-family: var(--font-work), system-ui, sans-serif;
-    font-weight: ${TYPOGRAPHY.fw.extraBold};
+    font-weight: ${TYPOGRAPHY.fw.bold};
   }
   &:hover::after { filter: brightness(1.28); }
 `;
@@ -60,7 +60,7 @@ export const Label = styled.span`
   font-synthesis: none;
   font-weight: ${TYPOGRAPHY.fw.extraBold};
   text-transform: uppercase;
-  letter-spacing: 0.6em;
+  letter-spacing: 0.2em;
   padding: 4px 10px;
 
   &.geek  {
@@ -81,7 +81,7 @@ export const Label = styled.span`
   @media (prefers-reduced-motion: reduce) {
     transition: none;
       &.geek, &.human { transition: none; }
- }
+  }
 `;
 
 

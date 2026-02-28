@@ -27,7 +27,7 @@ export const MenuItem = styled(Link)`
   font-family: var(--font-work), system-ui, sans-serif;
   font-weight: ${TYPOGRAPHY.fw.bold};
   text-transform: uppercase;
-  letter-spacing: 0.8em;
+  letter-spacing: 0.2em;
   font-size: ${TYPOGRAPHY.fs.xs};
   padding: 10px 12px;
   -webkit-tap-highlight-color: transparent;

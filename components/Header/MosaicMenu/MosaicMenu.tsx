@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 import useClickOutside from '@/hooks/useClickOutside';
 import type { Common } from '@/lib/i18n/dicts';
 import { CONTACTS } from '@/constants/contacts';
-import { IconContainer, IconWrapper, Tile } from './styles';
+import { IconButton, IconContainer, IconWrapper, Tile } from './styles';
 import Dropdown from './DropdownMenu/Dropdown';
 import List from './MenuList/List';
 
@@ -59,19 +59,20 @@ export default function MosaicMenu({ labels }: { labels: SectionLabels }) {
 
   return (
     <IconContainer ref={menuRootRef}>
-      <IconWrapper
+      <IconButton
         ref={toggleButtonRef}
-        open={open}
         onClick={toggleDropdown}
         type="button"
         aria-label="Open menu"
         aria-expanded={open}
         aria-haspopup="menu"
       >
-        {TILE_INDEXES.map((index)=> (
+      <IconWrapper open={open}>
+        {TILE_INDEXES.map((index) => (
           <Tile key={index} $index={index} />
         ))}
       </IconWrapper>
+      </IconButton>
 
       <Dropdown
         rendered={isMounted}

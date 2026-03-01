@@ -100,14 +100,17 @@ export const ContactLink = styled.a`
   flex-wrap: nowrap;
   font-family: var(--font-work), system-ui, sans-serif;
   font-weight: ${TYPOGRAPHY.fw.regular};
-  font-size: ${TYPOGRAPHY.fs.xs};
+  font-size: ${TYPOGRAPHY.fs.lg};
   cursor: pointer;
   user-select: none;
   color: ${COLORS.bg};
   text-decoration: none;
   padding-block: 2px;
 
-  @media (max-width: ${BP.md}) {
+  @media (min-width: ${BP.md}) {
     font-size: ${TYPOGRAPHY.fs.md};
+  }
+  @media (min-width: ${BP.lg}) {
+    font-size: ${TYPOGRAPHY.fs.sm};
   }
 `;

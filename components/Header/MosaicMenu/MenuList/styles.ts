@@ -25,10 +25,10 @@ export const MenuItem = styled(Link)`
   text-decoration: none;
   color: ${COLORS.bg};
   font-family: var(--font-work), system-ui, sans-serif;
-  font-weight: ${TYPOGRAPHY.fw.bold};
+  font-weight: ${TYPOGRAPHY.fw.extraBold};
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: ${TYPOGRAPHY.fs.xs};
+  font-size: ${TYPOGRAPHY.fs.sm};
   padding: 10px 12px;
   -webkit-tap-highlight-color: transparent;
   display: flex;
@@ -46,13 +46,13 @@ export const MenuItem = styled(Link)`
     color: ${COLORS.bluesky};
   }
 
-  @media (max-width: ${BP.md}) {
-    font-size: ${TYPOGRAPHY.fs.sm};
+  @media (min-width: ${BP.lg}) {
+    font-weight: ${TYPOGRAPHY.fw.bold};
   }
 `;
 
 export const ItemWrap = styled.li`
-  margin: 8px 0;
+  margin: 4px 0;
   width: 100%;
 `;
 

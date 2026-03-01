@@ -21,11 +21,21 @@ export const IconContainer = styled.div`
   padding-top: 6px;
 `;
 
-export const IconWrapper = styled.button<{ open: boolean }>`
+export const IconButton = styled.button`
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+`;
+
+export const IconWrapper = styled.div<{ open: boolean }>`
   width: 24px;
   height: 24px;
   position: relative;
   overflow: visible;
+  background-color: transparent;
   transform: rotate(0deg) translateZ(0.1px);
   transform-origin: 50% 50%;
   transform-style: preserve-3d;

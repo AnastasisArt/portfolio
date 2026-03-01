@@ -1,9 +1,9 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaDiscord } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaAt, FaDiscord } from "react-icons/fa";
 
 export const ICONS = {
   github: FaGithub,
   linkedin: FaLinkedin,
-  mail: FaEnvelope,
+  mail: FaAt,
   discord: FaDiscord,
 } as const;
 

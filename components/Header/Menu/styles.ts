@@ -15,11 +15,11 @@ export const MenuList = styled.ul`
   align-items: center;
   justify-content: flex-start;
   gap:0;
+  flex-wrap: wrap;
   list-style: inherit;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
-  color: ${COLORS.secondary};
+  color: ${COLORS.white};
 `;
 
 export const ItemWrap = styled.li`
@@ -27,7 +27,7 @@ export const ItemWrap = styled.li`
   align-items: center;
 
   &:not(:last-child)::after {
-    content: '||';
+    content: '|';
     color: currentColor;
     filter: brightness(1.18);
     margin: 0 18px;
@@ -46,9 +46,11 @@ export const MenuItem = styled(Link)`
   position: relative;
   transition: width 0.32s cubic-bezier(.16,1,.3,1), filter 0.18s ease;
   will-change: width;
-
-  &:hover { filter: brightness(1.25); }
-  &:focus-visible { outline: 2px dashed currentColor; outline-offset: 2px; }
+  
+  &:hover {
+    color: ${COLORS.bluesky};
+    filter: brightness(1.50); 
+  }
 
   @media (prefers-reduced-motion: reduce) { transition: none; }
 `;
@@ -58,7 +60,7 @@ export const Label = styled.span`
   white-space: nowrap;
   font-family: var(--font-work), system-ui, sans-serif;
   font-synthesis: none;
-  font-weight: ${TYPOGRAPHY.fw.extraBold};
+  font-weight: ${TYPOGRAPHY.fw.bold};
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding: 4px 10px;

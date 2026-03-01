@@ -1,5 +1,4 @@
-'use client';
-import DevMenu from './Menu/Menu';
+import Menu from './Menu/Menu';
 import MosaicMenu from './MosaicMenu/MosaicMenu';
 import type { Common } from '@/lib/i18n/dicts';
 import { HeaderBar, Row, Left, Right } from './styles';
@@ -12,7 +11,7 @@ export default function Header({ labels }: HeaderProps) {
     <HeaderBar role="banner">
       <Row>
         <Left>
-          <DevMenu labels={labels} />
+          <Menu labels={labels} />
         </Left>
 
         <Right aria-label="Menu mosaïque">

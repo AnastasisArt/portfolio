@@ -1,16 +1,45 @@
 "use client";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { LOCALES, type Locale } from "@/constants/i18n";
+import { SwitchWrap, LangButton, Sep } from "./styles";
+import { intersperse } from "@/lib/ui/intersperse";
+import { setLocale } from "@/lib/i18n/routing";
 
-export function LangSwitcher({ current }: { current: Locale }) {
-  const pathname = usePathname();
+export default function LangSwitch({ currentLocale }: { currentLocale: Locale }) {
   const router = useRouter();
-  const other = current === "fr" ? "en" : "fr";
-  const newPath = pathname.replace(`/${current}`, `/${other}`);
+  const pathname = usePathname() || `/${currentLocale}`;
+  const searchParams = useSearchParams();
+
+  const handleChange =(targetLocale: Locale)=> {
+    if (targetLocale === currentLocale) return;
+
+    const updatedPath = setLocale(pathname, targetLocale);
+    const queryString = searchParams?.toString();
+    const hashFragment = window.location.hash;
+
+    const finalUrl = queryString
+      ? `${updatedPath}?${queryString}${hashFragment}`
+      : `${updatedPath}${hashFragment}`;
+    router.push(finalUrl);
+  };
+
+  const buttons = LOCALES.map((locale)=> (
+    <LangButton
+      key={locale}
+      type="button"
+      data-active={currentLocale === locale || undefined}
+      onClick={() => handleChange(locale)}
+      aria-current={currentLocale === locale ? "page" : undefined}
+    >
+      {locale.toUpperCase()}
+    </LangButton>
+  ));
 
   return (
-    <button onClick={() => router.push(newPath)}>
-      {other.toUpperCase()}
-    </button>
+    <SwitchWrap aria-label="Language switcher">
+      {intersperse(buttons, (index)=> (
+        <Sep key={`sep-${index}`}>|</Sep>
+      ))}
+    </SwitchWrap>
   );
 }

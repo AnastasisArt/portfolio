@@ -44,6 +44,7 @@ export const MenuItem = styled(Link)`
 
   &:hover {
     color: ${COLORS.bluesky};
+    filter: brightness(0.9);
   }
 
   @media (min-width: ${BP.lg}) {

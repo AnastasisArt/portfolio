@@ -1,7 +1,4 @@
-'use client';
-
-import { Wrap, Rule, Line, Bottom, Version } from './styles';
-import { useRandomQuote } from '@/hooks/useRandomQuotes';
+import { Wrap, Rule, Bottom, Version, Line } from "./styles";
 
 type Props = {
   quotes: string[];
@@ -11,12 +8,12 @@ type Props = {
 };
 
 export default function Footer({
-                                 quotes,
-                                 year = 2025,
-                                 brand = 'AnastasisArt',
-                                 version = 'v1.0',
-                               }: Props) {
-  const randomQuote = useRandomQuote(quotes);
+  quotes,
+  year = new Date().getFullYear(),
+  brand = "Anastasia Vojkic",
+  version = "v1.0",
+}: Props) {
+  const randomQuote = quotes.length > 0 ? quotes[Math.floor(Math.random() * quotes.length)] : "";
 
   return (
     <Wrap aria-label="Site footer">
@@ -24,9 +21,12 @@ export default function Footer({
       <Line>{randomQuote}</Line>
       <Rule />
       <Bottom>
-        <span>© {year} {brand}</span>
+        <span>
+          © {year} {brand}
+        </span>
         <Version>{version}</Version>
       </Bottom>
     </Wrap>
   );
 }
+

@@ -1,5 +1,22 @@
 import styled from 'styled-components';
-import { COLORS, TYPOGRAPHY } from '@/constants';
+import {BP, COLORS, TYPOGRAPHY} from '@/constants';
+
+export const FooterWrap = styled.div`
+  margin: 12px auto;
+  width: 100vw;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  > * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: ${BP.lg}){
+    max-width: min(100%);
+  }
+`;
 
 export const Wrap = styled.footer`
   color: ${COLORS.grey};

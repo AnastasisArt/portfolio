@@ -1,5 +1,6 @@
 "use client";
 import { createGlobalStyle } from "styled-components";
+import { workSans } from '@/lib/fonts';
 
 export const GlobalStyles = createGlobalStyle`
   *, *::before, *::after {
@@ -18,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     min-height: 100vh;
     background: ${({ theme }) => theme.colors.bg ?? "var(--background)"};
     color: ${({ theme }) => theme.colors.primary ?? "var(--foreground)"};
-    font-family: var(--font-work), system-ui, sans-serif;
+    font-family: ${workSans.style.fontFamily};
     font-weight: ${({ theme }) => theme.typography.fw.medium};
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -26,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
   
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-family: var(--font-work), system-ui, sans-serif;
+    font-family: ${workSans.style.fontFamily};
   }
   
   p {

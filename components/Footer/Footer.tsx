@@ -11,7 +11,7 @@ export default function Footer({
   quotes,
   year = new Date().getFullYear(),
   brand = "Anastasia Vojkic",
-  version = "v1.0",
+  version = "v2.0",
 }: Props) {
   const randomQuote = quotes.length > 0 ? quotes[Math.floor(Math.random() * quotes.length)] : "";
 

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { COLORS, TYPOGRAPHY, BP } from '@/constants';
+import { workSans } from '@/lib/fonts';
 
 export const MenuList = styled.ul`
   display: flex;
@@ -24,7 +25,7 @@ export const MenuItem = styled(Link)`
   width: 100%;
   text-decoration: none;
   color: ${COLORS.bg};
-  font-family: var(--font-work), system-ui, sans-serif;
+  font-family: ${workSans.style.fontFamily};
   font-weight: ${TYPOGRAPHY.fw.extraBold};
   text-transform: uppercase;
   letter-spacing: 0.2em;

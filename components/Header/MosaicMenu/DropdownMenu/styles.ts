@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { COLORS, TYPOGRAPHY, BP } from '@/constants';
+import { workSans } from '@/lib/fonts';
 
 const slideDown = keyframes`
   from { opacity: 0; transform: translateY(-20px); }
@@ -98,7 +99,7 @@ export const ContactLink = styled.a`
   justify-content: start;
   gap: 8px;
   flex-wrap: nowrap;
-  font-family: var(--font-work), system-ui, sans-serif;
+  font-family: ${workSans.style.fontFamily};
   font-weight: ${TYPOGRAPHY.fw.regular};
   font-size: ${TYPOGRAPHY.fs.lg};
   cursor: pointer;

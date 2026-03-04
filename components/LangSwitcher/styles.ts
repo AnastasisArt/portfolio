@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { COLORS, TYPOGRAPHY } from '@/constants';
+import { workSans } from '@/lib/fonts';
 
 export const SwitchWrap = styled.nav`
   display: flex;
@@ -7,7 +8,7 @@ export const SwitchWrap = styled.nav`
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
-  padding: 1rem 1.4rem 0rem 0rem;
+  padding: 1rem 4px 0 0;
 `;
 
 export const LangButton = styled.button`
@@ -16,7 +17,7 @@ export const LangButton = styled.button`
   background: transparent;
   border: 0;
   padding: 4px 8px;
-  font-family: var(--font-work), system-ui, sans-serif;
+  font-family: ${workSans.style.fontFamily};
   font-weight: ${TYPOGRAPHY.fw.bold};
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -40,7 +41,7 @@ export const LangButton = styled.button`
 
 export const Sep = styled.span`
   user-select: none;
-  font-family: var(--font-work), system-ui, sans-serif;
+  font-family: ${workSans.style.fontFamily};
   font-weight: ${TYPOGRAPHY.fw.extraBold};
   color: currentColor;
   opacity: 0.9;

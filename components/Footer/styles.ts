@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {BP, COLORS, TYPOGRAPHY} from '@/constants';
+import {turret} from '@/lib/fonts';
 
 export const FooterWrap = styled.div`
   margin: 12px auto;
@@ -20,7 +21,7 @@ export const FooterWrap = styled.div`
 
 export const Wrap = styled.footer`
   color: ${COLORS.grey};
-  font-family: var(--font-turret), system-ui, sans-serif;
+  font-family: ${turret.style.fontFamily};
   font-weight: ${TYPOGRAPHY.fw.regular};
   font-size: ${TYPOGRAPHY.fs.xs};
   margin-top: 4rem;

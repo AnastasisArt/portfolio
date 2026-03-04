@@ -8,7 +8,7 @@ type HeaderProps = { labels: SectionLabels; };
 
 export default function Header({ labels }: HeaderProps) {
   return (
-    <HeaderBar role="banner">
+    <HeaderBar>
       <Row>
         <Left>
           <Menu labels={labels} />

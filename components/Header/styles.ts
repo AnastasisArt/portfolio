@@ -8,6 +8,7 @@ export const HeaderBar = styled.header`
   background: transparent;
   overflow: visible;
   isolation: isolate;
+  padding-block: 4px;
 `;
 
 export const Row = styled.div`

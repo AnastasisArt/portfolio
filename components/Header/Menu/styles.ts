@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { COLORS, TYPOGRAPHY } from '@/constants';
+import { workSans } from '@/lib/fonts';
 
 export const MenuWrap = styled.nav`
   display: flex;
@@ -31,7 +32,7 @@ export const ItemWrap = styled.li`
     color: currentColor;
     filter: brightness(1.18);
     margin: 0 18px;
-    font-family: var(--font-work), system-ui, sans-serif;
+    font-family: ${workSans.style.fontFamily};
     font-weight: ${TYPOGRAPHY.fw.bold};
   }
   &:hover::after { filter: brightness(1.28); }
@@ -58,7 +59,7 @@ export const MenuItem = styled(Link)`
 export const Label = styled.span`
   display: inline-block;
   white-space: nowrap;
-  font-family: var(--font-work), system-ui, sans-serif;
+  font-family: ${workSans.style.fontFamily};
   font-synthesis: none;
   font-weight: ${TYPOGRAPHY.fw.bold};
   text-transform: uppercase;

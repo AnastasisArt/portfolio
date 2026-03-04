@@ -2,14 +2,14 @@
   "title": "Thurin Architecte",
   "subtitle": "Showcase website & admin interface",
 
-  "description": "Custom development of architect Nicolas Thurin’s website, from initial design to production deployment.",
+  "description": "Custom development of the website for architect Nicolas Thurin, from initial design to production deployment.",
 
   "frontendTitle": "Front-end",
-  "frontend": "Next.js architecture focused on server-side rendering and performance, styling with styled-components, responsive layout handled with Tailwind, and carefully crafted animations.",
+  "frontend": "The application is built with Next.js using a server-side rendering approach. The interface is styled with styled-components and adapted to different screen sizes with Tailwind.",
 
   "backendTitle": "Back-end",
-  "backend": "NestJS API with JWT authentication and password hashing using Argon2, PostgreSQL / TypeORM database, and a dedicated admin interface for managing projects and their media.",
+  "backend": "NestJS API with JWT authentication and secure password hashing using Argon2. Data is stored in PostgreSQL with TypeORM. A dedicated admin interface allows the management of projects and their media.",
 
   "deploymentTitle": "Deployment",
-  "deployment": "Application deployed on a manually configured VPS, with attention to security, production stability, and backups."
+  "deployment": "The application is deployed on a manually configured VPS. The infrastructure includes backup management and a setup designed for production stability."
 }

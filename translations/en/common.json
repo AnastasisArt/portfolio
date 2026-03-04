@@ -11,15 +11,24 @@
   },
 
   "about_text": {
-    "part1": "What I love most about development is starting from point A, imagining point B, then building everything in between while anticipating each obstacle.",
-    "part2": "A small idea can become a rich universe if you approach it with care, high standards, and passion.",
-    "part3": "I like systems that interlock and interfaces that make sense. Curious about every layer of a project, I have a soft spot for the back end, where security and consistency come into play. The front end reveals that work and gives it a tangible form, with a deliberate artistic dimension.",
-    "part4": "I aim for solutions that are robust, scalable, and maintainable, even if that requires more work."
+    "intro_regular1": "I hold a",
+    "intro_strong1": "Bachelor's degree in Application Design and Development",
+    "intro_regular2": " and plan to continue my studies by joining a",
+    "intro_strong2": "Master's program in Computer Science & Mobility",
+    "intro_regular3": " through a work-study program. I am currently looking for a company to join for the upcoming academic year.",
+    "part1": "What I enjoy most in this field is starting from point A, imagining point B, then building everything in between while anticipating constraints and potential obstacles.",
+    "part2": "A simple idea can grow into a rich system when it is approached with rigor, high standards, and attention to detail.",
+    "part3": "I appreciate well-structured systems and interfaces that make sense. Curious about every layer of a project, I have a particular interest in the back end, where security, consistency, and data reliability come into play. The interface then highlights this work, as it is the part the end user sees first.",
+    "part4": "I favor solutions that are robust, scalable, and maintainable, even if that requires more thought and work upfront."
   },
 
   "footer": {
     "fun_quotes": [
-      "Made with ♥"
+      "Code that works today and tomorrow.",
+      "Looking for the next challenge.",
+      "Less magic, more logic.",
+      "Code always tells the truth.",
+      "Simple when possible, solid when necessary."
     ]
   }
 }

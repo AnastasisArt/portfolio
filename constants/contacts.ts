@@ -10,9 +10,16 @@ export type ContactItem = {
 
 export const CONTACTS: ContactItem[] = [
   {
-    href: 'mailto:contact@anastasis-art.com',
-    label: 'contact@anastasis-art.com',
+    href: 'mailto:vojkic.a@protonmail.com',
+    label: 'vojkic.a@protonmail.com',
     icon: 'mail',
+  },
+  {
+    href: "https://www.linkedin.com/in/anastasia-v-862124321/",
+    label: "Anastasia V.",
+    icon: "linkedin",
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
   {
     href: 'https://github.com/AnastasisArt',

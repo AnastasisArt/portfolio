@@ -18,17 +18,12 @@ export default function Contact() {
             rel={c.rel}
             aria-label={c.label}
           >
-            <Icon name={c.icon} size={22} />
+            <Icon name={c.icon} size={32} />
           </IconLink>
         ))}
       </IconsRow>
 
-      {email ? (
-        <EmailLink href={email.href}>
-          <Icon name={email.icon} size={16} style={{ marginRight: 8 }} />
-          {email.label}
-        </EmailLink>
-      ) : null}
+      {email ? (<EmailLink href={email.href}>{email.label}</EmailLink>) : null}
     </ContactSection>
   );
 }

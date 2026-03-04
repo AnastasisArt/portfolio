@@ -7,11 +7,15 @@ export const ContactSection = styled.section`
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 12px;
+  gap: 28px;
   text-align: center;
   max-width: 100vw;
   height: 80vh;
   box-sizing: border-box;
+
+  @media (min-width: ${BP.lg}){
+    gap: 12px;
+  }
 `;
 
 export const IconsRow = styled.div`

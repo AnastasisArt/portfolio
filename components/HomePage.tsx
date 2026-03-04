@@ -1,6 +1,7 @@
 import Container from "@/components/BaseContainer/Container";
 import About from '@/components/Sections/About/About';
 import Projects from '@/components/Sections/Projects/Projects';
+import Contact from '@/components/Sections/Contact/Contact';
 import type {Common, ProjectDict} from '@/lib/i18n/dicts';
 
 type Props = {
@@ -19,7 +20,12 @@ export default function HomePage({ common, ntarchi, agendapp, swapitup }: Props)
           about_text={common.about_text}
         />
       </Container>
+
       <Projects ntarchi={ntarchi} agendapp={agendapp} swapitup={swapitup} />
+
+      <Container>
+        <Contact />
+      </Container>
     </>
   );
 }

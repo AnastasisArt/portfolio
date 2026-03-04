@@ -7,7 +7,7 @@ import {
   setInnerFixedForScroll,
   setInnerAtEndOfSection,
 } from './helpers';
-import { BP } from "@/constants";
+import { BP_PX } from "@/constants";
 
 type UseProjectsScrollParams = {
   projectsRef: RefObject<HTMLElement | null>;
@@ -43,7 +43,7 @@ export const useProjectsScroll = ({
       const viewportWidth = window.innerWidth;
 
       //mobile/tablet < 1024px ---> classic vertical behavior
-      const isMobile = viewportWidth < BP.lg;
+      const isMobile = viewportWidth < BP_PX.lg;
       //position verticale absolue du début de Projects
       const projectsTop = getAbsTop(projects);
 

@@ -64,6 +64,7 @@ export const EmailLink = styled.a`
   cursor: pointer;
   user-select: none;
   font-size: ${TYPOGRAPHY.fs.xl};
+  letter-spacing: 0.15em;
   color: ${COLORS.primary};
   transition: color 200ms ease-out, transform 200ms ease-out;
   

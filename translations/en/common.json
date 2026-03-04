@@ -1,5 +1,10 @@
 {
-  "appName": "Anastasis",
+  "meta": {
+    "title": "Anastasia Vojkic · Application Developer",
+    "description": "Application developer focused on robust systems, clean architecture and thoughtful interfaces."
+  },
+
+  "appName": "Anastasia Vojkic",
   "subtitle_role": "Full Stack Developer",
   "comingSoon": "Coming soon",
 

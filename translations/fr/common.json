@@ -1,5 +1,10 @@
 {
-  "appName": "Anastasis",
+  "meta": {
+    "title": "Anastasia Vojkic · Développeuse d'applications",
+    "description": "Développeuse d'applications spécialisée dans la conception de systèmes robustes, une architecture propre et des interfaces qui mettent en valeur le travail réalisé en profondeur."
+  },
+
+  "appName": "Anastasia Vojkic",
   "subtitle_role": "Développeuse full stack" ,
   "comingSoon" : "À venir",
 

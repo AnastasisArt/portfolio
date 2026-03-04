@@ -60,7 +60,7 @@ export async function generateMetadata({ params }: LangProps): Promise<Metadata>
 
 export default async function LangLayout({ children, params }: LangProps) {
   const { lang, common } = await getLocaleCommon(params);
-  
+
   return (
     <Providers>
       <Container>

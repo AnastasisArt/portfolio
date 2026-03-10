@@ -1,0 +1,8 @@
+{
+  "title": "Projet en cours",
+  "subtitle": "Conception d’une plateforme de distribution logicielle",
+  "description": "Conception d’une plateforme de distribution de logiciels inspirée d’un modèle type store.\nLe projet est encore en phase de conception et n’est volontairement pas détaillé ici.\n\n",
+  "dataModelingTitle": "Modélisation des données",
+  "dataModeling": "Des expériences passées m'ont montré que lorsqu’une structure de données doit être modifiée en cours de développement, l’impact se propage rapidement dans toute l’application. Celle-ci oblige alors, dans le pire des cas, à revoir l’ensemble des couches du projet.\n\nL’idée ici n’est pas de modéliser indéfiniment et de retarder le départ réel du projet, mais de construire une base solide afin de limiter au maximum cet effet cascade à l’avenir, qui s’avère bien souvent plus coûteux en temps.",
+  "imageAlt": "Extrait anonymisé d’un schéma de base de données pour un projet en cours"
+}

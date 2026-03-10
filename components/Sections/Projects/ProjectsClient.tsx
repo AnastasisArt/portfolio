@@ -12,7 +12,7 @@ export default function ProjectsClient({ children }: Props) {
   const innerRef = useRef<HTMLDivElement | null>(null);
   const [showBanner, setShowBanner] = useState(false);
 
-  const nbProjects = 3;
+  const nbProjects = 4;
 
   useProjectsScroll({
     projectsRef,

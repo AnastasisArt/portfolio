@@ -12,6 +12,7 @@ export default async function Page({ params }: PageProps) {
   if (!isLocale(lang)) notFound();
 
   const common = getCommon(lang);
+  const inprogress = getProject(lang, "inprogress");
   const ntarchi = getProject(lang, "ntarchi");
   const agendapp = getProject(lang, "agendapp");
   const swapitup = getProject(lang, "swapitup");
@@ -19,6 +20,7 @@ export default async function Page({ params }: PageProps) {
   return (
     <HomePage
       common={common}
+      inprogress={inprogress}
       ntarchi={ntarchi}
       agendapp={agendapp}
       swapitup={swapitup}

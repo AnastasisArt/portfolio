@@ -8,6 +8,9 @@ import frNTArchi from "@/translations/fr/projects/ntarchi.json";
 import enNTArchi from "@/translations/en/projects/ntarchi.json";
 import frSwapItUp from "@/translations/fr/projects/swapitup.json";
 import enSwapItUp from "@/translations/en/projects/swapitup.json";
+import frInProgress from "@/translations/fr/projects/inprogress.json";
+import enInProgress from "@/translations/en/projects/inprogress.json";
+
 
 const translations = {
   fr: {
@@ -16,6 +19,7 @@ const translations = {
       agendapp: frAgendapp,
       ntarchi: frNTArchi,
       swapitup: frSwapItUp,
+      inprogress: frInProgress,
     },
   },
   en: {
@@ -24,6 +28,7 @@ const translations = {
       agendapp: enAgendapp,
       ntarchi: enNTArchi,
       swapitup: enSwapItUp,
+      inprogress: enInProgress,
     },
   },
 } as const;

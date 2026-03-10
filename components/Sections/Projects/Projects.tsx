@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectsClient from "./ProjectsClient";
+import InProgress from "./_InProgress/InProgress";
 import NTArchi from "./_NTArchi/NTArchi";
 import Agendapp from "./_AgendApp/AgendApp";
 import SwapItUp from "./_SwapItUp/SwapItUp";
@@ -7,14 +8,19 @@ import { Slide } from "./styles";
 import type { ProjectDict } from "@/lib/i18n/dicts";
 
 type Props = {
+  inprogress: ProjectDict<"inprogress">;
   ntarchi: ProjectDict<"ntarchi">;
   agendapp: ProjectDict<"agendapp">;
   swapitup: ProjectDict<"swapitup">;
 };
 
-export default function Projects({ ntarchi, agendapp, swapitup }: Props) {
+export default function Projects({ inprogress, ntarchi, agendapp, swapitup }: Props) {
   return (
     <ProjectsClient>
+      <Slide>
+        <InProgress dict={inprogress} />
+      </Slide>
+
       <Slide>
         <NTArchi dict={ntarchi} />
       </Slide>

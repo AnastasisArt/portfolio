@@ -1,0 +1,8 @@
+{
+  "title": "Work in Progress",
+  "subtitle": "Design of a software distribution platform",
+  "description": "Design of a software distribution platform inspired by a store-like model.\nThe project is still in the design phase and is intentionally not detailed here.\n\n",
+  "dataModelingTitle": "Data Modeling",
+  "dataModeling": "Past experience has shown that changes to a data structure during development can quickly propagate across the entire application. In the worst case, every layer of the project needs to be revisited.\n\nThe goal is not to model indefinitely and delay development, but to establish a solid foundation early in order to limit this cascade effect later on, which often turns out to be far more costly in terms of time.",
+  "imageAlt": "Anonymized extract of a database schema from a project in progress"
+}

@@ -15,7 +15,7 @@ export const CONTACTS: ContactItem[] = [
     icon: 'mail',
   },
   {
-    href: "https://www.linkedin.com/in/anastasia-v-862124321/",
+    href: "https://www.linkedin.com/in/anastasia-vojkic-862124321/",
     label: "Anastasia V.",
     icon: "linkedin",
     target: "_blank",

@@ -65,4 +65,17 @@ export const Text = styled.p`
   font-size: ${TYPOGRAPHY.fs.md};
   padding-block: 0.6rem;
   text-align: left;
+  line-height: 1.4;
+  white-space: pre-line;
+`;
+
+export const StrongText = styled.span`
+  font-weight: ${TYPOGRAPHY.fw.bold};
+  &.back{
+    color: ${COLORS.lightblue};
+  }
+
+  @media (min-width: ${BP.lg}) {
+    font-weight: ${TYPOGRAPHY.fw.semiBold};
+  }
 `;

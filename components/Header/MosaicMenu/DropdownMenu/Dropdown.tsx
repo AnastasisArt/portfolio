@@ -1,6 +1,6 @@
 'use client';
 import { createPortal } from 'react-dom';
-import { Icon } from '@/components/Icon';
+import { Icon } from '@/components/ui/Icon';
 import type { ContactItem } from '@/constants/contacts';
 import { DropdownWrap, DropdownContent, ContactLink, ContactBlock } from './styles';
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { CONTACTS } from "@/constants/contacts";
-import { Icon } from "@/components/Icon";
+import { Icon } from "@/components/ui/Icon";
 import { ContactSection, IconsRow, IconLink, EmailLink } from "./styles";
 
 export default function Contact() {

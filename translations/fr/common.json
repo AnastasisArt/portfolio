@@ -5,7 +5,7 @@
   },
 
   "appName": "Anastasia Vojkic",
-  "subtitle_role": "Développeuse full stack" ,
+  "subtitle_role": "Développeuse logiciel" ,
   "comingSoon" : "À venir",
 
   "sections": {
@@ -16,24 +16,29 @@
   },
 
   "about_text": {
-    "intro_regular1": "Développeuse diplômée d’une",
-    "intro_strong1": "Licence professionnelle de Concepteur et Développeur d’Applications",
-    "intro_regular2": ", je souhaite poursuivre mon parcours en intégrant un",
-    "intro_strong2": "Master Informatique & Mobilité",
-    "intro_regular3": " en alternance. Je recherche actuellement une entreprise d’accueil pour la rentrée prochaine.",
-    "part1": "Ce qui me plaît le plus dans ce métier, c’est partir d’un point A, imaginer le point B, puis construire tout ce qu’il y a entre les deux en anticipant les contraintes et les obstacles.",
-    "part2": "Une idée simple peut devenir un système riche lorsqu’elle est menée avec exigence, rigueur et attention aux détails.",
-    "part3": "J’apprécie les systèmes bien structurés et les interfaces qui font sens. Curieuse de toutes les couches d’un projet, j’ai un intérêt particulier pour le back end, où se jouent la sécurité, la cohérence et la fiabilité des données. L’interface vient ensuite mettre ce travail en valeur, car c’est elle que l’utilisateur final voit en premier.",
-    "part4": "Je privilégie des solutions robustes, évolutives et maintenables, même si cela demande davantage de réflexion et de travail en amont."
+    "sections": {
+      "intro": {
+        "title": "Profil",
+        "text1": "Développeuse diplômée d’une Licence professionnelle de Concepteur et Développeur d’Applications, je souhaite poursuivre mon parcours en intégrant un Master Informatique & Mobilité en alternance. Je recherche actuellement une entreprise d’accueil pour la rentrée prochaine.\n\nJe me définis comme",
+        "text_strong1": " orientée back-end",
+        "text2": ", avec une vision full stack."
+      },
+      "vision": {
+        "title": "Approche",
+        "text": "Je me considère avant tout comme une développeuse back-end, cependant, j’ai également été amenée à travailler sur le front, ce qui me donne une vision et une compréhension globale des applications.\n\nEn équipe, je m’oriente donc naturellement vers le back. Dans des contextes plus autonomes, sur des besoins concrets, je prends en charge le développement et j’adapte mon rôle en fonction des contraintes.\n\nUn back-end n’est jamais invisible, il se voit toujours dans les limites de l’interface.\nC’est pourquoi je me place du point de vue de l’utilisateur final, sans oublier les plus créatifs d’entre eux… ceux qui cherchent à éprouver ou contourner le système.\n\nJ’aborde les choses avec un esprit analytique et une exigence personnelle qui me poussent à creuser jusqu’à ce que tout fasse sens.\nCette approche se retrouve dans l’attention que je porte à la structuration des données et à l’architecture applicative."
+      },
+      "goals": {
+        "title": "Objectifs",
+        "text": "Intégrer un master en alternance\nGagner en expérience\nMe spécialiser dans l’architecture logicielle\nCréer."
+      }
+    }
   },
 
   "footer": {
     "fun_quotes": [
-      "Du code qui fonctionne aujourd’hui et demain.",
       "À la recherche du prochain défi.",
       "Moins de magie, plus de logique.",
-      "Le code raconte toujours la vérité.",
-      "Simple quand c’est possible, solide quand c’est nécessaire."
+      "Le code raconte toujours la vérité."
     ]
   }
 

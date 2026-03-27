@@ -36,11 +36,9 @@
 
   "footer": {
     "fun_quotes": [
-      "Code that works today and tomorrow.",
       "Looking for the next challenge.",
       "Less magic, more logic.",
-      "Code always tells the truth.",
-      "Simple when possible, solid when necessary."
+      "Code always tells the truth."
     ]
   }
 }

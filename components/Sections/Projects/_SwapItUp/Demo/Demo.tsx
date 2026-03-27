@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef, useState } from 'react';
-import { Icon } from '@/components/Icon';
+import { Icon } from '@/components/ui/Icon';
 import { MockupContainer, PlayButton, Video, ImageLayer, PauseOverlay } from './styles';
 
 export default function SwapItUpVideo() {

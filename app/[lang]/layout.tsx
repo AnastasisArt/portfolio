@@ -40,6 +40,14 @@ export async function generateMetadata({ params }: LangProps): Promise<Metadata>
     metadataBase: new URL(SITE_URL),
     title,
     description,
+    alternates: {
+      canonical: `/${lang}`,
+      languages: {
+        fr: "/fr",
+        en: "/en",
+        "x-default": "/fr",
+      },
+    },
     openGraph: {
       type: "website",
       url: `${SITE_URL}/${lang}`,

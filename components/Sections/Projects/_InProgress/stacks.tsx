@@ -12,9 +12,39 @@ export default function InProgressStacks() {
         url={STACKS.typescript.url}
       />
       <StackTag
+        icon={<Image src={STACKS.nest.icon} alt="NestJS" />}
+        label={STACKS.nest.label}
+        url={STACKS.nest.url}
+      />
+      <StackTag
         icon={<Image src={STACKS.postgresql.icon} alt="PostgreSQL" />}
         label={STACKS.postgresql.label}
         url={STACKS.postgresql.url}
+      />
+      <StackTag
+        icon={<Image src={STACKS.typeorm.icon} alt="TypeORM" />}
+        label={STACKS.typeorm.label}
+        url={STACKS.typeorm.url}
+      />
+      <StackTag
+        icon={<Image src={STACKS.postman.icon} alt="Postman" />}
+        label={STACKS.postman.label}
+        url={STACKS.postman.url}
+      />
+      <StackTag
+        icon={<Image src={STACKS.swagger.icon} alt="Swagger" />}
+        label={STACKS.swagger.label}
+        url={STACKS.swagger.url}
+      />
+      <StackTag
+        icon={<Image src={STACKS.git.icon} alt="GIT" />}
+        label={STACKS.git.label}
+        url={STACKS.git.url}
+      />
+      <StackTag
+        icon={<Image src={STACKS.docker.icon} alt="Docker" />}
+        label={STACKS.docker.label}
+        url={STACKS.docker.url}
       />
     </StackGroup>
   );

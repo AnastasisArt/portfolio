@@ -109,7 +109,7 @@ export const Title = styled.h1<{ $align?: Align }>`
     margin-top: 2rem;
   }
   
-  /* --- LINK --- */
+  /* --- TITLE LINK --- */
   .titleLink {
     display: inline-block;
     transition: color 180ms ease, transform 180ms ease;
@@ -163,7 +163,7 @@ export const RoleLabel = styled.span`
   color: ${COLORS.bluesky};
   text-transform: uppercase;
   font-family: ${workSans.style.fontFamily};
-  font-weight: ${TYPOGRAPHY.fw.regular};
+  font-weight: ${TYPOGRAPHY.fw.regular}; 
 `;
 
 export const Text = styled.p<{ $align?: Align }>`
@@ -178,6 +178,19 @@ export const Text = styled.p<{ $align?: Align }>`
   }
 `;
 
+export const ViewDetailsLink = styled.a`
+  color: ${COLORS.tertiary};
+  font-size: ${TYPOGRAPHY.fs.sm};
+  text-transform: uppercase;
+  text-align: center;
+  align-self: center;
+  margin-top: 1rem;
+
+  &:hover {
+    color: ${COLORS.secondary};
+  }
+`;
+
 export const StackGroup = styled.div`
   display: flex;
   flex-direction: row;
@@ -188,4 +201,35 @@ export const StackGroup = styled.div`
   width: 100%;
   margin: 0;
   margin-top: 1rem;
+`;
+
+//---------- DETAILS
+export const DetailContent = styled.div`
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-top: 3rem;
+`;
+
+export const DetailImage = styled.div`
+  width: 100%;
+  max-width: 90%;
+  margin: 2rem auto;
+  
+  &.large {
+    max-width: 80%;
+  }
+  &.medium {
+    max-width: 70%;
+  }
+  &.small {
+    max-width: 60%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 `;

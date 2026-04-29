@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaAt, FaDiscord, FaPlay, FaPause, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaAt, FaDiscord, FaPlay, FaPause, FaChevronDown} from "react-icons/fa";
 
 export const ICONS = {
   github: FaGithub,

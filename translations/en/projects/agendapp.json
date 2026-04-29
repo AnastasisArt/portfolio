@@ -1,4 +1,5 @@
 {
+  "title": "Agend’App",
   "intro": "Agend’App is a platform currently under development for beauty and wellness professionals. It aims to centralize the management of their activities such as resource planning, appointment scheduling and leave management.\n\nThe project relies on a web administration interface connected to a mobile application.",
   "contribution": "As part of this project developed during my internship, I contributed to the design of the back-end. I was responsible for the \"establishments\" domain and its related entities, one of the two core areas of the application's data model alongside user management.\n\nI also worked independently on the web administration interface used by professionals to manage their activity and data.",
 

@@ -21,7 +21,7 @@ export default function InProgressDetails({ dict }: Props) {
   return (
     <DetailContent>
       <Title className="margin-top">{dict.title}</Title>
-      {dict.subtitle && <Subtitle>{dict.subtitle}</Subtitle>}
+      <Subtitle>{dict.subtitle}</Subtitle>
 
       <RoleLabel>{d.section1Title}</RoleLabel>
       <Text>{d.section1Text}</Text>

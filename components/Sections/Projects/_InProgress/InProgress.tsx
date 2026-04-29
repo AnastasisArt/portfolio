@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import inProgressImg from "@/public/images/devine.png";
+import inProgressImg from "@/public/images/devine2.png";
 import {
   Container,
   Left,
@@ -9,13 +9,18 @@ import {
   Text,
   Subtitle,
   RoleLabel,
+  ViewDetailsLink,
 } from "../Common.styles";
-import InProgressProjectStacks from "./stacks";
-import type { ProjectDict } from "@/lib/i18n/dicts";
+import InProgressProjectStacks from "./Stacks";
+import type {Common, ProjectDict} from "@/lib/i18n/dicts";
 
-type Props = { dict: ProjectDict<"inprogress">; };
+type Props = {
+  dict: ProjectDict<"inprogress">;
+  common: Common;
+  detailsHref: string;
+};
 
-export default function InProgress({ dict }: Props) {
+export default function InProgress({ dict, common, detailsHref }: Props) {
   return (
     <Container>
       <Left>
@@ -30,6 +35,10 @@ export default function InProgress({ dict }: Props) {
 
         <RoleLabel>{dict.dataModelingTitle}</RoleLabel>
         <Text>{dict.dataModeling}</Text>
+
+        <ViewDetailsLink href={detailsHref}>
+          {common.viewDetails}
+        </ViewDetailsLink>
 
         <InProgressProjectStacks />
       </Right>

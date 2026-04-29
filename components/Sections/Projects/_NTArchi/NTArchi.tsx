@@ -11,7 +11,7 @@ import {
   Subtitle,
   RoleLabel,
 } from "../Common.styles";
-import NTArchiStacks from "./stacks";
+import NTArchiStacks from "./Stacks";
 import type { ProjectDict } from "@/lib/i18n/dicts";
 
 type Props = {

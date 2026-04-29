@@ -1,6 +1,6 @@
 import React from "react";
 import { overlays } from "./overlays";
-import SwapItUpStack from "./stacks";
+import SwapItUpStack from "./Stacks";
 import SwapItUpVideo from "./Demo/Demo";
 import { Left, OverlayImage } from "./styles";
 import { Container, Title, Text, Subtitle, Right } from "../Common.styles";

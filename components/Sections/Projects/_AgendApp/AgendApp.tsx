@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import type { ProjectDict } from "@/lib/i18n/dicts";
-import AgendappStacks from "./stacks";
+import AgendappStacks from "./Stacks";
 import agendappImg from "@/public/images/agendapp.png";
 import { Role, RoleContent } from "./styles";
 import {
@@ -27,7 +27,7 @@ export default function Agendapp({ dict }: Props){
 
       <Right>
         <Title>
-          AGEND&apos;APP <Status>({dict.inProgress})</Status>
+          {dict.title} <Status>({dict.inProgress})</Status>
         </Title>
 
         <Text>{dict.intro}</Text>

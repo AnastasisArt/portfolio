@@ -3,7 +3,9 @@
   "subtitle": "Solo dev challenge",
   "intro": "Projet tutoré que j’ai vraiment pris plaisir à développer. Il m’a permis de mêler structure, réflexion et créativité, tout ce que j’aime dans le code.\n\n",
 
-  "development": "Derrière son apparence simple, le jeu repose sur plusieurs logiques comme la détection des combinaisons, les réactions en chaîne et la mise à jour dynamique de la grille.\n\nJ’ai d’abord développé le projet en React.js avant de le reprendre entièrement en TypeScript dans l’optique d’en faire un projet plus sérieux et mieux structuré.\n\nDepuis, j’ai approfondi l’étude des algorithmes et de leur complexité afin d’identifier précisément plusieurs pistes d’optimisation pour la logique du jeu.",
+  "development": "Derrière son apparence simple, le jeu repose sur plusieurs logiques comme la détection des combinaisons, les réactions en chaîne et la mise à jour dynamique de la grille.",
+  "development2": "J’ai d’abord développé le projet en React.js avant de le reprendre entièrement en TypeScript dans l’optique d’en faire un projet plus sérieux et mieux structuré.",
+  "development3": "Depuis, j’ai approfondi l’étude des algorithmes et de leur complexité afin d’identifier précisément plusieurs pistes d’optimisation pour la logique du jeu.",
 
   "hint": "Un système de \"best hint\" analyse la grille et détermine le meilleur mouvement immédiat possible. Je prévois également d’optimiser l’algorithme afin d’améliorer la recherche des coups, notamment à l’aide d’une approche de type backtracking."
 }

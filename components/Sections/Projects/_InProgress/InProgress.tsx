@@ -35,6 +35,7 @@ export default function InProgress({ dict, common, detailsHref }: Props) {
 
         <RoleLabel>{dict.dataModelingTitle}</RoleLabel>
         <Text>{dict.dataModeling}</Text>
+        <Text>{dict.dataModeling2}</Text>
 
         <ViewDetailsLink href={detailsHref}>
           {common.viewDetails}

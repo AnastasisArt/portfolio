@@ -31,7 +31,9 @@ export default function Agendapp({ dict }: Props){
         </Title>
 
         <Text>{dict.intro}</Text>
+        <Text>{dict.intro2}</Text>
         <Text>{dict.contribution}</Text>
+        <Text>{dict.contribution2}</Text>
 
         <Role>
           <RoleLabel>{dict.roles.graphic} -</RoleLabel>

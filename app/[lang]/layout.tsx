@@ -73,7 +73,7 @@ export default async function LangLayout({ children, params }: LangProps) {
     <Providers>
       <Container>
         <LangSwitch currentLocale={lang} />
-        <Header labels={common.sections} />
+        <Header labels={common.sections} lang={lang} />
       </Container>
       {children}
       <Footer quotes={common.footer.fun_quotes} />

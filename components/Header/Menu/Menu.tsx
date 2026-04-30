@@ -2,10 +2,12 @@
 import { useEffect, useRef } from 'react';
 import { MenuWrap, MenuList, ItemWrap, MenuItem, Label } from './styles';
 import type { Common } from '@/lib/i18n/dicts';
+import type { Locale } from '@/constants/i18n';
 
 type SectionLabels = Common['sections'];
+type Props = { labels: SectionLabels; lang: Locale; };
 
-export default function Menu({ labels }: { labels: SectionLabels }) {
+export default function Menu({ labels, lang }: Props) {
   const rootRef = useRef<HTMLElement | null>(null);
 
   useEffect(()=> {
@@ -70,14 +72,14 @@ export default function Menu({ labels }: { labels: SectionLabels }) {
     <MenuWrap ref={rootRef} aria-label="Menu rapide">
       <MenuList role="menu">
         <ItemWrap role="none">
-          <MenuItem href="#me" role="menuitem" data-menu-item>
+          <MenuItem href={`/${lang}#me`} role="menuitem" data-menu-item>
             <Label className="geek">me.txt</Label>
             <Label className="human">{labels.about}</Label>
           </MenuItem>
         </ItemWrap>
 
         <ItemWrap role="none">
-          <MenuItem href="#projects" role="menuitem" data-menu-item>
+          <MenuItem href={`/${lang}#projects`} role="menuitem" data-menu-item>
             <Label className="geek">projects.exe</Label>
             <Label className="human">{labels.work}</Label>
           </MenuItem>
@@ -86,7 +88,7 @@ export default function Menu({ labels }: { labels: SectionLabels }) {
         {/* For later */}
         {/*
         <ItemWrap role="none">
-          <MenuItem href="#stack" role="menuitem" data-menu-item>
+          <MenuItem href={`/${lang}#stack`} role="menuitem" data-menu-item>
             <Label className="geek">stack.config.js</Label>
             <Label className="human">{labels.skills_tools}</Label>
           </MenuItem>
@@ -94,7 +96,7 @@ export default function Menu({ labels }: { labels: SectionLabels }) {
         */}
 
         <ItemWrap role="none">
-          <MenuItem href="#ping" role="menuitem" data-menu-item>
+          <MenuItem href={`/${lang}#ping`} role="menuitem" data-menu-item>
             <Label className="geek">ping.sh</Label>
             <Label className="human">{labels.get_in_touch}</Label>
           </MenuItem>

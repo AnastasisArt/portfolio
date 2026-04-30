@@ -2,18 +2,20 @@
 import { useRef, useState } from 'react';
 import useClickOutside from '@/hooks/useClickOutside';
 import type { Common } from '@/lib/i18n/dicts';
+import type { Locale } from '@/constants/i18n';
 import { CONTACTS } from '@/constants/contacts';
 import { IconButton, IconContainer, IconWrapper, Tile } from './styles';
 import Dropdown from './DropdownMenu/Dropdown';
 import List from './MenuList/List';
 
 type SectionLabels = Common['sections'];
+type Props = { labels: SectionLabels; lang: Locale; };
 
 const CLOSE_ANIMATION_MS = 280;
 const DROPDOWN_OFFSET_PX = 12;
 const TILE_INDEXES = [0, 1, 2, 3] as const;
 
-export default function MosaicMenu({ labels }: { labels: SectionLabels }) {
+export default function MosaicMenu({ labels, lang }: Props) {
   const [open, setOpen] = useState(false);
   //Mounted state for the dropdown rendered via a portal
   const [isMounted, setIsMounted] = useState(false);
@@ -80,7 +82,7 @@ export default function MosaicMenu({ labels }: { labels: SectionLabels }) {
         topPx={dropdownTopPx}
         contacts={CONTACTS}
       >
-        <List labels={labels} onCloseAction={closeDropdown} />
+        <List labels={labels} lang={lang} onCloseAction={closeDropdown} />
       </Dropdown>
     </IconContainer>
   );

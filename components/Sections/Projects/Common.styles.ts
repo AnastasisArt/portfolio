@@ -167,6 +167,7 @@ export const RoleLabel = styled.span`
 `;
 
 export const Text = styled.p<{ $align?: Align }>`
+  width: 100%;
   font-family: ${workSans.style.fontFamily};
   font-size: ${TYPOGRAPHY.fs.md};
   font-weight: ${TYPOGRAPHY.fw.regular};
@@ -204,17 +205,24 @@ export const StackGroup = styled.div`
 `;
 
 //---------- DETAILS
-export const DetailContent = styled.div`
-  width: 100%;
-  max-width: 70%;
-  margin: 0 auto;
+export const DetailContent = styled(Container)`
   padding-top: 3rem;
+
+  @media (min-width: ${BP.xl}) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: auto;
+    gap: 0;
+    max-width: 75%;
+  }
 `;
 
 export const DetailImage = styled.div`
   width: 100%;
   max-width: 90%;
   margin: 2rem auto;
+  
   
   &.large {
     max-width: 80%;

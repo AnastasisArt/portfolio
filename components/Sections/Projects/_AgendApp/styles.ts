@@ -4,7 +4,7 @@ import { TYPOGRAPHY, COLORS } from '@/constants';
 export const Role = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.2rem;
 `;
 
 export const RoleContent = styled.span`

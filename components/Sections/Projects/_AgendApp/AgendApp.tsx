@@ -41,11 +41,14 @@ export default function Agendapp({ dict }: Props){
         </Role>
         <Role>
           <RoleLabel>{dict.roles.backend} -</RoleLabel>
-          <RoleContent>Jérôme Duguet, Jérôme Picavet, Anastasia Vojkic</RoleContent>
+          <RoleContent>Jérôme Duguet,</RoleContent>
+          <RoleContent>Jérôme Picavet,</RoleContent>
+          <RoleContent>Anastasia Vojkic</RoleContent>
         </Role>
         <Role>
           <RoleLabel>{dict.roles.mobile} -</RoleLabel>
-          <RoleContent>Floriane Monnini, Jérôme Duguet</RoleContent>
+          <RoleContent>Floriane Monnini, </RoleContent>
+          <RoleContent>Jérôme Duguet</RoleContent>
         </Role>
         <Role>
           <RoleLabel>{dict.roles.web} -</RoleLabel>

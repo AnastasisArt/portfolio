@@ -5,35 +5,33 @@ import NTArchi from "./_NTArchi/NTArchi";
 import Agendapp from "./_AgendApp/AgendApp";
 import SwapItUp from "./_SwapItUp/SwapItUp";
 import { Slide } from "./styles";
-import type {Common, ProjectDict} from "@/lib/i18n/dicts";
+import type {Common, ProjectKey, ProjectDict} from "@/lib/i18n/dicts";
 import {Locale} from '@/constants/i18n';
 
+type ProjectDicts = { [K in ProjectKey]: ProjectDict<K>; };
 type Props = {
   lang: Locale;
   common: Common;
-  inprogress: ProjectDict<"inprogress">;
-  ntarchi: ProjectDict<"ntarchi">;
-  agendapp: ProjectDict<"agendapp">;
-  swapitup: ProjectDict<"swapitup">;
+  projects: ProjectDicts;
 };
 
-export default function Projects({ lang, common, inprogress, ntarchi, agendapp, swapitup }: Props) {
+export default function Projects({ lang, common, projects }: Props) {
   return (
     <ProjectsClient>
       <Slide>
-        <InProgress dict={inprogress} common={common} detailsHref={`/${lang}/projects/inprogress`} />
+        <InProgress dict={projects.inprogress} common={common} detailsHref={`/${lang}/projects/inprogress`} />
       </Slide>
 
       <Slide>
-        <NTArchi dict={ntarchi} />
+        <NTArchi dict={projects.ntarchi} />
       </Slide>
 
       <Slide>
-        <Agendapp dict={agendapp} />
+        <Agendapp dict={projects.agendapp} />
       </Slide>
 
       <Slide className="last-project">
-        <SwapItUp dict={swapitup} />
+        <SwapItUp dict={projects.swapitup} />
       </Slide>
     </ProjectsClient>
   );

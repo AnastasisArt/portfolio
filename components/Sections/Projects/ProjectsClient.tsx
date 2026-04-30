@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import Banner from "@/components/Sections/Projects/Banner/Banner";
 import { ProjectsWrapper, Anchor, Inner } from "./styles";
 import { useProjectsScroll } from "@/hooks/ProjectsScroll/useProjectsScroll";
+import { PROJECTS } from "@/constants/projects";
 
 type Props = { children: React.ReactNode; };
 
@@ -12,7 +13,7 @@ export default function ProjectsClient({ children }: Props) {
   const innerRef = useRef<HTMLDivElement | null>(null);
   const [showBanner, setShowBanner] = useState(false);
 
-  const nbProjects = 4;
+  const nbProjects = PROJECTS.length;
 
   useProjectsScroll({
     projectsRef,

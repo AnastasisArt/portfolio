@@ -5,14 +5,14 @@ import { LOCALES } from "@/constants/i18n";
 import { isLocale } from "@/lib/i18n/locale";
 import { getCommon } from "@/lib/i18n/dicts";
 import Providers from "@/app/Providers";
+import { SITE_URL } from "@/constants/url";
 
 import LangSwitch from "@/components/LangSwitcher/LangSwitch";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Container from "@/components/ui/BaseContainer/Container";
 
-const SITE_URL = "https://anastasia-vojkic.dev";
-const OG_IMAGE = "/logo-48.png";
+const OG_IMAGE = `${SITE_URL}/logo-48.png`;
 
 export function generateStaticParams() {
   return LOCALES.map((lang)=> ({ lang }));

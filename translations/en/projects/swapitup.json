@@ -3,7 +3,9 @@
   "subtitle": "Solo dev challenge",
   "intro": "A guided project that I genuinely enjoyed building. It allowed me to combine structure, problem solving and creativity, everything I enjoy about coding.\n\n",
 
-  "development": "Despite its simple appearance, the game already involves several logical systems such as match detection, chain reactions and dynamic grid updates.\n\nI first built the project in React.js before rewriting it entirely in TypeScript in order to turn it into a more serious and better structured project.\n\nAt the same time I started studying algorithms and their complexity more deeply in order to identify ways to optimize the game's logic.",
+  "development": "Despite its simple appearance, the game already involves several logical systems such as match detection, chain reactions and dynamic grid updates.",
+  "development2": "I first built the project in React.js before rewriting it entirely in TypeScript in order to turn it into a more serious and better structured project.",
+  "development3": "At the same time I started studying algorithms and their complexity more deeply in order to identify ways to optimize the game's logic.",
 
   "hint": "A \"best hint\" system analyzes the grid and determines the best immediate move. I also plan to improve the algorithm used to search for moves, notably by experimenting with a backtracking-based approach."
 }

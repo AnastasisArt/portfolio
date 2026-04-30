@@ -1,6 +1,6 @@
 import React from "react";
 import { overlays } from "./overlays";
-import SwapItUpStack from "./stacks";
+import SwapItUpStack from "./Stacks";
 import SwapItUpVideo from "./Demo/Demo";
 import { Left, OverlayImage } from "./styles";
 import { Container, Title, Text, Subtitle, Right } from "../Common.styles";
@@ -37,6 +37,8 @@ export default function SwapItUp({ dict }: Props) {
         <Subtitle $align="right">{dict.subtitle}</Subtitle>
         <Text $align="right">{dict.intro}</Text>
         <Text $align="right">{dict.development}</Text>
+        <Text $align="right">{dict.development2}</Text>
+        <Text $align="right">{dict.development3}</Text>
         <Text $align="right">{dict.hint}</Text>
 
         <SwapItUpStack />

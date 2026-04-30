@@ -109,7 +109,7 @@ export const Title = styled.h1<{ $align?: Align }>`
     margin-top: 2rem;
   }
   
-  /* --- LINK --- */
+  /* --- TITLE LINK --- */
   .titleLink {
     display: inline-block;
     transition: color 180ms ease, transform 180ms ease;
@@ -163,10 +163,11 @@ export const RoleLabel = styled.span`
   color: ${COLORS.bluesky};
   text-transform: uppercase;
   font-family: ${workSans.style.fontFamily};
-  font-weight: ${TYPOGRAPHY.fw.regular};
+  font-weight: ${TYPOGRAPHY.fw.regular}; 
 `;
 
 export const Text = styled.p<{ $align?: Align }>`
+  width: 100%;
   font-family: ${workSans.style.fontFamily};
   font-size: ${TYPOGRAPHY.fs.md};
   font-weight: ${TYPOGRAPHY.fw.regular};
@@ -175,6 +176,19 @@ export const Text = styled.p<{ $align?: Align }>`
 
   @media (min-width: ${BP.lg}) {
     text-align: ${({ $align }) => $align ?? "left"};
+  }
+`;
+
+export const ViewDetailsLink = styled.a`
+  color: ${COLORS.tertiary};
+  font-size: ${TYPOGRAPHY.fs.sm};
+  text-transform: uppercase;
+  text-align: center;
+  align-self: center;
+  margin-top: 1rem;
+
+  &:hover {
+    color: ${COLORS.secondary};
   }
 `;
 
@@ -188,4 +202,42 @@ export const StackGroup = styled.div`
   width: 100%;
   margin: 0;
   margin-top: 1rem;
+`;
+
+//---------- DETAILS
+export const DetailContent = styled(Container)`
+  padding-top: 3rem;
+
+  @media (min-width: ${BP.xl}) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: auto;
+    gap: 0;
+    max-width: 75%;
+  }
+`;
+
+export const DetailImage = styled.div`
+  width: 100%;
+  max-width: 90%;
+  margin: 2rem auto;
+  
+  
+  &.large {
+    max-width: 80%;
+  }
+  &.medium {
+    max-width: 70%;
+  }
+  &.small {
+    max-width: 60%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 `;

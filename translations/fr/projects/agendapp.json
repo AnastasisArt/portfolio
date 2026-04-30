@@ -1,6 +1,9 @@
 {
-  "intro": "Agend’App est une plateforme en cours de développement destinée aux professionnels de la beauté et du bien-être. Elle vise à centraliser la gestion de leurs activités telles que la planification des ressources, organisation des rendez-vous et gestion des congés.\n\nLe projet repose sur une interface d’administration web reliée à une application mobile.",
-  "contribution": "Dans le cadre de ce projet réalisé pendant mon stage, j’ai participé à la conception du back-end. J’étais responsable de la gestion de la partie « établissements » et des entités associées, l’un des deux domaines centraux du modèle de données de l’application avec la gestion des utilisateurs.\n\nJ’ai également travaillé seule sur l’interface d’administration web, destinée aux professionnels pour piloter leur activité et gérer leurs données.",
+  "title": "Agend’App",
+  "intro": "Agend’App est une plateforme en cours de développement destinée aux professionnels de la beauté et du bien-être. Elle vise à centraliser la gestion de leurs activités telles que la planification des ressources, organisation des rendez-vous et gestion des congés.",
+  "intro2" : "Le projet repose sur une interface d’administration web reliée à une application mobile.",
+  "contribution": "Dans le cadre de ce projet réalisé pendant mon stage, j’ai participé à la conception du back-end. J’étais responsable de la gestion de la partie « établissements » et des entités associées, l’un des deux domaines centraux du modèle de données de l’application avec la gestion des utilisateurs.",
+  "contribution2" : "J’ai également travaillé seule sur l’interface d’administration web, destinée aux professionnels pour piloter leur activité et gérer leurs données.",
 
   "inProgress": "en pause...",
   "roles": {

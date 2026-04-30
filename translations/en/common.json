@@ -40,5 +40,7 @@
       "Less magic, more logic.",
       "Code always tells the truth."
     ]
-  }
+  },
+
+  "viewDetails": "View details"
 }

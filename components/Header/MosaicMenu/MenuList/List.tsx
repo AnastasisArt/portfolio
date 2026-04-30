@@ -1,20 +1,22 @@
 'use client';
 import { MenuList, ItemWrap, MenuItem, Label } from './styles';
 import type { Common } from '@/lib/i18n/dicts';
+import {Locale} from '@/constants/i18n';
 
 type SectionLabels = Common['sections'];
 
 type Props = {
   labels: SectionLabels;
+  lang: Locale;
   onCloseAction: ()=> void;
 };
 
-export default function List({ labels, onCloseAction }: Props) {
+export default function List({ labels, lang, onCloseAction }: Props) {
   return (
     <MenuList role="menu">
       <ItemWrap>
         <MenuItem
-          href="#me"
+          href={`/${lang}#me`}
           role="menuitem"
           className="first"
           onClick={onCloseAction}
@@ -25,7 +27,7 @@ export default function List({ labels, onCloseAction }: Props) {
 
       <ItemWrap>
         <MenuItem
-          href="#projects"
+          href={`/${lang}#projects`}
           role="menuitem"
           onClick={onCloseAction}
         >
@@ -37,7 +39,7 @@ export default function List({ labels, onCloseAction }: Props) {
       {/*
       <ItemWrap>
         <MenuItem
-          href="#stack"
+          href={`/${lang}#stack`}
           role="menuitem"
           onClick={onCloseAction}
         >
@@ -48,7 +50,7 @@ export default function List({ labels, onCloseAction }: Props) {
 
       <ItemWrap>
         <MenuItem
-          href="#ping"
+          href={`/${lang}#ping`}
           role="menuitem"
           className="last"
           onClick={onCloseAction}

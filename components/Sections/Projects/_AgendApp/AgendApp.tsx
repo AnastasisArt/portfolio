@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import type { ProjectDict } from "@/lib/i18n/dicts";
-import AgendappStacks from "./stacks";
+import AgendappStacks from "./Stacks";
 import agendappImg from "@/public/images/agendapp.png";
 import { Role, RoleContent } from "./styles";
 import {
@@ -27,11 +27,13 @@ export default function Agendapp({ dict }: Props){
 
       <Right>
         <Title>
-          AGEND&apos;APP <Status>({dict.inProgress})</Status>
+          {dict.title} <Status>({dict.inProgress})</Status>
         </Title>
 
         <Text>{dict.intro}</Text>
+        <Text>{dict.intro2}</Text>
         <Text>{dict.contribution}</Text>
+        <Text>{dict.contribution2}</Text>
 
         <Role>
           <RoleLabel>{dict.roles.graphic} -</RoleLabel>
@@ -39,11 +41,14 @@ export default function Agendapp({ dict }: Props){
         </Role>
         <Role>
           <RoleLabel>{dict.roles.backend} -</RoleLabel>
-          <RoleContent>Jérôme Duguet, Jérôme Picavet, Anastasia Vojkic</RoleContent>
+          <RoleContent>Jérôme Duguet,</RoleContent>
+          <RoleContent>Jérôme Picavet,</RoleContent>
+          <RoleContent>Anastasia Vojkic</RoleContent>
         </Role>
         <Role>
           <RoleLabel>{dict.roles.mobile} -</RoleLabel>
-          <RoleContent>Floriane Monnini, Jérôme Duguet</RoleContent>
+          <RoleContent>Floriane Monnini, </RoleContent>
+          <RoleContent>Jérôme Duguet</RoleContent>
         </Role>
         <Role>
           <RoleLabel>{dict.roles.web} -</RoleLabel>

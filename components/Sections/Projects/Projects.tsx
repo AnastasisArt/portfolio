@@ -5,20 +5,23 @@ import NTArchi from "./_NTArchi/NTArchi";
 import Agendapp from "./_AgendApp/AgendApp";
 import SwapItUp from "./_SwapItUp/SwapItUp";
 import { Slide } from "./styles";
-import type { ProjectDict } from "@/lib/i18n/dicts";
+import type {Common, ProjectDict} from "@/lib/i18n/dicts";
+import {Locale} from '@/constants/i18n';
 
 type Props = {
+  lang: Locale;
+  common: Common;
   inprogress: ProjectDict<"inprogress">;
   ntarchi: ProjectDict<"ntarchi">;
   agendapp: ProjectDict<"agendapp">;
   swapitup: ProjectDict<"swapitup">;
 };
 
-export default function Projects({ inprogress, ntarchi, agendapp, swapitup }: Props) {
+export default function Projects({ lang, common, inprogress, ntarchi, agendapp, swapitup }: Props) {
   return (
     <ProjectsClient>
       <Slide>
-        <InProgress dict={inprogress} />
+        <InProgress dict={inprogress} common={common} detailsHref={`/${lang}/projects/inprogress`} />
       </Slide>
 
       <Slide>

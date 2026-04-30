@@ -1,8 +1,51 @@
 {
   "title": "Projet en cours",
   "subtitle": "Conception d’une plateforme de distribution logicielle",
-  "description": "Conception d’une plateforme de distribution de logiciels inspirée d’un modèle type store.\nLe projet est encore en phase de conception et n’est volontairement pas détaillé ici.\n\n",
+  "description": "Conception d’une plateforme de distribution de logiciels inspirée d’un modèle type store.\nLe projet est encore en phase de conception et n’est volontairement pas détaillé ici.",
   "dataModelingTitle": "Modélisation des données",
-  "dataModeling": "Des expériences passées m'ont montré que lorsqu’une structure de données doit être modifiée en cours de développement, l’impact se propage rapidement dans toute l’application. Celle-ci oblige alors, dans le pire des cas, à revoir l’ensemble des couches du projet.\n\nL’idée ici n’est pas de modéliser indéfiniment et de retarder le départ réel du projet, mais de construire une base solide afin de limiter au maximum cet effet cascade à l’avenir, qui s’avère bien souvent plus coûteux en temps.",
-  "imageAlt": "Extrait anonymisé d’un schéma de base de données pour un projet en cours"
+  "dataModeling": "Des expériences passées m'ont montré que lorsqu’une structure de données doit être modifiée en cours de développement, l’impact se propage rapidement dans toute l’application. Celle-ci oblige alors, dans le pire des cas, à revoir l’ensemble des couches du projet.",
+  "dataModeling2" : "L’idée ici n’est pas de modéliser indéfiniment et de retarder le départ réel du projet, mais de construire une base solide afin de limiter au maximum cet effet cascade à l’avenir, qui s’avère bien souvent plus coûteux en temps.",
+  "imageAlt": "Extrait de schéma de base de données pour un projet en cours",
+
+  "details": {
+    "section1Title": "Contexte du projet",
+    "section1Text": "Ce projet est une plateforme de distribution logicielle inspirée du modèle de Steam, actuellement en cours de développement. \nMême si la 1ère version visible restera volontairement simple, l’architecture a été conçue avec une vision long terme l’objectif étant d’éviter de construire une V1 contraignante à faire évoluer.\n\n",
+
+    "section2Title": "Rôle & organisation",
+    "section2Text1": "Mon rôle au sein de ce projet ne se limite pas au développement. J’interviens à la fois sur les aspects techniques et organisationnels du projet tels que l’analyse du besoin, le découpage des versions, la priorisation de tâches, la documentation, la modélisation des données et le maquettage de la V1.",
+    "section2Text2": "Je suis en charge du cadrage global du projet, sans être à l’origine du produit.",
+    "section2Text3": "Les orientations fonctionnelles sont définies en amont, et mon rôle consiste à les structurer, les traduire en solutions techniques cohérentes et assurer une base solide pour les évolutions futures.",
+    "section2Text4": "Le projet étant amené à évoluer par étapes, j’ai mis en place une organisation via Trello pour garder une vision claire de l’avancement, des décisions prises et des prochaines priorités, avec une structuration par versions et par phases de travail.",
+
+    "section3Title": "Analyse & découpage du projet",
+    "section3Text1": "Une grosse partie du travail initial a porté sur la compréhension du modèle produit. L’objectif était de construire un modèle de données plus avancé que la première version réellement déployée.",
+    "section3Text2": "La V1 publique se concentrera uniquement sur la consultation de produits, mais le backend anticipe déjà plusieurs besoins futurs tels que la gestion des produits, relations entre produits, fichiers, formats, systèmes supportés, médias, mises à jour, contenus associés et droits d’accès internes.",
+    "section3Text3": "On distingue deux niveaux d’évolution : \nla version visible côté utilisateur, volontairement restreinte au départ, et la version technique du modèle de données, plus complète, pensée pour supporter les futures évolutions sans impacter toute l’architecture.\n\n",
+
+    "section4Title": "Modélisation des données",
+    "section4Text1": "Une première phase a consisté à définir un dictionnaire de données (identification, typage et documentation des champs) ainsi qu’un diagramme relationnel.",
+    "section4Text2": "La base PostgreSQL sert de source de vérité et les entités TypeORM viennent la refléter de manière explicite. \nChaque relation, contrainte, enum, clé composite ou exception est documentée pour rester compréhensible dans le temps.",
+
+    "section5Title": "Stratégie DTO",
+    "section5Text1": "J’ai mis en place une stratégie DTO distincte selon les usages.",
+    "section5Text2": "Les DTO de lecture sont volontairement larges au départ pour couvrir rapidement le modèle.\nÀ l’inverse, les DTO de création et de mise à jour sont beaucoup plus stricts et ne sont créés que lorsqu’un vrai flux applicatif existe. Ils ne recopient pas les entités, mais représentent ce que le client est réellement autorisé à envoyer.",
+    "section5Text3": "Certains champs sont volontairement absents lorsqu’ils sont générés par le backend, sensibles, techniques ou déjà déduits du contexte parent.\n\n",
+
+    "section6Title": "Structuration & inventaires",
+    "section6Text": "Pour garder une vision claire du périmètre, j’ai créé des inventaires dédiés des DTO existants, DTO spécialisés, services disponibles, méthodes exposées et responsabilités de chaque couche.\nCela évite de devoir reparcourir toute l’arborescence du projet à chaque décision et permet de maintenir une documentation utile pour de futurs contributeurs.",
+
+    "section7Title": "Services & patterns",
+    "section7Text1": "Côté services, j’ai choisi d’avancer progressivement, des cas les plus simples vers les plus complexes.",
+    "section7Text2": "Les premières implémentations concernent les tables référentielles en lecture seule. \nCes services suivent un pattern _R__, c’est-à-dire : uniquement de la lecture, sans création, mise à jour ou suppression.",
+    "section7Text3": "Les entités plus complexes, comme celles liées au produit, sont volontairement traitées dans un second temps. \nElles impliquent des logiques plus avancées (relations multiples, cas métier spécifiques, transactions, orchestration), qui nécessitent une base déjà structurée.",
+    "section7Text4": "Pour standardiser les comportements, j’ai défini des patterns d’opérations comme _R__, CRU_, CR_D ou CRUD. Ces patterns servent de repères pour adapter chaque entité à son besoin réel.\n\n",
+
+    "section8Title": "Approche globale",
+    "section8Text1": "Le projet est structuré avec une séparation claire des responsabilités où chaque couche a son rôle, ce qui évite de tout mélanger et permet de garder une architecture maintenable.",
+    "section8Text2": "Ce travail de structuration et de documentation demande plus de temps au départ, mais il permet de garder une vision claire sur le long terme, de reprendre rapidement ses repères et de faciliter l’arrivée de nouveaux collaborateurs.",
+
+    "image1Alt": "Organisation du projet via un tableau Trello structuré par phases (backlog, en cours, validé, terminé) et par versions (V1, V2 et suivantes)",
+    "image2Alt": "Diagramme de base de données représentant les relations entre différentes entités",
+    "image3Alt": "Documentation des conventions DTO et de la structuration de l’API"
+  }
 }

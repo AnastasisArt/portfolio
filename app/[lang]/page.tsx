@@ -19,6 +19,7 @@ export default async function Page({ params }: PageProps) {
 
   return (
     <HomePage
+      lang={lang}
       common={common}
       inprogress={inprogress}
       ntarchi={ntarchi}

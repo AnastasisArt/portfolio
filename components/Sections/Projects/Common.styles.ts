@@ -220,24 +220,24 @@ export const DetailContent = styled(Container)`
 
 export const DetailImage = styled.div`
   width: 100%;
-  max-width: 90%;
   margin: 2rem auto;
-  
-  
-  &.large {
-    max-width: 80%;
-  }
-  &.medium {
-    max-width: 70%;
-  }
-  &.small {
-    max-width: 60%;
-  }
 
   img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: contain;
+  }
+
+  @media (min-width: ${BP.lg}) {
+    &.large {
+      max-width: 80%;
+    }
+    &.medium {
+      max-width: 70%;
+    }
+    &.small {
+      max-width: 60%;
+    }
   }
 `;

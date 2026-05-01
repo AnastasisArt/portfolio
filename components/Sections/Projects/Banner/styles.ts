@@ -1,5 +1,5 @@
 import styled, { keyframes, css } from 'styled-components';
-import { COLORS, TYPOGRAPHY } from '@/constants';
+import {BP, COLORS, TYPOGRAPHY} from '@/constants';
 import { turret } from "@/lib/fonts";
 
 const DURATION_IN_MS = 520;
@@ -38,7 +38,10 @@ export const Container = styled.div<ContainerProps>`
   font-family: ${turret.style.fontFamily};
   font-weight: ${TYPOGRAPHY.fw.extraBold};
   text-transform: uppercase;
-  font-size: clamp(1rem, 0.5rem + 2vw, 3rem);
+  font-size: clamp(1.2rem, 0.7rem + 2.5vw, 3.5rem);
+  @media (min-width: ${BP.lg}) {
+    font-size: clamp(1rem, 0.5rem + 2vw, 3rem);
+  }
   line-height: 0.6;
   white-space: nowrap;
   padding-top: 0.12em;

@@ -56,8 +56,8 @@ export const DropdownContent = styled.div`
   position: relative;
   padding: 4px;
   border-radius: 24px;
-  min-width: 320px;
-  max-width: 360px;
+  min-width: 280px;
+  max-width: 300px;
   width: 100%;
   z-index: 1;
   

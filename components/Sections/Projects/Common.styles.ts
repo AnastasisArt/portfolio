@@ -230,6 +230,9 @@ export const DetailImage = styled.div`
   }
 
   @media (min-width: ${BP.lg}) {
+    &.full {
+      max-width: 100%;
+    }
     &.large {
       max-width: 80%;
     }
@@ -238,6 +241,15 @@ export const DetailImage = styled.div`
     }
     &.small {
       max-width: 60%;
+    }
+    &.xsmall {
+      max-width: 50%;
+    }
+    &.xxsmall {
+      max-width: 40%;
+    }
+    &.xxxsmall {
+      max-width: 30%;
     }
   }
 `;

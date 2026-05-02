@@ -27,7 +27,7 @@ export default function Projects({ lang, common, projects }: Props) {
       </Slide>
 
       <Slide>
-        <Agendapp dict={projects.agendapp} />
+        <Agendapp dict={projects.agendapp} common={common} detailsHref={`/${lang}/projects/agendapp`} />
       </Slide>
 
       <Slide className="last-project">

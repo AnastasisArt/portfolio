@@ -11,5 +11,77 @@
     "backend": "back-end",
     "mobile": "mobile development",
     "web": "web admin interface"
+  },
+
+  "details": {
+    "section1Title": "Project context",
+    "section1Text1": "I contributed to the development of an online appointment booking platform for the beauty and wellness sector.",
+    "section1Text2": "The project was structured around a mobile application for users as well as a web administration interface designed for professionals. The work was fully remote, which required strong self-discipline, as well as good organization and communication within the team.",
+
+    "section2Title": "Product analysis & scoping",
+    "section2Text1": "The project was inspired by platforms like Planity, Treatwell or Booksy, with the goal of offering a more accessible booking solution for both professionals and users.",
+    "section2Text2": "It addressed a concrete need by providing an alternative to existing tools, which are often costly, especially for certain features like notifications.",
+    "section2Text3": "We started by analyzing existing market solutions to understand their strengths, limitations and real usage. This helped define the scope and avoid going in overly broad directions.",
+    "section2Text4": "Some ideas, such as integrating medical professionals, were considered but intentionally set aside due to stricter regulations and higher business complexity.",
+    "section2Text5": "Among the planned features were multilingual support, notifications, an internal messaging system, and future payment integration.\n\n",
+
+    "section3Title": "Role within the team",
+    "section3Text1": "I first worked on data modeling and backend development, before taking over the web administration interface.",
+    "section3Text2": "Over time, my role became more transversal. A large part of the entities related to establishments, DTOs and services was handled, with occasional technical validations.",
+    "section3Text3": "I also acted as a bridge between different parts of the project, as adjustments on the front-end, mobile or design side often required backend changes.",
+    "section3Text4": "This position allowed me to work across multiple layers, from technical structuring to business logic, including the database, API, front-end components, forms, validation and integration.\n\n",
+
+    "section4Title": "Data modeling",
+    "section4Text1": "Based on the specifications, the required data was identified and structured, including elements that were not always explicitly defined.",
+    "section4Text2": "An initial version of a data dictionary was created, then compared with the rest of the team before merging everything into a consistent model.",
+    "section4Text3": "The schema was then modeled using dbdiagram to visualize entity relationships, and refined over time, growing from around 25 to more than 35 tables as requirements became clearer.",
+
+    "section5Title": "Backend & API",
+    "section5Text1": "The backend was developed using NestJS, TypeORM and PostgreSQL, within a Docker environment.",
+    "section5Text2": "Entities aligned with the SQL model were implemented, with particular attention to relationships, foreign keys, typed fields, timestamps and enums. Options like eager and cascade were used to simplify certain operations and speed up development, with limitations to consider in more complex cases.",
+    "section5Text3": "Working on DTOs, services and controllers helped structure business logic within services and define clear entry points through controllers.",
+    "section5Text4": "This work also highlighted alignment issues between backend and frontend, as some structures were not directly usable on the interface side, requiring adjustments in typing and data handling.",
+    "section5Text5": "On the service side, standard operations were implemented along with more specific logic around entity relationships, using TypeORM’s QueryBuilder to build more precise queries and avoid inconsistencies.\n\n",
+
+    "section6Title": "Geolocation",
+    "section6Text1": "A key feature involved finding nearby establishments based on user GPS coordinates.",
+    "section6Text2": "After comparing several options, I chose to use Geolib for its practical features such as distance calculation and proximity sorting.",
+    "section6Text3": "A more precise alternative existed, but it was heavier and better suited for advanced use cases like GPS navigation, with no real added value for this project.\n\n",
+
+    "section7Title": "Testing & reliability",
+    "section7Text1": "I was responsible for testing API routes one by one using Swagger.",
+    "section7Text2": "For each route, I simulated JSON requests, sometimes with nested objects or pre-required related data. In case of errors, I relied on Swagger responses, Docker logs and the code to identify and fix issues.",
+    "section7Text3": "This phase helped validate the API before it was used on the front-end.",
+
+    "section8Title": "Web administration interface",
+    "section8Text1": "On the front-end side, I had a high level of freedom in my technical choices. The architecture was structured, constants were defined and the first reusable components were implemented.",
+    "section8Text2": "I chose styled-components to maintain precise control over styling, while keeping a React-friendly approach based on a global theme, conditional styles and isolated, reusable and composable components.\n\n",
+
+    "section9Title": "Components & TypeScript",
+    "section9Text1": "I set up a component base to structure the interface, and TypeScript allowed me to type them properly by combining custom props with native HTML attributes.",
+    "section9Text2": "In some cases, native browser elements were too limited, so I rebuilt certain parts to maintain full control over their design and behavior.\n\n",
+
+    "section10Title": "Responsive, hooks & i18next",
+    "section10Text1": "I developed custom hooks to handle responsiveness and specific UI behaviors.",
+    "section10Text2": "For example, an OS detection hook made it possible to adapt the interface, such as hiding actions that were not relevant for the user’s environment.",
+    "section10Text3": "The interface was also multilingual using i18next, with translations adapted for both French and English.",
+
+    "section11Title": "Forms & advanced validation",
+    "section11Text1": "Form management relied on react-hook-form and Yup.",
+    "section11Text2": "Some forms required more advanced logic to handle dynamic data and properly structure the payload sent to the API.",
+
+    "section12Title": "Conclusion",
+    "section12Text1": "This project allowed me to work on a full development cycle, from understanding requirements to building a usable interface.",
+    "section12Text2": "Beyond the technical side, it highlighted real challenges related to project scoping. Some aspects were unclear at the start and had to be clarified along the way, requiring continuous adjustments to technical choices and architecture.",
+    "section12Text3": "It also strengthened my autonomy and ability to take responsibility, while contributing to the overall consistency of the project.",
+    "section12Text4": "It showed that technical skills alone are not enough. The quality of a project also depends on clear requirements, consistent architectural choices and the ability to adapt to an evolving context.",
+
+    "projectImage": "Agend’App platform interface combining a mobile appointment management app and a web administration interface for professionals in the beauty and wellness sector.",
+    "image1Alt": "Project action plan on Google Sheets outlining data modeling steps, including tasks, dates, and status.",
+    "image2Alt": "Geolocation function filtering and sorting establishments by distance from GPS coordinates using the Geolib library.",
+    "image3Alt": "Examples of API responses in Swagger, showing a success case (201) and an internal server error (500).",
+    "image4Alt": "Mobile interface showing a navigation menu with multilingual support (French / English), including page links, app download and contact information.",
+    "image5Alt": "Yup validation schema in TypeScript handling time slots with conditional rules between start and end times.",
+    "image6Alt": "Form interface for entering time slots with field validation and error messages for inconsistent inputs."
   }
 }

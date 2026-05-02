@@ -11,5 +11,77 @@
     "backend": "back-end",
     "mobile": "mobile",
     "web": "interface web"
+  },
+
+  "details": {
+    "section1Title": "Contexte du projet",
+    "section1Text1": "J’ai participé au développement d’une plateforme de prise de rendez-vous en ligne dédiée au secteur du bien-être.",
+    "section1Text2": "Le projet s’organisait autour d’une application mobile destinée aux utilisateurs ainsi qu’une interface web d’administration pensée pour les professionnels. Le travail s’est déroulé entièrement à distance, ce qui demandait surtout de l’auto-discipline, ainsi qu’une bonne organisation et communication avec l’équipe.",
+
+    "section2Title": "Analyse produit & cadrage",
+    "section2Text1": "Le projet s’inspirait de plateformes comme Planity, Treatwell ou Booksy, avec l’objectif de proposer une solution de réservation plus accessible, tant pour les professionnels que pour les particuliers.",
+    "section2Text2": "Il répondait à un besoin concret, proposer une alternative aux outils existants souvent coûteux.",
+    "section2Text3": "Nous avons commencé par analyser les solutions du marché afin d’identifier leurs points forts, leurs limites et les usages réels. Cette étape a permis de clarifier le périmètre et d’éviter de partir dans des directions trop larges.",
+    "section2Text4": "Certaines pistes, comme l’intégration de professionnels du domaine médical, ont été envisagées mais volontairement écartées en raison de contraintes réglementaires plus strictes et d’une complexité métier plus élevée.",
+    "section2Text5": "Parmi les fonctionnalités prévues, on retrouvait le multilingue, les notifications, une messagerie interne ainsi que l’intégration future d’un système de paiement en ligne.\n\n",
+
+    "section3Title": "Rôle dans l’équipe",
+    "section3Text1": "J’ai d’abord travaillé sur la modélisation des données et le développement back-end, avant de prendre en charge l’interface web d’administration.",
+    "section3Text2": "Au fil du projet, mon rôle est devenu plus transversal. Une grande partie des entités liées aux établissements, des DTO et des services a été prise en charge, avec des validations techniques ponctuelles.",
+    "section3Text3": "J’ai également servi de point de relais entre les différentes parties du projet, car les ajustements côté front, mobile ou maquettes impliquaient souvent des modifications en back.",
+    "section3Text4": "Ce positionnement m’a permis de couvrir plusieurs niveaux, de la structuration technique à la logique métier, en passant par la base de données, l’API, les composants front-end, les formulaires, la validation et l’intégration.\n\n",
+
+    "section4Title": "Modélisation des données",
+    "section4Text1": "À partir des cahiers des charges, les données nécessaires ont été identifiées et structurées, y compris celles qui n’étaient pas explicitement formulées.",
+    "section4Text2": "Une première version d’un dictionnaire de données a été construite, puis confrontée à celles de l’équipe avant de fusionner les propositions en un modèle unique cohérent.",
+    "section4Text3": "Le schéma a ensuite été retranscrit sur dbdiagram pour visualiser les relations entre entités, puis affiné progressivement, passant d’environ 25 à plus de 35 tables à mesure que le besoin se précisait.",
+
+    "section5Title": "Backend & API",
+    "section5Text1": "La partie back-end a été développée avec NestJS, TypeORM et PostgreSQL, dans un environnement Docker.",
+    "section5Text2": "Des entités alignées avec le modèle SQL ont été mises en place, avec une attention particulière portée aux relations, aux clés étrangères, aux champs typés, aux timestamps et aux enums. Certaines options comme eager ou cascade ont été utilisées pour simplifier certaines opérations et accélérer le développement, avec des limites à prendre en compte sur des cas plus complexes.",
+    "section5Text3": "Le travail sur les DTO, les services et les contrôleurs a permis de structurer la logique métier dans les services et les points d’entrée dans les contrôleurs.",
+    "section5Text4": "Ce travail a également mis en évidence un problème d’alignement entre le back et le front, certaines structures n’étant pas directement exploitables côté interface, ce qui a nécessité des ajustements de typage et de gestion des données.",
+    "section5Text5": "Côté services, des opérations classiques ont été mises en place ainsi que des traitements plus spécifiques autour des relations entre entités, en utilisant notamment le QueryBuilder de TypeORM pour construire des requêtes plus précises et éviter des incohérences.\n\n",
+
+    "section6Title": "Géolocalisation",
+    "section6Text1": "Une fonctionnalité clé consistait à rechercher les établissements proches d’un utilisateur à partir de coordonnées GPS.",
+    "section6Text2": "Après comparaison de plusieurs solutions, j’ai fait le choix d’utiliser Geolib, qui propose des fonctions directement exploitables pour ce type de besoin (calcul de distance, tri par proximité).",
+    "section6Text3": "Une alternative plus précise existait, mais elle était plus lourde et davantage adaptée à des cas avancés (type navigation GPS), sans réelle valeur ajoutée pour ce projet.\n\n",
+
+    "section7Title": "Tests & fiabilisation",
+    "section7Text1": "J’ai été chargée de tester les routes API une par une via Swagger.",
+    "section7Text2": "Pour chaque route, je simulais des requêtes JSON, parfois avec des objets imbriqués ou des données liées à préparer en amont. En cas d’erreur, je m’appuyais sur les retours Swagger, les logs Docker et le code pour identifier puis corriger le problème.",
+    "section7Text3": "Cette phase a permis de valider le fonctionnement de l’API avant son utilisation en front.",
+
+    "section8Title": "Interface web d’administration",
+    "section8Text1": "Sur la partie front-end, j’ai eu une grande liberté dans mes choix techniques. L’architecture a été structurée, les constantes définies et les premiers composants réutilisables mis en place.",
+    "section8Text2": "J’ai choisi styled-components pour garder un contrôle précis sur le style, tout en conservant une logique adaptée à React, basée sur un thème global, des styles conditionnels et des composants isolés, réutilisables et composables.\n\n",
+
+    "section9Title": "Composants & TypeScript",
+    "section9Text1": "J’ai mis en place une base de composants pour structurer l’interface et TypeScript m’a permis de typer proprement ces derniers, en combinant mes propres props avec les attributs natifs HTML.",
+    "section9Text2": "Dans certains cas, les éléments natifs du navigateur se sont révélés trop limités. J’ai donc recréé certains éléments pour garder un contrôle total sur leur design et leur comportement.\n\n",
+
+    "section10Title": "Responsive, hooks & i18next",
+    "section10Text1": "J’ai développé des hooks personnalisés pour gérer le responsive et certains comportements d’interface.",
+    "section10Text2": "Par exemple, un hook de détection du système d’exploitation permettait d’adapter l’affichage, comme masquer certaines actions lorsqu’elles ne sont pas pertinentes pour l’utilisateur.",
+    "section10Text3": "L’interface était aussi multilingue avec i18next, avec des traductions adaptées au français et à l’anglais.",
+
+    "section11Title": "Formulaires & validation avancée",
+    "section11Text1": "La gestion des formulaires reposait sur react-hook-form et Yup.",
+    "section11Text2": "Certains formulaires demandaient une logique plus avancée pour gérer des données dynamiques et structurer correctement les données envoyées à l’API.",
+
+    "section12Title": "Conclusion",
+    "section12Text1": "Ce projet m’a permis de travailler sur un cycle de développement complet, de la compréhension du besoin jusqu’à la mise en place d’une interface exploitable.",
+    "section12Text2": "Au-delà de la technique, il a mis en évidence des problématiques concrètes liées au cadrage. Certains éléments étaient flous au départ et ont dû être clarifiés en cours de projet, ce qui a nécessité d’ajuster régulièrement les choix techniques et l’architecture.",
+    "section12Text3": "Cette expérience a également renforcé l’autonomie et la capacité à prendre des responsabilités, tout en contribuant à la cohérence globale du projet.",
+    "section12Text4": "Elle montre que la technique seule ne suffit pas. La qualité d’un projet dépend aussi de la clarté du besoin, de la cohérence des choix d’architecture et de la capacité à s’adapter à un contexte qui évolue en cours de projet.",
+
+    "projectImage": "Interface de la plateforme Agend’App combinant application mobile de gestion des rendez-vous et interface web d’administration pour les professionnels du secteur du bien-être.",
+    "image1Alt": "Plan d’action du projet sur Google Sheets détaillant les étapes de modélisation des données, avec tâches, dates et statut.",
+    "image2Alt": "Fonction de géolocalisation filtrant et triant les établissements par distance à partir de coordonnées GPS avec la bibliothèque Geolib.",
+    "image3Alt": "Exemples de réponses API dans Swagger, montrant un cas de succès (201) et une erreur interne du serveur (500).",
+    "image4Alt": "Interface mobile affichant un menu de navigation avec gestion multilingue (français / anglais), incluant accès aux pages, téléchargement de l’application et informations de contact.",
+    "image5Alt": "Schéma de validation Yup en TypeScript pour gérer des créneaux horaires avec règles conditionnelles entre heure de début et heure de fin.",
+    "image6Alt": "Interface de formulaire permettant de saisir des créneaux horaires avec validation des champs et messages d’erreur sur les incohérences de saisie."
   }
 }

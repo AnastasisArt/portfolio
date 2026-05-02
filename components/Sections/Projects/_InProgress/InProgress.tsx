@@ -24,7 +24,7 @@ export default function InProgress({ dict, common, detailsHref }: Props) {
   return (
     <Container>
       <Left>
-        <Image src={inProgressImg} alt={dict.imageAlt} />
+        <Image src={inProgressImg} alt={dict.imageAlt} priority />
       </Left>
 
       <Right>

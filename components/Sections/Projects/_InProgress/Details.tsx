@@ -32,7 +32,7 @@ export default function InProgressDetails({ dict }: Props) {
       <Text>{d.section2Text3}</Text>
       <Text>{d.section2Text4}</Text>
 
-      <DetailImage className={'large'}>
+      <DetailImage className={"full"}>
         <Image src={devine1Img} alt={d.image1Alt} />
       </DetailImage>
 
@@ -45,7 +45,7 @@ export default function InProgressDetails({ dict }: Props) {
       <Text>{d.section4Text1}</Text>
       <Text>{d.section4Text2}</Text>
 
-      <DetailImage className={'small'}>
+      <DetailImage className={"small"}>
         <Image src={devine2Img} alt={d.image2Alt} />
       </DetailImage>
 
@@ -57,7 +57,7 @@ export default function InProgressDetails({ dict }: Props) {
       <RoleLabel>{d.section6Title}</RoleLabel>
       <Text>{d.section6Text}</Text>
 
-      <DetailImage className={'large'}>
+      <DetailImage className={"large"}>
         <Image src={devine3Img} alt={d.image3Alt} />
       </DetailImage>
 

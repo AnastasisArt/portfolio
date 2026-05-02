@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import type { ProjectDict } from "@/lib/i18n/dicts";
+import type {Common, ProjectDict} from "@/lib/i18n/dicts";
 import AgendappStacks from "./Stacks";
-import agendappImg from "@/public/images/agendapp.png";
+import agendappImg from "@/public/images/agendapp1.png";
 import { Role, RoleContent } from "./styles";
 import {
   Container,
@@ -12,13 +12,16 @@ import {
   Text,
   Status,
   RoleLabel,
+  ViewDetailsLink,
 } from "../Common.styles";
 
 type Props = {
   dict: ProjectDict<"agendapp">;
+  common: Common;
+  detailsHref: string;
 };
 
-export default function Agendapp({ dict }: Props){
+export default function Agendapp({ dict, common, detailsHref }: Props){
   return (
     <Container>
       <Left>
@@ -54,6 +57,10 @@ export default function Agendapp({ dict }: Props){
           <RoleLabel>{dict.roles.web} -</RoleLabel>
           <RoleContent>Anastasia Vojkic</RoleContent>
         </Role>
+
+        <ViewDetailsLink href={detailsHref}>
+          {common.viewDetails}
+        </ViewDetailsLink>
 
         <AgendappStacks />
       </Right>

@@ -9,16 +9,18 @@ import {
   Title,
   Text,
   Subtitle,
-  RoleLabel,
+  RoleLabel, ViewDetailsLink,
 } from "../Common.styles";
 import NTArchiStacks from "./Stacks";
-import type { ProjectDict } from "@/lib/i18n/dicts";
+import type {Common, ProjectDict} from "@/lib/i18n/dicts";
 
 type Props = {
   dict: ProjectDict<"ntarchi">;
+  common: Common;
+  detailsHref: string;
 };
 
-export default function NTArchi({ dict }: Props) {
+export default function NTArchi({ dict, common, detailsHref }: Props) {
   return (
     <Container>
       <Left>
@@ -48,6 +50,10 @@ export default function NTArchi({ dict }: Props) {
 
         <RoleLabel>{dict.deploymentTitle}</RoleLabel>
         <Text>{dict.deployment}</Text>
+
+        <ViewDetailsLink href={detailsHref}>
+          {common.viewDetails}
+        </ViewDetailsLink>
 
         <NTArchiStacks />
       </Right>

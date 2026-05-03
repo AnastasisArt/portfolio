@@ -23,7 +23,7 @@ export default function Projects({ lang, common, projects }: Props) {
       </Slide>
 
       <Slide>
-        <NTArchi dict={projects.ntarchi} />
+        <NTArchi dict={projects.ntarchi} common={common} detailsHref={`/${lang}/projects/ntarchi`}/>
       </Slide>
 
       <Slide>

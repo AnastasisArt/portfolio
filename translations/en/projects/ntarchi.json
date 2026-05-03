@@ -11,5 +11,82 @@
   "backend": "NestJS API with JWT authentication and secure password hashing using Argon2. Data is stored in PostgreSQL with TypeORM. A dedicated admin interface allows the management of projects and their media.",
 
   "deploymentTitle": "Deployment",
-  "deployment": "The application is deployed on a manually configured VPS. The infrastructure includes backup management and a setup designed for production stability."
+  "deployment": "The application is deployed on a manually configured VPS. The infrastructure includes backup management and a setup designed for production stability.",
+
+  "details": {
+    "section1Title": "Project context",
+    "section1Text1": "I built an architect’s portfolio website from A to Z, replacing an old WordPress site.",
+    "section1Text2": "The homepage had been displaying ‘Site under construction’ for several years, and the admin interface was not suited to his actual usage. For an architect who only publishes a few projects per year, coming back occasionally to a dense interface filled with unnecessary sections quickly became discouraging, which gradually led him to stop updating the site.",
+    "section1Text3": "The goal was therefore to create a site with a real identity, smoother overall, but above all to design an admin interface limited to his actual needs.",
+
+    "section2Title": "Existing analysis",
+    "section2Text1": "Before starting any design work, I analyzed his existing site and listed all the original data.",
+    "section2Text2": "This work wasn’t just about listing data. It mainly helped me anticipate upcoming decisions and optimize our discussions. \nBy going through everything that already existed, I was able to identify redundant information, data that could be merged, elements that were no longer useful, but also potential gaps compared to similar websites.",
+
+    "section3Title": "Visual direction & framing",
+    "section3Text1": "The client didn’t have a clear directive. He could tell what he liked or disliked, but without having a clear vision of what he actually wanted.",
+    "section3Text2": "I therefore prepared our first meeting in advance by doing visual research, gathering inspirations, proposing color palettes, typography pairings and thinking about the target audience. I also designed 4 homepage variations based on his own projects, each with a very different visual direction, to help him project himself and position his preferences.",
+    "section3Text3": "The goal wasn’t to get a perfectly formulated request, but to give him concrete material to react to, get feedback, refine his preferences and gradually build a clear direction.",
+
+    "section4Title": "Product vision",
+    "section4Text1": "The main challenge was to create a tool that is simple, reliable and pleasant to use. \nThe public interface needed to be bright, both clean and elegant, with colors inspired by raw materials and a few original touches.",
+    "section4Text2": "The admin interface, on the other hand, had to be clear, direct and free of unnecessary noise. \nIt was designed to be easy to use, with a single-page structure organized into collapsible sections.",
+
+    "section5Title": "Architecture & data modeling",
+    "section5Text1": "Once the direction was validated, I defined the data model and started working on the back-end.",
+    "section5Text2": "Based on our discussions, I structured entities aligned with real needs and seeded reference data. Relationships use eager and cascade sparingly.",
+
+    "section6Title": "DTO & mockups: a direct link",
+    "section6Text1": "In my projects, I always connect DTOs and mockups. They can be designed separately, but working alone allowed me to be more demanding about that alignment.",
+    "section6Text2": "I started by designing the user-facing part, then moved on to the back-end alongside the admin interface. I first imagined the behavior, structured the data accordingly, then designed the UI to match it.",
+    "section6Text3": "Without that, structures can quickly become too heavy or not suited to the interface. I don’t see a DTO as a simple projection of the database, but as something directly tied to how the user interacts with the system.",
+
+    "section7Title": "Back-end construction",
+    "section7Text1": "Once the structure was defined, I developed the services required for the site to function.",
+    "section7Text2": "The API covers all content, including projects, their images, as well as global data such as contact information, the “atelier” page description, the architect’s background, and collaborations (MOE) with their associated links. It also allows selecting featured projects on the homepage and controlling their display order.",
+    "section7Text3": "Some data is intentionally exposed differently depending on front-end needs in order to avoid unnecessarily heavy requests.",
+
+    "section8Title": "Security & access management",
+    "section8Text1": "With the API functional, I added access management. Sensitive routes are protected via JWT, with guards limiting certain actions based on roles.",
+    "section8Text2": "Before going live, I also added several protection mechanisms such as header management, rate limiting, and permissions configuration.",
+
+    "section9Title": "Front-end & personal growth",
+    "section9Text1": "The front-end was built starting from simple elements and gradually moving toward complete pages.",
+    "section9Text2": "I created a reusable base with constants, types, hooks and components reused from previous projects and adapted when needed.",
+    "section9Text3": "For styling, I used Tailwind only for responsive handling. Everything else was done with styled-components to keep full control over the rendering.",
+    "section9Text4": "Even though I’m naturally more back-end oriented, this project helped me evolve my approach to front-end work. \nI used to try to control every detail across every screen size, but I realized it’s more about finding a balance that works across as many formats as possible rather than locking everything down.",
+
+    "section10Title": "Image handling",
+    "section10Text1": "High-quality images are essential in architecture.",
+    "section10Text2": "I handled image processing on the back-end to control file size without visible quality loss, and to generate multiple formats for different use cases. Images are ultimately stored on Cloudflare R2.",
+    "section10Text3": "This complements the optimization already handled by Next.js on the front-end.",
+
+    "section11Title": "Deployment & real constraints",
+    "section11Text1": "Deployment was a particularly impactful phase of the project.",
+    "section11Text2": "At first, I planned to use a simple setup with Vercel and Render. However, the client’s existing hosting changed that decision.",
+    "section11Text3": "What I initially thought was an expensive yearly cost turned out to be a 3-year payment. It wasn’t an option to make him abandon that investment, nor to propose a solution that wouldn’t allow him to make use of it.",
+    "section11Text4": "His hosting offered some flexibility but imposed a very outdated version of PostgreSQL, incompatible with the project. I had to move toward a VPS, which wasn’t planned initially.",
+    "section11Text5": "I approached this step very carefully. \nEven though I already had an idea of what needed to be done, I prepared everything in advance by listing all configurations and their execution order to avoid mistakes.",
+    "section11Text6": "Managing a VPS involved aspects I hadn’t fully worked with before, especially around security and infrastructure. This phase helped me strengthen those areas and get back into working with Linux through the command line.",
+
+    "section12Title": "Production & monitoring",
+    "section12Text1": "Once the site was live, an issue occurred the very next day due to a browser update affecting scroll behavior.",
+    "section12Text2": "Since all pages were impacted, I quickly identified that the issue came from a global point, which allowed me to fix it without having to break down the analysis.",
+    "section12Text3": "After that, I set up a ping system with Better Stack to be immediately alerted in case of downtime.",
+
+    "section13Title": "Result & perspective",
+    "section13Text1": "The site is now functional, deployed and stable.",
+    "section13Text2": "This project allowed me to cover the full lifecycle of an application and was an interesting experience beyond purely technical aspects.",
+    "section13Text3": "What stands out the most to me is the human side of the work: listening, analyzing, understanding, reformulating, guiding and proposing, but also making decisions, adapting and responding.",
+    "section13Text4": "These are all aspects I was able to practice and genuinely enjoy, especially because of the responsibility it implies toward the person you’re working with.",
+
+    "projectImage": "Architect portfolio website interface featuring a visual grid inspired by materials and textures, alongside a mobile preview displaying a project.",
+    "image1Alt": "Admin interface of the website allowing the architect to edit personal information, background, collaborations and presentation, with a responsive mobile version.",
+    "image2Alt": "Project creation form in the admin interface, with structured fields (title, surface, type, status) and image management, shown in both desktop and mobile versions.",
+    "image3Alt": "Admin interface displaying a list of projects as cards with edit and delete actions, including one expanded card showing full project details.",
+    "image4Alt": "Swagger interface displaying a list of endpoints with security indicators (locked or unlocked) depending on their access level.",
+    "image5Alt": "Images stored on Cloudflare R2 with multiple versions of the same file in different sizes and resolutions to adapt to various screen formats.",
+    "image6Alt": "htop interface showing VPS server status with CPU usage, memory, uptime and running processes, including Docker (containerd).",
+    "image7Alt": "Better Stack weekly summary email showing website availability over 7 days with 100% uptime."
+  }
 }

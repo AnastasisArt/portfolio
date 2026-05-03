@@ -11,5 +11,82 @@
   "backend": "API NestJS avec authentification JWT et gestion sécurisée des mots de passe via Argon2. Les données sont stockées dans PostgreSQL avec TypeORM. Une interface d’administration permet de gérer les projets et leurs médias.",
 
   "deploymentTitle": "Déploiement",
-  "deployment": "Application déployée sur un VPS configuré manuellement. L’infrastructure inclut la gestion des sauvegardes et une configuration orientée stabilité en production."
+  "deployment": "Application déployée sur un VPS configuré manuellement. L’infrastructure inclut la gestion des sauvegardes et une configuration orientée stabilité en production.",
+
+  "details": {
+    "section1Title": "Contexte du projet",
+    "section1Text1": "J’ai réalisé de A à Z le site portfolio d’un architecte en remplacement d’un ancien site WordPress.",
+    "section1Text2": "La page d’accueil affichait “Site en construction” depuis plusieurs années et l’interface d’administration n’était pas adaptée à son usage. Pour un architecte qui publie seulement quelques projets par an, revenir ponctuellement sur une interface dense, remplie de sections inutiles, devenait décourageant, ce qui l’a progressivement conduit à abandonner les mises à jour.",
+    "section1Text3": "L’objectif était donc de créer un site avec une véritable identité, plus fluide, mais surtout de lui concevoir une interface admin limitée à ses besoins réels.",
+
+    "section2Title": "Analyse de l’existant",
+    "section2Text1": "Avant de commencer à concevoir quoi que ce soit, j’ai analysé son ancien site et répertorié toute la data d’origine.",
+    "section2Text2": "Ce travail ne s’est pas limité à répertorier les données. Il m’a surtout permis d’éprouver les choix à venir et d’optimiser nos échanges. \nEn listant ce qui existait déjà, j’ai pu identifier les informations redondantes, les données qui pouvaient être fusionnées, celles qui n’étaient plus utiles, mais aussi les manques potentiels en comparaison avec d’autres sites semblables.",
+
+    "section3Title": "Direction visuelle & cadrage",
+    "section3Text1": "Le client n’avait pas de directive précise. Il savait reconnaître ce qui lui plaisait ou non, mais sans avoir de vision claire de ce qu’il souhaitait.",
+    "section3Text2": "J’ai donc préparé notre premier entretien en amont, en faisant de la veille graphique, en cherchant des inspirations, en proposant des palettes de couleurs, des associations typographiques et en réfléchissant au public cible. Je lui ai également conçu 4 pages d’accueil à partir de ses propres projets, chacune avec une direction visuelle différente, afin de l’aider à se projeter et se positionner.",
+    "section3Text3": "L’objectif n’était pas d’obtenir une demande parfaitement formulée, mais de lui apporter des supports concrets pour provoquer des réactions, recueillir des retours, affiner ses préférences et construire progressivement une direction.",
+
+    "section4Title": "Vision produit",
+    "section4Text1": "Le véritable enjeu était de lui créer un outil simple, fiable et agréable à utiliser. \nL’interface publique devait être lumineuse, à la fois sobre et élégante, avec des couleurs évoquant les matières brutes et quelques touches d’originalité.",
+    "section4Text2": "L’interface admin, quant à elle, devait avant tout être claire, directe et débarrassée du bruit inutile. \nElle a donc été conçue pour être facilement prise en main, avec une structure en une seule page, organisée en sections déroulantes.",
+
+    "section5Title": "Architecture & modélisation",
+    "section5Text1": "Une fois la direction validée, j’ai établi le modèle de données et lancé le travail du back-end.",
+    "section5Text2": "Grâce à nos échanges, j’ai structuré des entités alignées sur ses besoins réels et seedé les données de référence. Aussi, les relations utilisent eager et cascade de manière parcimonieuse.",
+
+    "section6Title": "DTO & maquettes : un lien direct",
+    "section6Text1": "Dans mes projets, je fais toujours le lien entre les DTO et les maquettes. Ils peuvent être pensés séparément, mais le fait de travailler seule m’a permis d’être plus exigeante sur ce point.",
+    "section6Text2": "J’ai commencé par maquetter la partie visiteur, puis j’ai avancé sur le back-end en parallèle de l’interface admin. J’ai d’abord imaginé le comportement, structuré les données en conséquence, puis maquetté pour y correspondre.",
+    "section6Text3": "Les structures mises en place peuvent vite devenir trop lourdes ou inadaptées à l’interface. Je ne considère donc pas un DTO comme une simple projection de la base car ce dernier est directement lié à la manière dont l’utilisateur interagit avec le système.",
+
+    "section7Title": "Construction back-end",
+    "section7Text1": "Une fois la structure posée, j’ai développé les services nécessaires au fonctionnement du site.",
+    "section7Text2": "L’API couvre l’ensemble du contenu, tels que les projets, leurs photos, mais aussi les données globales comme les informations de contact, la description de la page “atelier”, le parcours de l’architecte ou encore les collaborations (MOE) avec leurs liens associés. Elle permet également de sélectionner les projets mis en avant sur la page d’accueil ainsi que leur ordre d’affichage.",
+    "section7Text3": "Certaines données sont volontairement exposées différemment selon les besoins réels en front, afin d’alléger les requêtes.",
+
+    "section8Title": "Sécurité & gestion des accès",
+    "section8Text1": "L’API étant fonctionnelle, j’ai ajouté la gestion des accès. Les routes sensibles ont été protégées via JWT, avec des guards limitant certaines actions selon les rôles.",
+    "section8Text2": "Avant la mise en production, j’ai également intégré plusieurs mécanismes de protection comme la gestion des headers, la limitation des requêtes et la configuration des permissions.",
+
+    "section9Title": "Front-end & évolution personnelle",
+    "section9Text1": "Le front-end a été construit en partant des éléments les plus simples pour remonter progressivement vers les pages complètes.",
+    "section9Text2": "J’ai mis en place une base réutilisable avec des constantes, des types, des hooks et des composants importés de projets précédents, que j’adapte d’un projet à l’autre.",
+    "section9Text3": "Pour les styles, j’ai utilisé Tailwind uniquement pour la gestion du responsive. Tout le reste a été réalisé avec styled-components afin de garder un contrôle précis sur le rendu.",
+    "section9Text4": "Même si je suis naturellement plus orientée back-end, ce projet m’a permis de faire évoluer ma manière d’aborder le front. \nJ’avais tendance à vouloir contrôler précisément chaque élément sur chaque taille d’écran mais j’ai enfin compris qu’il ne s’agit pas de tout verrouiller, mais plutôt de trouver un équilibre qui fonctionne sur un maximum de formats.",
+
+    "section10Title": "Gestion des images",
+    "section10Text1": "Les images de haute qualité sont essentielles dans le domaine de l’architecture.",
+    "section10Text2": "J’ai donc traité les fichiers en back pour en maîtriser le poids, sans perte visible de qualité, et générer plusieurs formats adaptés aux différents usages. Les photos sont, in fine, stockées sur Cloudflare R2.",
+    "section10Text3": "Cette approche complète l’optimisation réalisée par Next.js en front.",
+
+    "section11Title": "Déploiement & contraintes réelles",
+    "section11Text1": "Le déploiement a été une phase particulièrement marquante du projet.",
+    "section11Text2": "Au départ, je comptais utiliser une solution simple avec Vercel et Render. Cependant, l’hébergement existant du client a remis ce choix en question.",
+    "section11Text3": "Ce que j’avais initialement interprété comme un coût annuel élevé s’est en réalité avéré être un paiement sur 3 ans. Il n’était donc pas envisageable de lui faire abandonner cet investissement, ni de proposer, à défaut, une solution qui ne permettrait pas d’en amortir le coût.",
+    "section11Text4": "Son hébergement offrait une certaine souplesse, mais imposait une version largement obsolète de PostgreSQL, incompatible avec le projet. J’ai donc dû m’orienter vers un VPS, non prévu initialement.",
+    "section11Text5": "C’est une étape que j’ai abordée avec beaucoup de prudence. \nMême si j’avais déjà une idée des éléments à mettre en place, j’ai préféré tout préparer en amont, en établissant une liste précise des configurations à réaliser ainsi que leur ordre de procédure.",
+    "section11Text6": "La gestion d’un VPS impliquait des aspects que je n’avais pas encore entièrement pratiqués, notamment en sécurité et en infrastructure. Cette phase m’a permis de consolider ces points et de retravailler Linux en ligne de commande.",
+
+    "section12Title": "Mise en production & suivi",
+    "section12Text1": "Une fois le site en production, un incident est survenu dès le lendemain, suite à une mise à jour navigateur impactant le comportement du scroll.",
+    "section12Text2": "Comme toutes mes pages étaient affectées, j’ai rapidement identifié que le problème venait d’un point global, ce qui m’a permis de corriger rapidement sans devoir fragmenter mon analyse.",
+    "section12Text3": "Par la suite, j’ai configuré un système de ping avec Better Stack afin d’être immédiatement alertée en cas d’indisponibilité du site.",
+
+    "section13Title": "Résultat & perspective",
+    "section13Text1": "Le site est aujourd’hui fonctionnel, déployé et stable.",
+    "section13Text2": "Ce projet m’a permis de couvrir l’ensemble du cycle de vie d’une application et a été un exercice intéressant, au-delà des seuls aspects techniques.",
+    "section13Text3": "Ce que j’en retiens surtout, c’est le travail humain derrière : écouter, analyser, comprendre, reformuler, guider et proposer, mais aussi prendre des décisions, s’adapter et répondre.",
+    "section13Text4": "Ce sont autant d’aspects que j’ai pu exercer et pour lesquels j’ai pris beaucoup de plaisir, plus particulièrement de par la responsabilité que cela implique envers son interlocuteur.",
+
+    "projectImage": "Interface du site portfolio d’un architecte, présentant une grille visuelle inspirée de matières et textures, accompagnée d’un aperçu mobile du site affichant un projet.",
+    "image1Alt": "Interface d’administration du site permettant de modifier les informations de l’architecte, son parcours, ses collaborations et la présentation, avec une version adaptée mobile.",
+    "image2Alt": "Formulaire d’ajout de projet dans l’interface admin, avec champs structurés (titre, surface, type, statut) et gestion des images, affiché en version desktop et mobile.",
+    "image3Alt": "Interface admin affichant une liste de projets sous forme de cartes avec actions de modification et suppression, dont une carte ouverte affichant les détails complets d’un projet.",
+    "image4Alt": "Interface Swagger affichant une liste d’endpoints avec indicateurs de sécurité (cadenas actif ou inactif) selon leur niveau d’accès.",
+    "image5Alt": "Stockage des images sur Cloudflare R2 avec plusieurs versions d’un même fichier en différents formats et résolutions pour une adaptation aux écrans.",
+    "image6Alt": "Interface htop affichant l’état du serveur VPS avec l’utilisation CPU, mémoire, uptime et les processus actifs, dont Docker (containerd).",
+    "image7Alt": "Email de récapitulatif hebdomadaire Better Stack indiquant la disponibilité du site sur 7 jours avec un taux de 100 %."
+  }
 }

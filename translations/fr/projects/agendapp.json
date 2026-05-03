@@ -36,7 +36,7 @@
     "section4Text2": "Une première version d’un dictionnaire de données a été construite, puis confrontée à celles de l’équipe avant de fusionner les propositions en un modèle unique cohérent.",
     "section4Text3": "Le schéma a ensuite été retranscrit sur dbdiagram pour visualiser les relations entre entités, puis affiné progressivement, passant d’environ 25 à plus de 35 tables à mesure que le besoin se précisait.",
 
-    "section5Title": "Backend & API",
+    "section5Title": "Back-end & API",
     "section5Text1": "La partie back-end a été développée avec NestJS, TypeORM et PostgreSQL, dans un environnement Docker.",
     "section5Text2": "Des entités alignées avec le modèle SQL ont été mises en place, avec une attention particulière portée aux relations, aux clés étrangères, aux champs typés, aux timestamps et aux enums. Certaines options comme eager ou cascade ont été utilisées pour simplifier certaines opérations et accélérer le développement, avec des limites à prendre en compte sur des cas plus complexes.",
     "section5Text3": "Le travail sur les DTO, les services et les contrôleurs a permis de structurer la logique métier dans les services et les points d’entrée dans les contrôleurs.",

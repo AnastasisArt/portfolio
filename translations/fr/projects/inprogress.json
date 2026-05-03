@@ -19,7 +19,7 @@
 
     "section3Title": "Analyse & découpage du projet",
     "section3Text1": "Une grosse partie du travail initial a porté sur la compréhension du modèle produit. L’objectif était de construire un modèle de données plus avancé que la première version réellement déployée.",
-    "section3Text2": "La V1 publique se concentrera uniquement sur la consultation de produits, mais le backend anticipe déjà plusieurs besoins futurs tels que la gestion des produits, relations entre produits, fichiers, formats, systèmes supportés, médias, mises à jour, contenus associés et droits d’accès internes.",
+    "section3Text2": "La V1 publique se concentrera uniquement sur la consultation de produits, mais le back-end anticipe déjà plusieurs besoins futurs tels que la gestion des produits, relations entre produits, fichiers, formats, systèmes supportés, médias, mises à jour, contenus associés et droits d’accès internes.",
     "section3Text3": "On distingue deux niveaux d’évolution : \nla version visible côté utilisateur, volontairement restreinte au départ, et la version technique du modèle de données, plus complète, pensée pour supporter les futures évolutions sans impacter toute l’architecture.\n\n",
 
     "section4Title": "Modélisation des données",
@@ -29,7 +29,7 @@
     "section5Title": "Stratégie DTO",
     "section5Text1": "J’ai mis en place une stratégie DTO distincte selon les usages.",
     "section5Text2": "Les DTO de lecture sont volontairement larges au départ pour couvrir rapidement le modèle.\nÀ l’inverse, les DTO de création et de mise à jour sont beaucoup plus stricts et ne sont créés que lorsqu’un vrai flux applicatif existe. Ils ne recopient pas les entités, mais représentent ce que le client est réellement autorisé à envoyer.",
-    "section5Text3": "Certains champs sont volontairement absents lorsqu’ils sont générés par le backend, sensibles, techniques ou déjà déduits du contexte parent.\n\n",
+    "section5Text3": "Certains champs sont volontairement absents lorsqu’ils sont générés par le back-end, sensibles, techniques ou déjà déduits du contexte parent.\n\n",
 
     "section6Title": "Structuration & inventaires",
     "section6Text": "Pour garder une vision claire du périmètre, j’ai créé des inventaires dédiés des DTO existants, DTO spécialisés, services disponibles, méthodes exposées et responsabilités de chaque couche.\nCela évite de devoir reparcourir toute l’arborescence du projet à chaque décision et permet de maintenir une documentation utile pour de futurs contributeurs.",

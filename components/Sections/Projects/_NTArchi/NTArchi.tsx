@@ -40,16 +40,9 @@ export default function NTArchi({ dict, common, detailsHref }: Props) {
         </Title>
 
         <Subtitle>{dict.subtitle}</Subtitle>
-        <Text>{dict.description}</Text>
-
-        <RoleLabel>{dict.frontendTitle}</RoleLabel>
-        <Text>{dict.frontend}</Text>
-
-        <RoleLabel>{dict.backendTitle}</RoleLabel>
-        <Text>{dict.backend}</Text>
-
-        <RoleLabel>{dict.deploymentTitle}</RoleLabel>
-        <Text>{dict.deployment}</Text>
+        <Text>{dict.description1}</Text>
+        <Text>{dict.description2}</Text>
+        <Text>{dict.description3}</Text>
 
         <ViewDetailsLink href={detailsHref}>
           {common.viewDetails}

@@ -1,11 +1,9 @@
 {
   "title": "SWAP IT UP !",
   "subtitle": "Solo dev challenge",
-  "intro": "A guided project that I genuinely enjoyed building. It allowed me to combine structure, problem solving and creativity, everything I enjoy about coding.\n\n",
 
-  "development": "Despite its simple appearance, the game already involves several logical systems such as match detection, chain reactions and dynamic grid updates.",
-  "development2": "I first built the project in React.js before rewriting it entirely in TypeScript in order to turn it into a more serious and better structured project.",
-  "development3": "At the same time I started studying algorithms and their complexity more deeply in order to identify ways to optimize the game's logic.",
-
-  "hint": "A \"best hint\" system analyzes the grid and determines the best immediate move. I also plan to improve the algorithm used to search for moves, notably by experimenting with a backtracking-based approach."
+  "description1": "A guided project I really enjoyed working on. \nIt allowed me to combine structure, problem-solving, and creativity — everything I enjoy in coding.",
+  "description2": "Despite its simple appearance, the game relies on several underlying mechanisms such as combination detection, chain reactions, and dynamic grid updates. \nI first built it in React.js before rewriting it entirely in TypeScript to establish a cleaner and more structured foundation.",
+  "description3": "While revisiting some mathematical fundamentals, I identified ways to optimize the game logic. I also implemented a \"best hint\" system to improve move detection, with additional optimization ideas such as a backtracking-based approach suggested during discussions with my brother, who is also a developer.",
+  "description4": "The project is currently being refactored."
 }

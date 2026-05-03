@@ -1,16 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import inProgressImg from "@/public/images/devine2.png";
-import {
-  Container,
-  Left,
-  Right,
-  Title,
-  Text,
-  Subtitle,
-  RoleLabel,
-  ViewDetailsLink,
-} from "../Common.styles";
+import { Container, Left, Right, Title, Text, Subtitle, ViewDetailsLink } from "../Common.styles";
 import InProgressProjectStacks from "./Stacks";
 import type {Common, ProjectDict} from "@/lib/i18n/dicts";
 
@@ -24,18 +15,15 @@ export default function InProgress({ dict, common, detailsHref }: Props) {
   return (
     <Container>
       <Left>
-        <Image src={inProgressImg} alt={dict.imageAlt} priority />
+        <Image src={inProgressImg} alt={dict.details.projectImage} priority />
       </Left>
 
       <Right>
         <Title className="no-margin margin-top">{dict.title}</Title>
 
         <Subtitle>{dict.subtitle}</Subtitle>
-        <Text>{dict.description}</Text>
-
-        <RoleLabel>{dict.dataModelingTitle}</RoleLabel>
-        <Text>{dict.dataModeling}</Text>
-        <Text>{dict.dataModeling2}</Text>
+        <Text>{dict.description1}</Text>
+        <Text>{dict.description2}</Text>
 
         <ViewDetailsLink href={detailsHref}>
           {common.viewDetails}

@@ -35,11 +35,10 @@ export default function SwapItUp({ dict }: Props) {
       <Right className="layout-portrait">
         <Title className="no-margin margin-top" $align="right">{dict.title}</Title>
         <Subtitle $align="right">{dict.subtitle}</Subtitle>
-        <Text $align="right">{dict.intro}</Text>
-        <Text $align="right">{dict.development}</Text>
-        <Text $align="right">{dict.development2}</Text>
-        <Text $align="right">{dict.development3}</Text>
-        <Text $align="right">{dict.hint}</Text>
+        <Text $align="right">{dict.description1}</Text>
+        <Text $align="right">{dict.description2}</Text>
+        <Text $align="right">{dict.description3}</Text>
+        <Text $align="right">{dict.description4}</Text>
 
         <SwapItUpStack />
       </Right>

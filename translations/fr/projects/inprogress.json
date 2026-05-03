@@ -1,11 +1,8 @@
 {
-  "title": "Projet en cours",
+  "title": "Projet en cours . . .",
   "subtitle": "Conception d’une plateforme de distribution logicielle",
-  "description": "Conception d’une plateforme de distribution de logiciels inspirée d’un modèle type store.\nLe projet est encore en phase de conception et n’est volontairement pas détaillé ici.",
-  "dataModelingTitle": "Modélisation des données",
-  "dataModeling": "Des expériences passées m'ont montré que lorsqu’une structure de données doit être modifiée en cours de développement, l’impact se propage rapidement dans toute l’application. Celle-ci oblige alors, dans le pire des cas, à revoir l’ensemble des couches du projet.",
-  "dataModeling2" : "L’idée ici n’est pas de modéliser indéfiniment et de retarder le départ réel du projet, mais de construire une base solide afin de limiter au maximum cet effet cascade à l’avenir, qui s’avère bien souvent plus coûteux en temps.",
-  "imageAlt": "Extrait de schéma de base de données pour un projet en cours",
+  "description1": "Plateforme de distribution de logiciels inspirée d’un modèle type store, en cours de développement.\nDerrière une V1 volontairement simple, le projet repose sur une architecture déjà pensée pour évoluer.",
+  "description2": "Une grande partie du travail porte sur la structuration du projet et la modélisation des données, avec une attention particulière à la cohérence et à l’évolutivité.",
 
   "details": {
     "section1Title": "Contexte du projet",
@@ -19,7 +16,7 @@
 
     "section3Title": "Analyse & découpage du projet",
     "section3Text1": "Une grosse partie du travail initial a porté sur la compréhension du modèle produit. L’objectif était de construire un modèle de données plus avancé que la première version réellement déployée.",
-    "section3Text2": "La V1 publique se concentrera uniquement sur la consultation de produits, mais le backend anticipe déjà plusieurs besoins futurs tels que la gestion des produits, relations entre produits, fichiers, formats, systèmes supportés, médias, mises à jour, contenus associés et droits d’accès internes.",
+    "section3Text2": "La V1 publique se concentrera uniquement sur la consultation de produits, mais le back-end anticipe déjà plusieurs besoins futurs tels que la gestion des produits, relations entre produits, fichiers, formats, systèmes supportés, médias, mises à jour, contenus associés et droits d’accès internes.",
     "section3Text3": "On distingue deux niveaux d’évolution : \nla version visible côté utilisateur, volontairement restreinte au départ, et la version technique du modèle de données, plus complète, pensée pour supporter les futures évolutions sans impacter toute l’architecture.\n\n",
 
     "section4Title": "Modélisation des données",
@@ -29,7 +26,7 @@
     "section5Title": "Stratégie DTO",
     "section5Text1": "J’ai mis en place une stratégie DTO distincte selon les usages.",
     "section5Text2": "Les DTO de lecture sont volontairement larges au départ pour couvrir rapidement le modèle.\nÀ l’inverse, les DTO de création et de mise à jour sont beaucoup plus stricts et ne sont créés que lorsqu’un vrai flux applicatif existe. Ils ne recopient pas les entités, mais représentent ce que le client est réellement autorisé à envoyer.",
-    "section5Text3": "Certains champs sont volontairement absents lorsqu’ils sont générés par le backend, sensibles, techniques ou déjà déduits du contexte parent.\n\n",
+    "section5Text3": "Certains champs sont volontairement absents lorsqu’ils sont générés par le back-end, sensibles, techniques ou déjà déduits du contexte parent.\n\n",
 
     "section6Title": "Structuration & inventaires",
     "section6Text": "Pour garder une vision claire du périmètre, j’ai créé des inventaires dédiés des DTO existants, DTO spécialisés, services disponibles, méthodes exposées et responsabilités de chaque couche.\nCela évite de devoir reparcourir toute l’arborescence du projet à chaque décision et permet de maintenir une documentation utile pour de futurs contributeurs.",
@@ -44,6 +41,7 @@
     "section8Text1": "Le projet est structuré avec une séparation claire des responsabilités où chaque couche a son rôle, ce qui évite de tout mélanger et permet de garder une architecture maintenable.",
     "section8Text2": "Ce travail de structuration et de documentation demande plus de temps au départ, mais il permet de garder une vision claire sur le long terme, de reprendre rapidement ses repères et de faciliter l’arrivée de nouveaux collaborateurs.",
 
+    "projectImage": "Extrait de schéma de base de données pour un projet en cours",
     "image1Alt": "Organisation du projet via un tableau Trello structuré par phases (backlog, en cours, validé, terminé) et par versions (V1, V2 et suivantes)",
     "image2Alt": "Diagramme de base de données représentant les relations entre différentes entités",
     "image3Alt": "Documentation des conventions DTO et de la structuration de l’API"

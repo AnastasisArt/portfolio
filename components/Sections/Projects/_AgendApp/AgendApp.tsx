@@ -10,9 +10,8 @@ import {
   Right,
   Title,
   Text,
-  Status,
   RoleLabel,
-  ViewDetailsLink,
+  ViewDetailsLink, Subtitle,
 } from "../Common.styles";
 
 type Props = {
@@ -29,30 +28,29 @@ export default function Agendapp({ dict, common, detailsHref }: Props){
       </Left>
 
       <Right>
-        <Title>
-          {dict.title} <Status>({dict.inProgress})</Status>
-        </Title>
+        <Title as="h3" className="no-margin margin-top">{dict.title}</Title>
+        <Subtitle as="p">{dict.subtitle}</Subtitle>
 
         <Text>{dict.intro}</Text>
         <Text>{dict.contribution}</Text>
 
         <Role>
-          <RoleLabel>{dict.roles.graphic} -</RoleLabel>
+          <RoleLabel as="span">{dict.roles.graphic} -</RoleLabel>
           <RoleContent>Floriane Monnini</RoleContent>
         </Role>
         <Role>
-          <RoleLabel>{dict.roles.backend} -</RoleLabel>
+          <RoleLabel as="span">{dict.roles.backend} -</RoleLabel>
           <RoleContent>Jérôme Duguet,</RoleContent>
           <RoleContent>Jérôme Picavet,</RoleContent>
           <RoleContent>Anastasia Vojkic</RoleContent>
         </Role>
         <Role>
-          <RoleLabel>{dict.roles.mobile} -</RoleLabel>
+          <RoleLabel as="span">{dict.roles.mobile} -</RoleLabel>
           <RoleContent>Floriane Monnini, </RoleContent>
           <RoleContent>Jérôme Duguet</RoleContent>
         </Role>
         <Role>
-          <RoleLabel>{dict.roles.web} -</RoleLabel>
+          <RoleLabel as="span">{dict.roles.web} -</RoleLabel>
           <RoleContent>Anastasia Vojkic</RoleContent>
         </Role>
 

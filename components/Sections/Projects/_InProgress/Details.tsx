@@ -20,8 +20,10 @@ export default function InProgressDetails({ dict }: Props) {
 
   return (
     <DetailContent>
-      <Title className="no-margin">{dict.title}</Title>
-      <Subtitle>{dict.subtitle}</Subtitle>
+      <div className="header">
+        <Subtitle>{dict.subtitle}</Subtitle>
+        <Title className="no-margin">{dict.title}</Title>
+      </div>
 
       <RoleLabel>{d.section1Title}</RoleLabel>
       <Text>{d.section1Text}</Text>

@@ -33,8 +33,9 @@ export default function SwapItUp({ dict }: Props) {
       </Left>
 
       <Right className="layout-portrait">
-        <Title className="no-margin margin-top" $align="right">{dict.title}</Title>
-        <Subtitle $align="right">{dict.subtitle}</Subtitle>
+        <Title className="no-margin margin-top" $align="right" as="h3">{dict.title}</Title>
+        <Subtitle $align="right" as="p">{dict.subtitle}</Subtitle>
+
         <Text $align="right">{dict.description1}</Text>
         <Text $align="right">{dict.description2}</Text>
         <Text $align="right">{dict.description3}</Text>

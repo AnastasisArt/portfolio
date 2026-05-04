@@ -42,7 +42,8 @@ export const Title = styled.h1`
   }
 `;
 
-export const Subtitle = styled.p`
+export const Subtitle = styled.span`
+  display: block;
   text-transform: uppercase;
   padding: 0;
   margin: 0;

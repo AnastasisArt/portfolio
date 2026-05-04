@@ -8,7 +8,8 @@ export default function Contact() {
   const socials = CONTACTS.filter((c) => c.icon !== "mail");
 
   return (
-    <ContactSection id="ping">
+    <ContactSection id="ping" aria-labelledby="contact-title">
+      <h2 id="contact-title" className="sr-only">Contact</h2>
       <IconsRow>
         {socials.map((c) => (
           <IconLink

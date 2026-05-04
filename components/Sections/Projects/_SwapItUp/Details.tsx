@@ -12,8 +12,10 @@ type Props = { dict: ProjectDict<"swapitup"> };
 export default function SwapItUpDetails({ dict }: Props) {
   return (
     <DetailContent>
-      <Title className="margin-top">{dict.title}</Title>
-      <Subtitle>{dict.subtitle}</Subtitle>
+      <div className="header">
+        <Subtitle>{dict.subtitle}</Subtitle>
+        <Title className="no-margin">{dict.title}</Title>
+      </div>
 
       <Text></Text>
     </DetailContent>

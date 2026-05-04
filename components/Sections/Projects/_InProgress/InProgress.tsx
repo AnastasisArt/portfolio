@@ -19,9 +19,9 @@ export default function InProgress({ dict, common, detailsHref }: Props) {
       </Left>
 
       <Right>
-        <Title className="no-margin margin-top">{dict.title}</Title>
+        <Title className="no-margin margin-top" as="h3">{dict.title}</Title>
+        <Subtitle as="p">{dict.subtitle}</Subtitle>
 
-        <Subtitle>{dict.subtitle}</Subtitle>
         <Text>{dict.description1}</Text>
         <Text>{dict.description2}</Text>
 

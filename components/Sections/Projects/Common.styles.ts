@@ -89,7 +89,7 @@ export const Right = styled.div`
   }
 `;
 
-export const Title = styled.h1<{ $align?: Align }>`
+export const Title = styled.h2<{ $align?: Align }>`
   color: ${COLORS.secondary};
   text-transform: uppercase;
   margin-bottom: 1.2rem;
@@ -134,18 +134,7 @@ export const Title = styled.h1<{ $align?: Align }>`
   }
 `;
 
-export const Status = styled.span`
-  font-size: ${TYPOGRAPHY.fs.lg};
-  font-weight: ${TYPOGRAPHY.fw.light};
-  text-transform: none;
-  color: ${COLORS.tertiary};
-
-  @media (min-width: ${BP.lg}) {
-    font-size: ${TYPOGRAPHY.fs.xxl};
-  }
-`;
-
-export const Subtitle = styled.p<{ $align?: Align }>`
+export const Subtitle = styled.h1<{ $align?: Align }>`
   text-transform: uppercase;
   font-family: ${workSans.style.fontFamily};
   font-weight: ${TYPOGRAPHY.fw.semiBold};
@@ -159,7 +148,7 @@ export const Subtitle = styled.p<{ $align?: Align }>`
   }
 `;
 
-export const RoleLabel = styled.span`
+export const RoleLabel = styled.h3`
   color: ${COLORS.bluesky};
   text-transform: uppercase;
   font-family: ${workSans.style.fontFamily};
@@ -207,6 +196,18 @@ export const StackGroup = styled.div`
 //---------- DETAILS
 export const DetailContent = styled(Container)`
   padding-top: 3rem;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header ${Title} {
+    order: 1;
+  }
+  .header ${Subtitle} {
+    order: 2;
+  }
 
   @media (min-width: ${BP.xl}) {
     flex-direction: column;

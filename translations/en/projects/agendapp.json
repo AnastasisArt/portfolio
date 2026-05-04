@@ -1,5 +1,7 @@
 {
   "title": "Agend’App",
+  "subtitle": "Management and booking tool for wellness professionals",
+
   "intro": "Agend’App is a platform designed for professionals in the beauty and wellness industry.\nIt centralizes the management of their activity, including human and material resources, as well as appointment booking on the user side, through a web administration interface connected to a mobile application.",
   "contribution": "As part of this project completed during my internship, I contributed to the back-end design within the team, while independently developing the web administration interface.\nThe work focused on the management of establishments and related entities, one of the two core areas of the data model alongside user management.",
 

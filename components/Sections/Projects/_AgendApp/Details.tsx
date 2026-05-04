@@ -6,7 +6,7 @@ import {
   DetailContent,
   DetailImage,
   RoleLabel,
-  Text,
+  Text, Subtitle,
 } from "../Common.styles";
 import agendapp1 from "@/public/images/agendapp1.png";
 import agendapp2 from "@/public/images/agendapp2.png";
@@ -23,7 +23,10 @@ export default function AgendAppDetails({ dict }: Props) {
 
   return (
     <DetailContent>
-      <Title className="margin-top">{dict.title}</Title>
+      <div className="header">
+        <Subtitle>{dict.subtitle}</Subtitle>
+        <Title className="no-margin">{dict.title}</Title>
+      </div>
 
       <RoleLabel>{d.section1Title}</RoleLabel>
       <Text>{d.section1Text1}</Text>

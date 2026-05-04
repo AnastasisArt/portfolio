@@ -28,7 +28,7 @@ export default function NTArchi({ dict, common, detailsHref }: Props) {
       </Left>
 
       <Right>
-        <Title className="no-margin">
+        <Title className="no-margin" as="h3">
           <Link
             href="https://thurin-architecte.fr/"
             className="titleLink"
@@ -38,8 +38,8 @@ export default function NTArchi({ dict, common, detailsHref }: Props) {
             {dict.title}
           </Link>{" "}
         </Title>
+        <Subtitle as="p">{dict.subtitle}</Subtitle>
 
-        <Subtitle>{dict.subtitle}</Subtitle>
         <Text>{dict.description1}</Text>
         <Text>{dict.description2}</Text>
         <Text>{dict.description3}</Text>

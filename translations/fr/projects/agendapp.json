@@ -1,5 +1,7 @@
 {
   "title": "Agend’App",
+  "subtitle": "Outil de gestion et de réservation pour professionnels du bien-être",
+
   "intro": "Agend’App est une plateforme destinée aux professionnels de la beauté et du bien-être.\nElle centralise la gestion de leur activité, avec une gestion des ressources humaines et matérielles, ainsi qu’une prise de rendez-vous côté utilisateurs, via une interface d’administration web reliée à une application mobile.",
   "contribution": "Dans le cadre de ce projet réalisé en stage, j’ai participé à la conception du back-end au sein de l’équipe, tout en développant seule l’interface web d’administration.\nLe travail a porté sur la gestion des établissements et des entités associées, l’un des deux axes centraux du modèle de données avec la gestion des utilisateurs.",
 

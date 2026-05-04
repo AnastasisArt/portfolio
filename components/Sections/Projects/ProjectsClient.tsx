@@ -24,7 +24,8 @@ export default function ProjectsClient({ children }: Props) {
   });
 
   return (
-    <ProjectsWrapper ref={projectsRef} id="projects">
+    <ProjectsWrapper ref={projectsRef} id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title" className="sr-only">Réalisations</h2>
       <Banner visible={showBanner} />
       <Anchor ref={anchorRef} />
 

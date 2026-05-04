@@ -1,11 +1,11 @@
 import React from "react";
 import type { ProjectDict } from "@/lib/i18n/dicts";
 import {
-    Title,
-    Subtitle,
-    DetailContent,
-    RoleLabel,
-    Text, DetailImage,
+  Title,
+  Subtitle,
+  DetailContent,
+  RoleLabel,
+  Text, DetailImage,
 } from "../Common.styles";
 import Image from 'next/image';
 import ntarchi from '@/public/images/nt-archi.png';
@@ -24,8 +24,10 @@ export default function NTArchiDetails({ dict }: Props) {
 
   return (
     <DetailContent>
-      <Title className="margin-top">{dict.title}</Title>
-      <Subtitle>{dict.subtitle}</Subtitle>
+      <div className="header">
+        <Subtitle>{dict.subtitle}</Subtitle>
+        <Title className="no-margin">{dict.title}</Title>
+      </div>
 
       <RoleLabel>{d.section1Title}</RoleLabel>
       <Text>{d.section1Text1}</Text>
@@ -33,7 +35,7 @@ export default function NTArchiDetails({ dict }: Props) {
       <Text>{d.section1Text3}</Text>
 
       <DetailImage className={"medium"}>
-          <Image src={ntarchi} alt={d.projectImage} />
+        <Image src={ntarchi} alt={d.projectImage} />
       </DetailImage>
 
       <RoleLabel>{d.section2Title}</RoleLabel>
@@ -46,14 +48,14 @@ export default function NTArchiDetails({ dict }: Props) {
       <Text>{d.section3Text3}</Text>
 
       <DetailImage className={"small"}>
-          <Image src={ntarchi2} alt={d.image1Alt} />
+        <Image src={ntarchi2} alt={d.image1Alt} />
       </DetailImage>
 
       <RoleLabel>{d.section4Title}</RoleLabel>
       <Text>{d.section4Text1}</Text>
       <Text>{d.section4Text2}</Text>
       <DetailImage className={"medium"}>
-          <Image src={ntarchi3} alt={d.image2Alt} />
+        <Image src={ntarchi3} alt={d.image2Alt} />
       </DetailImage>
 
       <RoleLabel>{d.section5Title}</RoleLabel>
@@ -68,18 +70,18 @@ export default function NTArchiDetails({ dict }: Props) {
       <RoleLabel>{d.section7Title}</RoleLabel>
       <Text>{d.section7Text1}</Text>
       <DetailImage className={"xsmall"}>
-          <Image src={ntarchi4} alt={d.image3Alt} />
+        <Image src={ntarchi4} alt={d.image3Alt} />
       </DetailImage>
       <Text>{d.section7Text2}</Text>
       <Text>{d.section7Text3}</Text>
       <DetailImage className={"xxxsmall"}>
-          <Image src={ntarchi5} alt={d.image4Alt} />
+        <Image src={ntarchi5} alt={d.image4Alt} />
       </DetailImage>
 
       <RoleLabel>{d.section8Title}</RoleLabel>
       <Text>{d.section8Text1}</Text>
       <DetailImage className={"medium"}>
-          <Image src={ntarchi6} alt={d.image5Alt} />
+        <Image src={ntarchi6} alt={d.image5Alt} />
       </DetailImage>
       <Text>{d.section8Text2}</Text>
 

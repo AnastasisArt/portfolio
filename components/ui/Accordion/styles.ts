@@ -13,7 +13,7 @@ export const AccordionRoot = styled.div<{ $isOpen: boolean }>`
   transition: padding-block 0.28s ease;
 `;
 
-export const AccordionHeader = styled.div`
+export const AccordionHeader = styled.h2`
   width: 100%;
 `;
 

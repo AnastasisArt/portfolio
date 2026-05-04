@@ -25,8 +25,8 @@ export default function Presentation({ subtitle_role, about_text }: Props) {
         <span className="ana">
           Ana <span className="dots" />
         </span>
+        <Subtitle>{subtitle_role}</Subtitle>
       </Title>
-      <Subtitle>{subtitle_role}</Subtitle>
 
       <Accordion
         title={about_text.sections.intro.title}

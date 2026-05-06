@@ -95,9 +95,6 @@ export default function NTArchiDetails({ dict }: Props) {
       <Text>{d.section10Text1}</Text>
       <Text>{d.section10Text2}</Text>
       <Text>{d.section10Text3}</Text>
-      <DetailImage className={"medium"}>
-        <Image src={ntarchi7} alt={d.image6Alt} />
-      </DetailImage>
 
       <RoleLabel>{d.section11Title}</RoleLabel>
       <Text>{d.section11Text1}</Text>
@@ -106,6 +103,9 @@ export default function NTArchiDetails({ dict }: Props) {
       <Text>{d.section11Text4}</Text>
       <Text>{d.section11Text5}</Text>
       <Text>{d.section11Text6}</Text>
+      <DetailImage className={"medium"}>
+        <Image src={ntarchi7} alt={d.image6Alt} />
+      </DetailImage>
 
       <RoleLabel>{d.section12Title}</RoleLabel>
       <Text>{d.section12Text1}</Text>

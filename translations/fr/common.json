@@ -19,9 +19,7 @@
     "sections": {
       "intro": {
         "title": "Profil",
-        "text1": "Développeuse diplômée d’une Licence professionnelle de Concepteur et Développeur d’Applications, je souhaite poursuivre mon parcours en intégrant un Master Informatique & Mobilité en alternance. \nJe recherche actuellement une entreprise d’accueil pour la rentrée prochaine.\n\nJe me définis comme",
-        "text_strong1": " orientée back-end",
-        "text2": ", avec une vision full stack."
+        "text1": "Je suis titulaire d’une licence professionnelle en Conception et Développement d’Applications.\n\nJe m’intéresse particulièrement à l’architecture logicielle, la modélisation de données et à la manière dont les choix techniques influencent les usages réels."
       },
       "vision": {
         "title": "Approche",
@@ -29,7 +27,13 @@
       },
       "goals": {
         "title": "Objectifs",
-        "text": "Intégrer un master en alternance\nGagner en expérience\nMe spécialiser dans l’architecture logicielle\nCréer."
+        "text1": "Contribuer à des projets utiles et innovants.\n",
+        "text2": "Aider les entreprises à concevoir, améliorer et faire évoluer leurs outils.\n",
+        "text3": "Continuer à ",
+        "text_strong1": "apprendre",
+        "text4": " des autres et à ",
+        "text_strong2": "transmettre",
+        "text5": " à mon tour."
       }
     }
   },

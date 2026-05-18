@@ -19,9 +19,7 @@
     "sections": {
       "intro": {
         "title": "Profile",
-        "text1": "I hold a professional degree in Application Design and Development, and I’m looking to continue my studies by joining a Master’s in Computer Science & Mobility through a work-study program. \nI’m currently looking for a company to join for the upcoming academic year.\n\nI consider myself",
-        "text_strong1": " back-end oriented",
-        "text2": ", with a full-stack perspective."
+        "text1": "I hold a professional degree in Application Design and Development.\n\nI’m particularly interested in software architecture, data modeling, and the way technical decisions shape real-world usage."
       },
       "vision": {
         "title": "Approach",
@@ -29,7 +27,13 @@
       },
       "goals": {
         "title": "Goals",
-        "text": "Join a Master’s program through a work-study program\nGain experience\nSpecialize in software architecture\nCreate."
+        "text1": "Contribute to meaningful and innovative projects.\n",
+        "text2": "Help companies design, improve, and evolve their tools.\n",
+        "text3": "Continue ",
+        "text_strong1": "learning",
+        "text4": " from others and ",
+        "text_strong2": "sharing",
+        "text5": " knowledge in return."
       }
     }
   },

@@ -66,22 +66,19 @@ export default function NTArchiDetails({ dict }: Props) {
       <Text>{d.section6Text1}</Text>
       <Text>{d.section6Text2}</Text>
       <Text>{d.section6Text3}</Text>
-
-      <RoleLabel>{d.section7Title}</RoleLabel>
-      <Text>{d.section7Text1}</Text>
       <DetailImage className={"xsmall"}>
         <Image src={ntarchi4} alt={d.image3Alt} />
       </DetailImage>
+
+      <RoleLabel>{d.section7Title}</RoleLabel>
+      <Text>{d.section7Text1}</Text>
       <Text>{d.section7Text2}</Text>
       <Text>{d.section7Text3}</Text>
-      <DetailImage className={"xxxsmall"}>
-        <Image src={ntarchi5} alt={d.image4Alt} />
-      </DetailImage>
 
       <RoleLabel>{d.section8Title}</RoleLabel>
       <Text>{d.section8Text1}</Text>
-      <DetailImage className={"medium"}>
-        <Image src={ntarchi6} alt={d.image5Alt} />
+      <DetailImage className={"xxxsmall"}>
+        <Image src={ntarchi5} alt={d.image4Alt} />
       </DetailImage>
       <Text>{d.section8Text2}</Text>
 
@@ -95,6 +92,9 @@ export default function NTArchiDetails({ dict }: Props) {
       <Text>{d.section10Text1}</Text>
       <Text>{d.section10Text2}</Text>
       <Text>{d.section10Text3}</Text>
+      <DetailImage className={"medium"}>
+        <Image src={ntarchi6} alt={d.image5Alt} />
+      </DetailImage>
 
       <RoleLabel>{d.section11Title}</RoleLabel>
       <Text>{d.section11Text1}</Text>

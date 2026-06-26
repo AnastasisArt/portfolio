@@ -18,22 +18,22 @@
   "about_text": {
     "sections": {
       "intro": {
-        "title": "Profil",
-        "text1": "Je suis titulaire d’une licence professionnelle en Conception et Développement d’Applications.\n\nJe m’intéresse particulièrement à l’architecture logicielle, la modélisation de données et à la manière dont les choix techniques influencent les usages réels."
+        "title": "Profile",
+        "text1": "Je suis diplômée d'une Licence Professionnelle Concepteur Développeur d'Applications et j'intégrerai en septembre un Master Informatique & Mobilité.\n\nLes deux prochaines années seront principalement consacrées à l'intelligence artificielle, la cybersécurité, l'algorithmique, les systèmes distribués et l'informatique des objets.\n\nUn programme aussi ambitieux qu'exigeant.\nSi c'était facile, ce serait moins drôle. 😎\n\nAu final, ce qui m'attire le plus reste l'architecture logicielle, la modélisation des données et l'impact des choix techniques sur les applications."
       },
       "vision": {
         "title": "Approche",
-        "text": "Je me considère avant tout comme une développeuse back-end, cependant, j’ai également été amenée à travailler sur le front, ce qui me donne une vision et une compréhension globale des applications.\n\nEn équipe, je m’oriente donc naturellement vers le back. Dans des contextes plus autonomes, sur des besoins concrets, je prends en charge le développement et j’adapte mon rôle en fonction des contraintes.\n\nUn back-end n’est jamais invisible, il se voit toujours dans les limites de l’interface.\nC’est pourquoi je me place du point de vue de l’utilisateur final, sans oublier les plus créatifs d’entre eux… ceux qui cherchent à éprouver ou contourner le système.\n\nJ’aborde les choses avec un esprit analytique et une exigence personnelle qui me poussent à creuser jusqu’à ce que tout fasse sens.\nCette approche se retrouve dans l’attention que je porte à la structuration des données et à l’architecture applicative."
+        "text": "Je me considère avant tout comme une développeuse back-end. C'est là que se concentrent la logique métier, la sécurité, l'intégrité des données et une grande partie des choix d'architecture. J'ai également été amenée à travailler sur le front-end, ce qui me donne une vision plus globale des applications.\n\nEn équipe, je m'oriente naturellement vers le back-end. Dans des contextes plus autonomes, sur des besoins concrets, je prends en charge le développement et j'adapte mon rôle en fonction des contraintes.\n\nUn back-end n'est jamais invisible, il se voit toujours dans les limites de l'interface.\nC'est pourquoi je me place du point de vue de l'utilisateur final, sans oublier les plus créatifs d'entre eux… ceux qui cherchent à éprouver ou contourner le système.\n\nJe pars du principe qu'il n'existe pas de solution universelle. Les choix techniques n'ont de valeur que lorsqu'ils répondent au contexte et aux contraintes du projet."
       },
       "goals": {
         "title": "Objectifs",
-        "text1": "Contribuer à des projets utiles et innovants.\n",
-        "text2": "Aider les entreprises à concevoir, améliorer et faire évoluer leurs outils.\n",
-        "text3": "Continuer à ",
+        "text1": "Contribuer un jour à des projets liés à l'astrophysique ou à l'exploration spatiale.\n",
+        "text2": "Évoluer aux côtés de personnes passionnées et profondément investies dans leur domaine.\n",
+        "text3": "Ne jamais perdre le plaisir d'",
         "text_strong1": "apprendre",
-        "text4": " des autres et à ",
+        "text4": "... ni celui de ",
         "text_strong2": "transmettre",
-        "text5": " à mon tour."
+        "text5": "."
       }
     }
   },

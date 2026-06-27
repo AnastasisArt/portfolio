@@ -150,6 +150,7 @@ export const Subtitle = styled.h1<{ $align?: Align }>`
 
 export const RoleLabel = styled.h3`
   color: ${COLORS.bluesky};
+  margin-top: 0.8rem;
   text-transform: uppercase;
   font-family: ${workSans.style.fontFamily};
   font-weight: ${TYPOGRAPHY.fw.regular}; 

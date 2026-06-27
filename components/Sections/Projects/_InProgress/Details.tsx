@@ -26,7 +26,8 @@ export default function InProgressDetails({ dict }: Props) {
       </div>
 
       <RoleLabel>{d.section1Title}</RoleLabel>
-      <Text>{d.section1Text}</Text>
+      <Text>{d.section1Text1}</Text>
+      <Text>{d.section1Text2}</Text>
 
       <RoleLabel>{d.section2Title}</RoleLabel>
       <Text>{d.section2Text1}</Text>
@@ -42,10 +43,12 @@ export default function InProgressDetails({ dict }: Props) {
       <Text>{d.section3Text1}</Text>
       <Text>{d.section3Text2}</Text>
       <Text>{d.section3Text3}</Text>
+      <Text>{d.section3Text4}</Text>
 
       <RoleLabel>{d.section4Title}</RoleLabel>
       <Text>{d.section4Text1}</Text>
       <Text>{d.section4Text2}</Text>
+      <Text>{d.section4Text3}</Text>
 
       <DetailImage className={"small"}>
         <Image src={devine2Img} alt={d.image2Alt} />
@@ -54,24 +57,31 @@ export default function InProgressDetails({ dict }: Props) {
       <RoleLabel>{d.section5Title}</RoleLabel>
       <Text>{d.section5Text1}</Text>
       <Text>{d.section5Text2}</Text>
-      <Text>{d.section5Text3}</Text>
 
       <RoleLabel>{d.section6Title}</RoleLabel>
-      <Text>{d.section6Text}</Text>
-
-      <DetailImage className={"large"}>
-        <Image src={devine3Img} alt={d.image3Alt} />
-      </DetailImage>
+      <Text>{d.section6Text1}</Text>
+      <Text>{d.section6Text2}</Text>
+      <Text>{d.section6Text3}</Text>
+      <Text>{d.section6Text4}</Text>
 
       <RoleLabel>{d.section7Title}</RoleLabel>
       <Text>{d.section7Text1}</Text>
       <Text>{d.section7Text2}</Text>
       <Text>{d.section7Text3}</Text>
-      <Text>{d.section7Text4}</Text>
 
       <RoleLabel>{d.section8Title}</RoleLabel>
       <Text>{d.section8Text1}</Text>
       <Text>{d.section8Text2}</Text>
+
+      <DetailImage className={"large"}>
+        <Image src={devine3Img} alt={d.image3Alt} />
+      </DetailImage>
+
+      <RoleLabel>{d.section9Title}</RoleLabel>
+      <Text>{d.section9Text1}</Text>
+      <Text>{d.section9Text2}</Text>
+      <Text>{d.section9Text3}</Text>
+      <Text>{d.section9Text4}</Text>
     </DetailContent>
   );
 }

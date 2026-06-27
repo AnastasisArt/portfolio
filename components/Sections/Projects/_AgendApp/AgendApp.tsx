@@ -35,22 +35,22 @@ export default function Agendapp({ dict, common, detailsHref }: Props){
         <Text>{dict.contribution}</Text>
 
         <Role>
-          <RoleLabel as="span">{dict.roles.graphic} -</RoleLabel>
+          <RoleLabel as="span" className="no-margin">{dict.roles.graphic} -</RoleLabel>
           <RoleContent>Floriane Monnini</RoleContent>
         </Role>
         <Role>
-          <RoleLabel as="span">{dict.roles.backend} -</RoleLabel>
+          <RoleLabel as="span" className="no-margin">{dict.roles.backend} -</RoleLabel>
           <RoleContent>Jérôme Duguet,</RoleContent>
           <RoleContent>Jérôme Picavet,</RoleContent>
           <RoleContent>Anastasia Vojkic</RoleContent>
         </Role>
         <Role>
-          <RoleLabel as="span">{dict.roles.mobile} -</RoleLabel>
+          <RoleLabel as="span" className="no-margin">{dict.roles.mobile} -</RoleLabel>
           <RoleContent>Floriane Monnini, </RoleContent>
           <RoleContent>Jérôme Duguet</RoleContent>
         </Role>
         <Role>
-          <RoleLabel as="span">{dict.roles.web} -</RoleLabel>
+          <RoleLabel as="span" className="no-margin">{dict.roles.web} -</RoleLabel>
           <RoleContent>Anastasia Vojkic</RoleContent>
         </Role>
 

@@ -153,7 +153,11 @@ export const RoleLabel = styled.h3`
   margin-top: 0.8rem;
   text-transform: uppercase;
   font-family: ${workSans.style.fontFamily};
-  font-weight: ${TYPOGRAPHY.fw.regular}; 
+  font-weight: ${TYPOGRAPHY.fw.regular};
+
+  &.no-margin {
+    margin-top: 0;
+  }
 `;
 
 export const Text = styled.p<{ $align?: Align }>`

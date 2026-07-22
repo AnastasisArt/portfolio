@@ -63,7 +63,7 @@ export const Subtitle = styled.span`
 export const Text = styled.p`
   width: 100%;
   margin: 0;
-  font-size: ${TYPOGRAPHY.fs.md};
+  font-size: ${TYPOGRAPHY.fs.sm};
   padding-block: 0.6rem;
   text-align: left;
   line-height: 1.4;

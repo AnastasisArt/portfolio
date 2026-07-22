@@ -17,11 +17,6 @@ export default function NTArchiStacks() {
         url={STACKS.nest.url}
       />
       <StackTag
-        icon={<Image src={STACKS.postgresql.icon} alt="PostgreSQL" />}
-        label={STACKS.postgresql.label}
-        url={STACKS.postgresql.url}
-      />
-      <StackTag
         icon={<Image src={STACKS.typeorm.icon} alt="TypeORM" />}
         label={STACKS.typeorm.label}
         url={STACKS.typeorm.url}
@@ -30,6 +25,11 @@ export default function NTArchiStacks() {
         icon={<Image src={STACKS.swagger.icon} alt="Swagger" />}
         label={STACKS.swagger.label}
         url={STACKS.swagger.url}
+      />
+      <StackTag
+        icon={<Image src={STACKS.postgresql.icon} alt="PostgreSQL" />}
+        label={STACKS.postgresql.label}
+        url={STACKS.postgresql.url}
       />
       <StackTag
         icon={<Image src={STACKS.next.icon} alt="Next.js" />}
@@ -47,9 +47,9 @@ export default function NTArchiStacks() {
         url={STACKS.reacthookform.url}
       />
       <StackTag
-        icon={<Image src={STACKS.git.icon} alt="GIT" />}
-        label={STACKS.git.label}
-        url={STACKS.git.url}
+        icon={<Image src={STACKS.docker.icon} alt="Docker" />}
+        label={STACKS.docker.label}
+        url={STACKS.docker.url}
       />
       <StackTag
         icon={<Image src={STACKS.linux.icon} alt="Linux" />}
@@ -57,9 +57,14 @@ export default function NTArchiStacks() {
         url={STACKS.linux.url}
       />
       <StackTag
-        icon={<Image src={STACKS.docker.icon} alt="Docker" />}
-        label={STACKS.docker.label}
-        url={STACKS.docker.url}
+        icon={<Image src={STACKS.caddy.icon} alt="Caddy" />}
+        label={STACKS.caddy.label}
+        url={STACKS.caddy.url}
+      />
+      <StackTag
+        icon={<Image src={STACKS.git.icon} alt="GIT" />}
+        label={STACKS.git.label}
+        url={STACKS.git.url}
       />
       <StackTag
         icon={<Image src={STACKS.tailwind.icon} alt="TailwindCSS" />}

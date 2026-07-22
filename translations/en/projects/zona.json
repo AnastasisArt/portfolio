@@ -1,0 +1,63 @@
+{
+  "title": "Zona v1.0",
+  "subtitle": "Audio Software Distribution Platform",
+  "description1": "Zona is an audio software distribution platform inspired by Steam. \nIt is designed for musicians, sound designers, audio developers, content creators, as well as audio professionals and enthusiasts.",
+  "description2": "Business analysis, software architecture, and data modeling are at the core of the project, providing a solid foundation for its long-term ambitions.",
+
+  "details": {
+    "section1Title": "Project Overview",
+    "section1Text1": "Zona is a software distribution platform dedicated to the audio industry.",
+    "section1Text2": "It brings together different types of resources (software, SDKs, frameworks, libraries, audio engines, plugins, content, etc.) within a unified catalog.",
+    "section1Text3": "The first public version focuses on catalog browsing. However, the architecture has been designed from the outset to support the platform's future evolution (administration, organizations, user accounts, community features, etc.) without requiring its foundations to be reconsidered.",
+
+    "section2Title": "Role & Organization",
+    "section2Text1": "My role goes beyond software development.",
+    "section2Text2": "I am involved in project planning, documentation, version planning, and transforming functional requirements into software architecture.",
+    "section2Text3": "The functional direction is defined upstream. My role is then to analyze it, structure it, and design the technical solutions needed to bring it to life.",
+
+    "section3Title": "Analysis & Design",
+    "section3Text1": "The analysis of the product model resulted in both a data dictionary and a PostgreSQL relational model. Studying the relationships between entities then made it possible to divide the administration into several coherent modules and define endpoint responsibilities, business validations, and transactions.",
+    "section3Text2": "The first production data proved to be a real test for the model. It revealed several real-world use cases that led to revisiting some design decisions in order to establish a more solid foundation before the public release.",
+
+    "section4Title": "DTO Strategy",
+    "section4Text1": "I implemented a dedicated DTO strategy depending on the use case.",
+    "section4Text2": "Read DTOs are intentionally broad in order to cover the data model efficiently. In contrast, create and update DTOs are much stricter and are only introduced when there is a genuine business need.",
+
+    "section5Title": "Services & Architecture",
+    "section5Text1": "The architecture is built around multiple service layers. \nSome services are exposed directly through the API, while others remain internal or are only used as part of higher-level orchestrations. This approach distributes responsibilities across specialized services instead of concentrating all business logic into a single one.",
+    "section5Text2": "Operations involving multiple entities rely on transactions to ensure data consistency. Whenever appropriate, additional optimizations are implemented to reduce unnecessary processing and improve performance, notably through Redis caching, batching, and request coalescing.",
+
+    "section6Title": "Moderation & Validation",
+    "section6Text1": "The platform is designed to eventually allow organizations to publish their own software and resources.",
+    "section6Text2": "The publication workflow relies on two complementary stages. \nFirst, automated business validation ensures that every product satisfies the requirements associated with its type (software, web application, content, etc.). Once those conditions are met, a manual moderation process verifies the official sources and distributed files before publication.",
+    "section6Text3": "This separation enables progressive publication. \nA product can become publicly available as soon as its required elements have been validated, while some resources, such as artifacts hosted by the platform, follow their own verification process before being published.",
+
+    "section7Title": "Frontend",
+    "section7Text1": "The frontend is built with Next.js and React. The interface follows a desktop-first approach. Although fully responsive, it is primarily designed for desktop usage, which better suits both the type of content being explored and the target audience.",
+    "section7Text2": "OpenAPI contracts define the interface between the backend and the frontend. TypeScript clients are generated automatically to ensure consistency between the frontend and the API throughout development.",
+    "section7Text3": "Business logic is intentionally centralized in the backend to minimize client-side processing. The frontend primarily focuses on data presentation, navigation, and user interactions.",
+
+    "section8Title": "Deployment & Infrastructure",
+    "section8Text1": "The application is deployed on a Linux VPS. The infrastructure consists of several independent Docker services: frontend, API, PostgreSQL, Redis, and a reverse proxy.",
+    "section8Text2": "Production deployments are automated with GitHub Actions. Each deployment builds the Docker images, publishes them to GitHub Container Registry, and updates the production services. \nSince the images are versioned, rollbacks remain possible at any time.",
+    "section8Text3": "The infrastructure also includes separate environments, health checks, data backups, recovery procedures, and HTTPS configuration using Caddy.",
+
+    "section9Title": "Data Management",
+    "section9Text1": "In the absence of an administration interface, the initial data is created through API endpoints exposed by Swagger. This ensures that every record goes through the same business validations, transactions, and backend processing as it would in production.",
+    "section9Text2": "Once validated, the database is exported (schema and data) and re-imported when provisioning new environments.",
+
+    "section10Title": "Documentation & Conventions",
+    "section10Text1": "A significant part of the work also focuses on technical documentation.",
+    "section10Text2": "Throughout the project, I established conventions covering DTOs, controllers, services, security, and various architectural decisions. I also created several inventories documenting the services, their methods, responsibilities, and the different DTOs.",
+
+    "section11Title": "Current Status",
+    "section11Text1": "With the first public version now deployed, development continues across several areas. The next milestones mainly focus on the administration interface, organization management, user accounts, and the platform's first community features.",
+    "section11Text2": "Zona is a long-term project whose architecture has been designed to support these future developments without requiring its foundations to be reconsidered.",
+
+    "projectImage": "Zona's audio software catalog interface featuring search filters and product cards",
+    "image1Alt": "Project organization using a Trello board structured by phases (backlog, in progress, validation, completed) and by versions (V1, V2 and beyond)",
+    "image2Alt": "Database diagram showing relationships between different entities",
+    "image3Alt": "Zona product page for TidalCycles featuring screenshots, software information, technical specifications, and the various available resources",
+    "image4Alt": "Documentation of DTO conventions and API structure"
+  }
+}

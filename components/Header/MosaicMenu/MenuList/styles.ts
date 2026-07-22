@@ -29,7 +29,7 @@ export const MenuItem = styled(Link)`
   font-weight: ${TYPOGRAPHY.fw.extraBold};
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: ${TYPOGRAPHY.fs.sm};
+  font-size: ${TYPOGRAPHY.fs.xs};
   padding: 10px 12px;
   -webkit-tap-highlight-color: transparent;
   display: flex;

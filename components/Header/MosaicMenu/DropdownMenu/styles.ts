@@ -3,46 +3,29 @@ import { COLORS, TYPOGRAPHY, BP } from '@/constants';
 import { workSans } from '@/lib/fonts';
 
 const slideDown = keyframes`
-  from { opacity: 0; transform: translateY(-20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translate(-50%, -20px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
 `;
 const slideUp = keyframes`
-  from { opacity: 1; transform: translateY(0); }
-  to   { opacity: 0; transform: translateY(-20px); }
+  from { opacity: 1; transform: translate(-50%, 0); }
+  to { opacity: 0; transform: translate(-50%, -20px); }
 `;
 
 export const DropdownWrap = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: center;
-  gap: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  position: fixed;
   z-index: 9999;
+  display: flex;
+  justify-content: center;
+  width: min(300px, calc(100vw - 2rem));
   pointer-events: auto;
   overflow: visible;
   transform-origin: top center;
-  width: 100vw;
-  max-width: 100vw;
+
   &.open {
-    animation: ${slideDown} 0.35s cubic-bezier(.16,1,.3,1) forwards;
+    animation: ${slideDown} 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
   &.close {
     animation: ${slideUp} 0.3s ease forwards;
-  }
-
-  @media (min-width: ${BP.lg}) {
-    position: absolute;
-    left: auto;
-    right: 16px;
-    margin: 0;
-    justify-content: flex-end;
-    width: auto;
-    max-width: 360px;
   }
 `;
 
@@ -101,16 +84,13 @@ export const ContactLink = styled.a`
   flex-wrap: nowrap;
   font-family: ${workSans.style.fontFamily};
   font-weight: ${TYPOGRAPHY.fw.regular};
-  font-size: ${TYPOGRAPHY.fs.lg};
+  font-size: ${TYPOGRAPHY.fs.md};
   cursor: pointer;
   user-select: none;
   color: ${COLORS.bg};
   text-decoration: none;
   padding-block: 2px;
-
-  @media (min-width: ${BP.md}) {
-    font-size: ${TYPOGRAPHY.fs.md};
-  }
+  
   @media (min-width: ${BP.lg}) {
     font-size: ${TYPOGRAPHY.fs.sm};
   }

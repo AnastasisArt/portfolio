@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectsClient from "./ProjectsClient";
-import InProgress from "./_InProgress/InProgress";
+import Zona from "./_Zona/Zona";
 import NTArchi from "./_NTArchi/NTArchi";
 import Agendapp from "./_AgendApp/AgendApp";
 import SwapItUp from "./_SwapItUp/SwapItUp";
@@ -19,7 +19,7 @@ export default function Projects({ lang, common, projects }: Props) {
   return (
     <ProjectsClient>
       <Slide>
-        <InProgress dict={projects.inprogress} common={common} detailsHref={`/${lang}/projects/inprogress`} />
+        <Zona dict={projects.zona} common={common} detailsHref={`/${lang}/projects/zona`} />
       </Slide>
 
       <Slide>

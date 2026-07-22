@@ -5,7 +5,7 @@ import { isLocale } from "@/lib/i18n/locale";
 import { getProject } from "@/lib/i18n/dicts";
 import { PROJECTS } from "@/constants/projects";
 import Container from "@/components/ui/BaseContainer/Container";
-import InProgressDetails from "@/components/Sections/Projects/_InProgress/Details";
+import ZonaDetails from "@/components/Sections/Projects/_Zona/Details";
 import NTArchiDetails from "@/components/Sections/Projects/_NTArchi/Details";
 import AgendAppDetails from "@/components/Sections/Projects/_AgendApp/Details";
 import SwapItUpDetails from "@/components/Sections/Projects/_SwapItUp/Details";
@@ -16,7 +16,7 @@ type PageProps = {
 
 type ProjectSlug = (typeof PROJECTS)[number];
 const PROJECT_DETAIL_RENDERERS = {
-  inprogress: (lang: Locale)=> ( <InProgressDetails dict={getProject(lang, "inprogress")} /> ),
+  zona: (lang: Locale)=> ( <ZonaDetails dict={getProject(lang, "zona")} /> ),
   ntarchi: (lang: Locale)=> ( <NTArchiDetails dict={getProject(lang, "ntarchi")} /> ),
   agendapp: (lang: Locale)=> ( <AgendAppDetails dict={getProject(lang, "agendapp")} /> ),
   swapitup: (lang: Locale)=> ( <SwapItUpDetails dict={getProject(lang, "swapitup")} /> )

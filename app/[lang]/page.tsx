@@ -13,7 +13,7 @@ export default async function Page({ params }: PageProps) {
 
   const common = getCommon(lang);
   const projects = {
-    inprogress: getProject(lang, "inprogress"),
+    zona: getProject(lang, "zona"),
     ntarchi: getProject(lang, "ntarchi"),
     agendapp: getProject(lang, "agendapp"),
     swapitup: getProject(lang, "swapitup"),

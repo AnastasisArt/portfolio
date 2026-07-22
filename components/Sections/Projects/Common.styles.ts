@@ -163,7 +163,7 @@ export const RoleLabel = styled.h3`
 export const Text = styled.p<{ $align?: Align }>`
   width: 100%;
   font-family: ${workSans.style.fontFamily};
-  font-size: ${TYPOGRAPHY.fs.md};
+  font-size: ${TYPOGRAPHY.fs.sm};
   font-weight: ${TYPOGRAPHY.fw.regular};
   padding-bottom: 0.6rem;
   white-space: pre-line;
@@ -174,15 +174,48 @@ export const Text = styled.p<{ $align?: Align }>`
 `;
 
 export const ViewDetailsLink = styled.a`
-  color: ${COLORS.tertiary};
-  font-size: ${TYPOGRAPHY.fs.sm};
-  text-transform: uppercase;
-  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   align-self: center;
-  margin-top: 1rem;
+  margin-block: 0.8rem 0.4rem;
+  padding: 0.6rem 1rem;
+  border: 1px dashed ${COLORS.tertiary};
+  border-radius: 999px;
+  background: ${COLORS.menuMobile};
+  color: ${COLORS.bg};
+  font-size: ${TYPOGRAPHY.fs.sm};
+  font-weight: ${TYPOGRAPHY.fw.bold};
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  box-shadow:
+    0 4px 0 rgba(22, 0, 41, 0.35),
+    0 10px 24px rgba(0, 0, 0, 0.2);
+  
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
 
   &:hover {
-    color: ${COLORS.secondary};
+    transform: translateY(-2px);
+    box-shadow:
+      0 6px 0 rgba(22, 0, 41, 0.35),
+      0 14px 30px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.03);
+  }
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow:
+      0 2px 0 rgba(22, 0, 41, 0.35),
+      0 6px 14px rgba(0, 0, 0, 0.18);
+  }
+
+  &:focus-visible {
+    outline: 2px solid ${COLORS.secondary};
+    outline-offset: 4px;
   }
 `;
 

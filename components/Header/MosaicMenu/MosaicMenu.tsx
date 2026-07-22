@@ -19,7 +19,7 @@ export default function MosaicMenu({ labels, lang }: Props) {
   const [open, setOpen] = useState(false);
   //Mounted state for the dropdown rendered via a portal
   const [isMounted, setIsMounted] = useState(false);
-  const [dropdownTopPx, setDropdownTopPx] = useState(0);
+  const [dropdownPosition, setDropdownPosition] = useState({ top: 0, left: 0 });
 
   const menuRootRef = useRef<HTMLDivElement>(null);
   const toggleButtonRef = useRef<HTMLButtonElement>(null);
@@ -32,16 +32,19 @@ export default function MosaicMenu({ labels, lang }: Props) {
     unmountTimerRef.current = null;
   };
 
-  const updateDropdownTop =()=> {
+  const updateDropdownPosition = () => {
     const button = toggleButtonRef.current;
     if (!button) return;
     const rect = button.getBoundingClientRect();
-    setDropdownTopPx(rect.bottom + DROPDOWN_OFFSET_PX);
+    setDropdownPosition({
+      top: rect.bottom + DROPDOWN_OFFSET_PX,
+      left: rect.left + rect.width / 2,
+    });
   };
 
-  const openDropdown =()=> {
+  const openDropdown = () => {
     cancelPendingUnmount();
-    updateDropdownTop();
+    updateDropdownPosition();
     setIsMounted(true);
     setOpen(true);
   };
@@ -79,7 +82,8 @@ export default function MosaicMenu({ labels, lang }: Props) {
       <Dropdown
         rendered={isMounted}
         open={open}
-        topPx={dropdownTopPx}
+        topPx={dropdownPosition.top}
+        leftPx={dropdownPosition.left}
         contacts={CONTACTS}
       >
         <List labels={labels} lang={lang} onCloseAction={closeDropdown} />

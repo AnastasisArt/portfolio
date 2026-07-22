@@ -5,6 +5,7 @@ export const Role = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 0.2rem;
+  font-size: ${TYPOGRAPHY.fs.sm};
 `;
 
 export const RoleContent = styled.span`

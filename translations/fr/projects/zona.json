@@ -1,0 +1,63 @@
+{
+  "title": "Zona v1.0",
+  "subtitle": "Plateforme de distribution logicielle dédiée à l'audio",
+  "description1": "Zona est une plateforme de distribution de logiciels dédiée au domaine de l'audio, inspirée du modèle de Steam. \nElle s'adresse aux musiciens, sound designers, développeurs audio, créateurs de contenu ainsi qu'aux professionnels et passionnés du secteur.",
+  "description2": "L'analyse métier, la conception de l'architecture et la modélisation des données sont au cœur du projet afin d'accompagner ses ambitions.",
+
+  "details": {
+    "section1Title": "Contexte du projet",
+    "section1Text1": "Zona est une plateforme de distribution de logiciels dédiée au domaine de l'audio.",
+    "section1Text2": "Elle regroupe différents types de ressources (logiciels, SDK, frameworks, bibliothèques, moteurs audio, plugins, contenus...) au sein d'un catalogue unifié.",
+    "section1Text3": "La première version publique se concentre sur la consultation du catalogue. L'architecture est cependant pensée dès le départ pour accompagner les futures évolutions de la plateforme (administration, organisations, comptes utilisateurs, fonctionnalités communautaires...) sans remettre en question les fondations existantes.",
+
+    "section2Title": "Rôle & organisation",
+    "section2Text1": "Mon rôle ne se limite pas au développement.",
+    "section2Text2": "J'interviens sur le cadrage du projet, la documentation, le découpage des versions et la transformation des besoins fonctionnels en architecture logicielle.",
+    "section2Text3": "Les orientations fonctionnelles sont définies en amont ; mon rôle consiste ensuite à les analyser, les structurer et concevoir les solutions techniques permettant de les concrétiser.",
+
+    "section3Title": "Analyse & conception",
+    "section3Text1": "L’analyse du modèle produit a abouti à un dictionnaire de données et à un modèle relationnel PostgreSQL. L'étude des dépendances entre les données a ensuite permis de découper l'administration en plusieurs modules cohérents et de définir les responsabilités des endpoints, les validations métier et les transactions.",
+    "section3Text2": "Les premières données de production ont constitué, quant à elles, une véritable épreuve pour le modèle. Elles ont révélé plusieurs cas d'usage qui ont conduit à revoir certaines décisions de conception afin de repartir sur des bases plus solides avant la mise en ligne.",
+
+    "section4Title": "Stratégie DTO",
+    "section4Text1": "J’ai mis en place une stratégie DTO distincte selon les usages.",
+    "section4Text2": "Les DTO de lecture sont volontairement larges afin de couvrir rapidement le modèle de données. À l'inverse, les DTO de création et de mise à jour sont plus stricts et ne sont créés que lorsqu'un véritable besoin métier existe.",
+
+    "section5Title": "Services & architecture",
+    "section5Text1": "L'architecture repose sur plusieurs niveaux de services. \nCertains sont directement exposés par l'API, tandis que d'autres restent internes ou interviennent uniquement dans le cadre d'une orchestration. Cette approche permet de répartir les responsabilités entre plusieurs services spécialisés plutôt que de concentrer toute la logique métier dans un seul.",
+    "section5Text2": "Les traitements impliquant plusieurs entités s'appuient sur des transactions afin de garantir la cohérence des données. Lorsque cela est pertinent, des optimisations sont également mises en œuvre afin de limiter les traitements inutiles et d'améliorer les performances, notamment grâce à des mécanismes de cache (Redis), de batch ou de request coalescing.",
+
+    "section6Title": "Modération & validation",
+    "section6Text1": "La plateforme est pensée pour accueillir, à terme, des organisations souhaitant publier leurs propres logiciels et ressources.",
+    "section6Text2": "Le processus de publication repose sur deux niveaux complémentaires. \nUne validation métier automatique vérifie d'abord que chaque produit respecte les prérequis attendus selon sa nature (logiciel, application web, contenu, etc.). Une fois ces conditions remplies, une modération humaine contrôle les sources officielles ainsi que les fichiers distribués avant leur publication.",
+    "section6Text3": "Cette séparation permet une publication progressive des contenus. \nUn produit peut être rendu public dès que les éléments indispensables sont validés, tandis que certaines ressources, comme les artifacts hébergés par la plateforme, suivent leur propre processus de vérification avant d'être publiées.",
+
+    "section7Title": "Front-end",
+    "section7Text1": "Le frontend repose sur Next.js et React. L'interface a été pensée selon une approche desktop-first. Bien qu'entièrement responsive, elle s'adresse avant tout à une utilisation sur ordinateur, plus adaptée au type de contenus consultés et au public visé.",
+    "section7Text2": "Les contrats OpenAPI définissent l'interface entre le backend et le frontend. Les clients TypeScript sont générés automatiquement afin de garantir la cohérence des échanges avec l'API tout au long du développement.",
+    "section7Text3": "La logique métier est volontairement centralisée dans le backend afin de limiter les traitements côté client. Le frontend se concentre principalement sur la présentation des données, la navigation et les interactions utilisateur.",
+
+    "section8Title": "Déploiement & infrastructure",
+    "section8Text1": "Le déploiement est réalisé sur un VPS Linux. L'infrastructure est composée de plusieurs services Docker indépendants : frontend, API, PostgreSQL, Redis et reverse proxy.",
+    "section8Text2": "Les mises en production sont automatisées avec GitHub Actions. Chaque déploiement construit les images Docker, les publie sur GitHub Container Registry puis met à jour les services en production. \nLes images étant versionnées, un rollback reste possible à tout moment.",
+    "section8Text3": "L'infrastructure comprend également des environnements séparés, des healthchecks, des sauvegardes des données, des procédures de restauration et une configuration HTTPS avec Caddy.",
+
+    "section9Title": "Gestion des données",
+    "section9Text1": "En l'absence d'interface d'administration, les premières données sont créées via les routes de l'API exposées par Swagger. Elles passent ainsi par l'ensemble des validations métier, des transactions et des traitements prévus par le backend.",
+    "section9Text2": "Une fois ces données validées, la base est exportée (schéma et data), puis réimportée lors du déploiement de nouveaux environnements.",
+
+    "section10Title": "Documentation & conventions",
+    "section10Text1": "Une partie importante du travail porte aussi sur la documentation technique.",
+    "section10Text2": "Au fil du développement, j'ai défini des conventions concernant les DTO, les contrôleurs, les services, la sécurité ainsi que différents choix d'architecture. J'ai également mis en place plusieurs inventaires recensant les services, leurs méthodes, leurs responsabilités ainsi que les différents DTO.",
+
+    "section11Title": "Phase actuelle",
+    "section11Text1": "La première version publique étant désormais déployée, le développement se poursuit autour de plusieurs axes. Les prochaines étapes concernent principalement l'espace d'administration, la gestion des organisations, les comptes utilisateurs ainsi que les premières fonctionnalités communautaires.",
+    "section11Text2": "Zona est pensé comme un projet évolutif, dont l'architecture a été conçue pour accompagner ces futures évolutions sans remettre en question ses fondations.",
+
+    "projectImage": "Page du catalogue d’applications de Zona présentant les produits audio et leurs filtres de recherche",
+    "image1Alt": "Organisation du projet via un tableau Trello structuré par phases (backlog, en cours, validé, terminé) et par versions (V1, V2 et suivantes)",
+    "image2Alt": "Diagramme de base de données représentant les relations entre différentes entités",
+    "image3Alt": "Page produit de TidalCycles sur Zona présentant les captures d'écran, les informations du logiciel, les spécifications techniques et les différentes ressources disponibles",
+    "image4Alt": "Documentation des conventions DTO et de la structuration de l’API"
+  }
+}

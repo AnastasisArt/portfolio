@@ -18,6 +18,10 @@ import tailwind from "@/public/icons/stack/tailwindcss.png";
 import docker from "@/public/icons/stack/docker.png";
 import node from "@/public/icons/stack/nodejs.png";
 import git from "@/public/icons/stack/git.png";
+import redis from "@/public/icons/stack/redis.png";
+import caddy from "@/public/icons/stack/caddy.png";
+import githubactions from "@/public/icons/stack/githubactions.png";
+import ghcr from "@/public/icons/stack/ghcr.png";
 import cloudflare from "@/public/icons/stack/cloudflare.png";
 import linux from "@/public/icons/stack/linux.png";
 import typeorm from "@/public/icons/stack/typeorm.png";
@@ -158,32 +162,6 @@ export const STACKS: Record<string, Stack> = {
     ],
     url: "https://react-hook-form.com/",
   },
-  openapi: {
-    icon: openapi,
-    label: [
-      { text: "O", accent: true },
-      { text: "PEN", accent: false },
-      { text: "API", accent: true },
-    ],
-    url: "https://www.openapis.org/",
-  },
-  i18next: {
-    icon: i18n,
-    label: [
-      { text: "I", accent: false },
-      { text: "18", accent: true },
-      { text: "NEXT", accent: false },
-    ],
-    url: "https://www.i18next.com/",
-  },
-  redux: {
-    icon: redux,
-    label: [
-      { text: "R", accent: true },
-      { text: "EDUX", accent: false },
-    ],
-    url: "https://redux.js.org",
-  },
   styled: {
     icon: styled,
     label: [
@@ -194,38 +172,31 @@ export const STACKS: Record<string, Stack> = {
     ],
     url: "https://styled-components.com/",
   },
-
-  //--- OTHERS ---\\
-  linux: {
-    icon: linux,
+  redux: {
+    icon: redux,
     label: [
-      { text: "L", accent: true },
-      { text: "INUX", accent: false },
+      { text: "R", accent: true },
+      { text: "EDUX", accent: false },
     ],
-    url: "https://www.linux.org/",
+    url: "https://redux.js.org",
   },
-  docker: {
-    icon: docker,
+  i18next: {
+    icon: i18n,
     label: [
-      { text: "D", accent: true },
-      { text: "OCKER", accent: false },
+      { text: "I", accent: false },
+      { text: "18", accent: true },
+      { text: "NEXT", accent: false },
     ],
-    url: "https://www.docker.com/",
+    url: "https://www.i18next.com/",
   },
-  node: {
-    icon: node,
+  openapi: {
+    icon: openapi,
     label: [
-      { text: "N", accent: true },
-      { text: "ODE.JS", accent: false },
+      { text: "O", accent: true },
+      { text: "PEN", accent: false },
+      { text: "API", accent: true },
     ],
-    url: "https://nodejs.org/",
-  },
-  git: {
-    icon: git,
-    label: [
-      { text: "GIT", accent: true },
-    ],
-    url: "https://git-scm.com/",
+    url: "https://www.openapis.org/",
   },
   typeorm: {
     icon: typeorm,
@@ -244,6 +215,75 @@ export const STACKS: Record<string, Stack> = {
     ],
     url: "https://hibernate.org/",
   },
+
+  //--- PLATFORMS & DEVOPS ---\\
+  node: {
+    icon: node,
+    label: [
+      { text: "N", accent: true },
+      { text: "ODE.JS", accent: false },
+    ],
+    url: "https://nodejs.org/",
+  },
+  linux: {
+    icon: linux,
+    label: [
+      { text: "L", accent: true },
+      { text: "INUX", accent: false },
+    ],
+    url: "https://www.linux.org/",
+  },
+  docker: {
+    icon: docker,
+    label: [
+      { text: "D", accent: true },
+      { text: "OCKER", accent: false },
+    ],
+    url: "https://www.docker.com/",
+  },
+  caddy: {
+    icon: caddy,
+    label: [
+      { text: "C", accent: true },
+      { text: "ADDY", accent: false },
+    ],
+    url: "https://caddyserver.com/",
+  },
+  redis: {
+    icon: redis,
+    label: [
+      { text: "R", accent: true },
+      { text: "EDIS", accent: false },
+    ],
+    url: "https://redis.io/",
+  },
+  githubactions: {
+    icon: githubactions,
+    label: [
+      { text: "G", accent: true },
+      { text: "ITHUB ", accent: false },
+      { text: "A", accent: true },
+      { text: "CTIONS", accent: false },
+    ],
+    url: "https://docs.github.com/actions",
+  },
+  ghcr: {
+    icon: ghcr,
+    label: [
+      { text: "GHCR", accent: true },
+    ],
+    url: "https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry",
+  },
+  cloudflare: {
+    icon: cloudflare,
+    label: [
+      { text: "C", accent: true },
+      { text: "LOUDFLARE R2", accent: false },
+    ],
+    url: "https://www.cloudflare.com/fr-fr/developer-platform/products/r2/",
+  },
+
+  //--- DATABASES ---\\
   postgresql: {
     icon: postgre,
     label: [
@@ -253,13 +293,22 @@ export const STACKS: Record<string, Stack> = {
     ],
     url: "https://www.postgresql.org/",
   },
-  postman: {
-    icon: postman,
+  sqlite: {
+    icon: sqlite,
     label: [
-      { text: "P", accent: true },
-      { text: "OSTMAN", accent: false },
+      { text: "SQL", accent: true },
+      { text: "ITE", accent: false },
     ],
-    url: "https://www.postman.com/",
+    url: "https://sqlite.org/",
+  },
+
+  //--- SERVICES & TOOLS ---\\
+  git: {
+    icon: git,
+    label: [
+      { text: "GIT", accent: true },
+    ],
+    url: "https://git-scm.com/",
   },
   swagger: {
     icon: swagger,
@@ -269,21 +318,13 @@ export const STACKS: Record<string, Stack> = {
     ],
     url: "https://swagger.io/",
   },
-  sqlite: {
-    icon: sqlite,
+  postman: {
+    icon: postman,
     label: [
-      { text: "SQL", accent: true },
-      { text: "ITE", accent: false },
+      { text: "P", accent: true },
+      { text: "OSTMAN", accent: false },
     ],
-    url: "https://sqlite.org/",
-  },
-  cloudflare: {
-    icon: cloudflare,
-    label: [
-      { text: "C", accent: true },
-      { text: "LOUDFLARE R2", accent: false },
-    ],
-    url: "https://www.cloudflare.com/fr-fr/developer-platform/products/r2/",
+    url: "https://www.postman.com/",
   },
   stripe: {
     icon: stripe,

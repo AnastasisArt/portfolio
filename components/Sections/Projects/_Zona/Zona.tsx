@@ -1,21 +1,21 @@
 import React from "react";
 import Image from "next/image";
-import inProgressImg from "@/public/images/devine2.png";
+import zona from "@/public/images/zona.png";
 import { Container, Left, Right, Title, Text, Subtitle, ViewDetailsLink } from "../Common.styles";
 import InProgressProjectStacks from "./Stacks";
 import type {Common, ProjectDict} from "@/lib/i18n/dicts";
 
 type Props = {
-  dict: ProjectDict<"inprogress">;
+  dict: ProjectDict<"zona">;
   common: Common;
   detailsHref: string;
 };
 
-export default function InProgress({ dict, common, detailsHref }: Props) {
+export default function Zona({ dict, common, detailsHref }: Props) {
   return (
     <Container>
       <Left>
-        <Image src={inProgressImg} alt={dict.details.projectImage} priority />
+        <Image src={zona} alt={dict.details.projectImage} priority />
       </Left>
 
       <Right>

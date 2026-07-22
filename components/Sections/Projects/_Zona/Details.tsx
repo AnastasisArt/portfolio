@@ -9,13 +9,15 @@ import {
   RoleLabel,
   Text,
 } from "../Common.styles";
-import devine1Img from "@/public/images/devine1.png";
-import devine2Img from "@/public/images/devine2.png";
-import devine3Img from "@/public/images/devine3.png";
+import zonaImg from '@/public/images/zona.png'
+import zona1Img from "@/public/images/zona1.png";
+import zona2Img from "@/public/images/zona2.png";
+import zona3Img from "@/public/images/zona3.png";
+import zona4Img from "@/public/images/zona4.png";
 
-type Props = { dict: ProjectDict<"inprogress"> };
+type Props = { dict: ProjectDict<"zona"> };
 
-export default function InProgressDetails({ dict }: Props) {
+export default function ZonaDetails({ dict }: Props) {
   const d = dict.details;
 
   return (
@@ -28,31 +30,32 @@ export default function InProgressDetails({ dict }: Props) {
       <RoleLabel>{d.section1Title}</RoleLabel>
       <Text>{d.section1Text1}</Text>
       <Text>{d.section1Text2}</Text>
+      <Text>{d.section1Text3}</Text>
+
+      <DetailImage className={"medium"}>
+        <Image src={zonaImg} alt={d.projectImage} />
+      </DetailImage>
 
       <RoleLabel>{d.section2Title}</RoleLabel>
       <Text>{d.section2Text1}</Text>
       <Text>{d.section2Text2}</Text>
       <Text>{d.section2Text3}</Text>
-      <Text>{d.section2Text4}</Text>
 
       <DetailImage className={"full"}>
-        <Image src={devine1Img} alt={d.image1Alt} />
+        <Image src={zona1Img} alt={d.image1Alt} />
       </DetailImage>
 
       <RoleLabel>{d.section3Title}</RoleLabel>
       <Text>{d.section3Text1}</Text>
       <Text>{d.section3Text2}</Text>
-      <Text>{d.section3Text3}</Text>
-      <Text>{d.section3Text4}</Text>
+
+      <DetailImage className="small">
+        <Image src={zona2Img} alt={d.image2Alt} />
+      </DetailImage>
 
       <RoleLabel>{d.section4Title}</RoleLabel>
       <Text>{d.section4Text1}</Text>
       <Text>{d.section4Text2}</Text>
-      <Text>{d.section4Text3}</Text>
-
-      <DetailImage className={"small"}>
-        <Image src={devine2Img} alt={d.image2Alt} />
-      </DetailImage>
 
       <RoleLabel>{d.section5Title}</RoleLabel>
       <Text>{d.section5Text1}</Text>
@@ -62,26 +65,35 @@ export default function InProgressDetails({ dict }: Props) {
       <Text>{d.section6Text1}</Text>
       <Text>{d.section6Text2}</Text>
       <Text>{d.section6Text3}</Text>
-      <Text>{d.section6Text4}</Text>
 
       <RoleLabel>{d.section7Title}</RoleLabel>
       <Text>{d.section7Text1}</Text>
+      <DetailImage className="small">
+        <Image src={zona3Img} alt={d.image3Alt} />
+      </DetailImage>
       <Text>{d.section7Text2}</Text>
       <Text>{d.section7Text3}</Text>
 
       <RoleLabel>{d.section8Title}</RoleLabel>
       <Text>{d.section8Text1}</Text>
       <Text>{d.section8Text2}</Text>
-
-      <DetailImage className={"large"}>
-        <Image src={devine3Img} alt={d.image3Alt} />
-      </DetailImage>
+      <Text>{d.section8Text3}</Text>
 
       <RoleLabel>{d.section9Title}</RoleLabel>
       <Text>{d.section9Text1}</Text>
       <Text>{d.section9Text2}</Text>
-      <Text>{d.section9Text3}</Text>
-      <Text>{d.section9Text4}</Text>
+
+      <RoleLabel>{d.section10Title}</RoleLabel>
+      <Text>{d.section10Text1}</Text>
+      <Text>{d.section10Text2}</Text>
+
+      <DetailImage className="large">
+        <Image src={zona4Img} alt={d.image4Alt} />
+      </DetailImage>
+
+      <RoleLabel>{d.section11Title}</RoleLabel>
+      <Text>{d.section11Text1}</Text>
+      <Text>{d.section11Text2}</Text>
     </DetailContent>
   );
 }

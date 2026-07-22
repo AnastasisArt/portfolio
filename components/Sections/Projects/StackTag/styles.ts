@@ -53,11 +53,11 @@ export const Label = styled.span`
 export const Part = styled.span<{ $accent?: boolean }>`
   ${({ $accent }) => 
     $accent ? css`
-      font-size: ${TYPOGRAPHY.fs.md};
+      font-size: ${TYPOGRAPHY.fs.sm};
       font-weight: ${TYPOGRAPHY.fw.regular};
     `
     : css`
-      font-size: ${TYPOGRAPHY.fs.sm};
+      font-size: ${TYPOGRAPHY.fs.xs};
     `
   }
 `;

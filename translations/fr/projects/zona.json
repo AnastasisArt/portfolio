@@ -2,7 +2,8 @@
   "title": "Zona v1.0",
   "subtitle": "Plateforme de distribution logicielle dédiée à l'audio",
   "description1": "Zona est une plateforme de distribution de logiciels dédiée au domaine de l'audio, inspirée du modèle de Steam. \nElle s'adresse aux musiciens, sound designers, développeurs audio, créateurs de contenu ainsi qu'aux professionnels et passionnés du secteur.",
-  "description2": "L'analyse métier, la conception de l'architecture et la modélisation des données sont au cœur du projet afin d'accompagner ses ambitions.",
+  "description2": "La v1.0 est enfin en production. Les fondations sont en place, et je peux enfin laisser parler ma créativité. J'ai désormais carte blanche pour repenser entièrement la direction artistique.",
+  "description3" : "Revenez dans quelques jours... ",
 
   "details": {
     "section1Title": "Contexte du projet",
@@ -51,8 +52,8 @@
     "section10Text2": "Au fil du développement, j'ai défini des conventions concernant les DTO, les contrôleurs, les services, la sécurité ainsi que différents choix d'architecture. J'ai également mis en place plusieurs inventaires recensant les services, leurs méthodes, leurs responsabilités ainsi que les différents DTO.",
 
     "section11Title": "Phase actuelle",
-    "section11Text1": "La première version publique étant désormais déployée, le développement se poursuit autour de plusieurs axes. Les prochaines étapes concernent principalement l'espace d'administration, la gestion des organisations, les comptes utilisateurs ainsi que les premières fonctionnalités communautaires.",
-    "section11Text2": "Zona est pensé comme un projet évolutif, dont l'architecture a été conçue pour accompagner ces futures évolutions sans remettre en question ses fondations.",
+    "section11Text1": "Zona v1.0 est désormais déployé en production. Après plusieurs mois consacrés à l'architecture, au backend, à l'infrastructure et au modèle de données, une nouvelle phase du projet commence.",
+    "section11Text2": "Jusqu'à présent, la priorité était de construire une plateforme robuste et de la mettre rapidement en production. La direction artistique était volontairement très encadrée. Aujourd'hui, j'ai enfin carte blanche pour repenser entièrement l'identité visuelle de Zona. Je reste avant tout développeuse backend, mais je considère qu'un frontend doit être le reflet du travail réalisé en profondeur. Il est temps que Zona ressemble enfin à ce qu'il est devenu. Revenez dans quelques jours... ",
 
     "projectImage": "Page du catalogue d’applications de Zona présentant les produits audio et leurs filtres de recherche",
     "image1Alt": "Organisation du projet via un tableau Trello structuré par phases (backlog, en cours, validé, terminé) et par versions (V1, V2 et suivantes)",

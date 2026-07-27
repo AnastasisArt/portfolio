@@ -2,7 +2,8 @@
   "title": "Zona v1.0",
   "subtitle": "Audio Software Distribution Platform",
   "description1": "Zona is an audio software distribution platform inspired by Steam. \nIt is designed for musicians, sound designers, audio developers, content creators, as well as audio professionals and enthusiasts.",
-  "description2": "Business analysis, software architecture, and data modeling are at the core of the project, providing a solid foundation for its long-term ambitions.",
+  "description2": "v1.0 is finally live. The foundations are in place, and I can finally let my creativity take over. I now have complete creative freedom to rethink the entire art direction. ",
+  "description3" : "Come back in a few days... ",
 
   "details": {
     "section1Title": "Project Overview",
@@ -51,9 +52,8 @@
     "section10Text2": "Throughout the project, I established conventions covering DTOs, controllers, services, security, and various architectural decisions. I also created several inventories documenting the services, their methods, responsibilities, and the different DTOs.",
 
     "section11Title": "Current Status",
-    "section11Text1": "With the first public version now deployed, development continues across several areas. The next milestones mainly focus on the administration interface, organization management, user accounts, and the platform's first community features.",
-    "section11Text2": "Zona is a long-term project whose architecture has been designed to support these future developments without requiring its foundations to be reconsidered.",
-
+    "section11Text1": "Zona v1.0 is now live in production. After several months dedicated to software architecture, backend development, infrastructure, and data modeling, a new phase of the project is beginning.",
+    "section11Text2": "Until now, the priority was to build a robust platform and get it into production quickly. The art direction was intentionally very constrained. Today, I finally have complete creative freedom to entirely rethink Zona's visual identity. I remain a backend developer first and foremost, but I believe the frontend should reflect the work carried out beneath the surface. It is time for Zona to finally look like what it has become. Come back in a few days... ",
     "projectImage": "Zona's audio software catalog interface featuring search filters and product cards",
     "image1Alt": "Project organization using a Trello board structured by phases (backlog, in progress, validation, completed) and by versions (V1, V2 and beyond)",
     "image2Alt": "Database diagram showing relationships between different entities",

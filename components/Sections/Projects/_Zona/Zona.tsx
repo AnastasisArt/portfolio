@@ -24,6 +24,7 @@ export default function Zona({ dict, common, detailsHref }: Props) {
 
         <Text>{dict.description1}</Text>
         <Text>{dict.description2}</Text>
+        <Text>{dict.description3}</Text>
 
         <ViewDetailsLink href={detailsHref}>
           {common.viewDetails}

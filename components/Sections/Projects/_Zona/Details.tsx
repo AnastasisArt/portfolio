@@ -14,6 +14,8 @@ import zona1Img from "@/public/images/zona1.png";
 import zona2Img from "@/public/images/zona2.png";
 import zona3Img from "@/public/images/zona3.png";
 import zona4Img from "@/public/images/zona4.png";
+import zona5Img from "@/public/images/zona5.png";
+import zona6Img from "@/public/images/zona6.png";
 
 type Props = { dict: ProjectDict<"zona"> };
 
@@ -32,7 +34,7 @@ export default function ZonaDetails({ dict }: Props) {
       <Text>{d.section1Text2}</Text>
       <Text>{d.section1Text3}</Text>
 
-      <DetailImage className={"medium"}>
+      <DetailImage className={"large"}>
         <Image src={zonaImg} alt={d.projectImage} />
       </DetailImage>
 
@@ -41,7 +43,7 @@ export default function ZonaDetails({ dict }: Props) {
       <Text>{d.section2Text2}</Text>
       <Text>{d.section2Text3}</Text>
 
-      <DetailImage className={"full"}>
+      <DetailImage className={"medium"}>
         <Image src={zona1Img} alt={d.image1Alt} />
       </DetailImage>
 
@@ -49,7 +51,7 @@ export default function ZonaDetails({ dict }: Props) {
       <Text>{d.section3Text1}</Text>
       <Text>{d.section3Text2}</Text>
 
-      <DetailImage className="small">
+      <DetailImage className="xsmall">
         <Image src={zona2Img} alt={d.image2Alt} />
       </DetailImage>
 
@@ -63,13 +65,16 @@ export default function ZonaDetails({ dict }: Props) {
 
       <RoleLabel>{d.section6Title}</RoleLabel>
       <Text>{d.section6Text1}</Text>
+      <DetailImage className="small">
+        <Image src={zona3Img} alt={d.image3Alt} />
+      </DetailImage>
       <Text>{d.section6Text2}</Text>
       <Text>{d.section6Text3}</Text>
 
       <RoleLabel>{d.section7Title}</RoleLabel>
       <Text>{d.section7Text1}</Text>
-      <DetailImage className="small">
-        <Image src={zona3Img} alt={d.image3Alt} />
+      <DetailImage className="medium">
+        <Image src={zona4Img} alt={d.image4Alt} />
       </DetailImage>
       <Text>{d.section7Text2}</Text>
       <Text>{d.section7Text3}</Text>
@@ -87,13 +92,21 @@ export default function ZonaDetails({ dict }: Props) {
       <Text>{d.section10Text1}</Text>
       <Text>{d.section10Text2}</Text>
 
-      <DetailImage className="large">
-        <Image src={zona4Img} alt={d.image4Alt} />
+      <DetailImage className="small">
+        <Image src={zona5Img} alt={d.image5Alt} />
       </DetailImage>
 
       <RoleLabel>{d.section11Title}</RoleLabel>
       <Text>{d.section11Text1}</Text>
       <Text>{d.section11Text2}</Text>
+      <Text>{d.section11Text3}</Text>
+      <DetailImage className="medium">
+        <Image src={zona6Img} alt={d.image6Alt} />
+      </DetailImage>
+
+      <RoleLabel>{d.section12Title}</RoleLabel>
+      <Text>{d.section12Text1}</Text>
+      <Text>{d.section12Text2}</Text>
     </DetailContent>
   );
 }

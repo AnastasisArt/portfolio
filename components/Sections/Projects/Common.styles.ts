@@ -253,7 +253,7 @@ export const DetailContent = styled(Container)`
     align-items: start;
     height: auto;
     gap: 0;
-    max-width: 75%;
+    max-width: 65%;
   }
 `;
 

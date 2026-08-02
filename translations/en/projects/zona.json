@@ -2,8 +2,9 @@
   "title": "Zona v1.0",
   "subtitle": "Audio Software Distribution Platform",
   "description1": "Zona is an audio software distribution platform inspired by Steam. \nIt is designed for musicians, sound designers, audio developers, content creators, as well as audio professionals and enthusiasts.",
-  "description2": "v1.0 is finally live. The foundations are in place, and I can finally let my creativity take over. I now have complete creative freedom to rethink the entire art direction. ",
-  "description3" : "Come back in a few days... ",
+  "description2": "Zona is now live, and its visual identity has been completely redesigned. After months spent building the architecture, backend, and infrastructure, the platform finally has a design that matches its ambitions.",
+  "description3": "The journey is only just beginning. The next phase focuses on expanding the catalog, refining the user experience, and developing Zona V3, paving the way for an even richer platform.",
+
 
   "details": {
     "section1Title": "Project Overview",
@@ -51,13 +52,21 @@
     "section10Text1": "A significant part of the work also focuses on technical documentation.",
     "section10Text2": "Throughout the project, I established conventions covering DTOs, controllers, services, security, and various architectural decisions. I also created several inventories documenting the services, their methods, responsibilities, and the different DTOs.",
 
-    "section11Title": "Current Status",
-    "section11Text1": "Zona v1.0 is now live in production. After several months dedicated to software architecture, backend development, infrastructure, and data modeling, a new phase of the project is beginning.",
-    "section11Text2": "Until now, the priority was to build a robust platform and get it into production quickly. The art direction was intentionally very constrained. Today, I finally have complete creative freedom to entirely rethink Zona's visual identity. I remain a backend developer first and foremost, but I believe the frontend should reflect the work carried out beneath the surface. It is time for Zona to finally look like what it has become. Come back in a few days... ",
-    "projectImage": "Zona's audio software catalog interface featuring search filters and product cards",
-    "image1Alt": "Project organization using a Trello board structured by phases (backlog, in progress, validation, completed) and by versions (V1, V2 and beyond)",
-    "image2Alt": "Database diagram showing relationships between different entities",
-    "image3Alt": "Zona product page for TidalCycles featuring screenshots, software information, technical specifications, and the various available resources",
-    "image4Alt": "Documentation of DTO conventions and API structure"
+    "section11Title": "Art Direction",
+    "section11Text1": "The first version of Zona was primarily focused on functionality.\nMost of the development effort went into the architecture, data model, backend, and infrastructure to build a solid platform. The visual design was intentionally kept simple during this first phase.",
+    "section11Text2": "Once those foundations were in place, I completely redesigned the platform's visual identity. The goal was to create an art direction that resonates with Zona's audience, primarily audio developers, musicians, sound designers, artists, professionals, and enthusiasts.",
+    "section11Text3": "The art direction draws inspiration from the world of audio as well as Linux, open-source culture, and experimental web design. It features references to terminals, waveforms, pixel art, SD cards, and the net.art movement, with direct inspirations from projects such as Windows93 and hacking.art.",
+
+    "section12Title": "Current Phase",
+    "section12Text1": "With both the technical foundations and the new visual identity now in place, the project is entering a new stage of development.",
+    "section12Text2": "The next iterations will mainly focus on expanding the catalog, refining the remaining interface details, and developing Zona V3.\nThis new phase will gradually introduce new features while continuing to evolve the platform as a whole.",
+
+    "projectImage": "Zona homepage displayed on desktop and mobile, showcasing featured software.",
+    "image1Alt": "Project management board showing Zona's development phases and planned versions.",
+    "image2Alt": "Excerpt from the PostgreSQL relational model illustrating the relationships between several platform entities.",
+    "image3Alt": "Tidal Cycles product page displaying screenshots, software information, official links, and available resources.",
+    "image4Alt": "Tidal Cycles product page displaying screenshots, software information, technical specifications, and related resources.",
+    "image5Alt": "Technical documentation describing the caching rules and the request coalescing implementation.",
+    "image6Alt": "Collage showcasing various elements of Zona's art direction, including the logo, terminal-inspired search, SD card-inspired components, and category cards."
   }
 }

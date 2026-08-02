@@ -1,9 +1,9 @@
 {
-  "title": "Zona v1.0",
+  "title": "Zona v2.0",
   "subtitle": "Plateforme de distribution logicielle dédiée à l'audio",
   "description1": "Zona est une plateforme de distribution de logiciels dédiée au domaine de l'audio, inspirée du modèle de Steam. \nElle s'adresse aux musiciens, sound designers, développeurs audio, créateurs de contenu ainsi qu'aux professionnels et passionnés du secteur.",
-  "description2": "La v1.0 est enfin en production. Les fondations sont en place, et je peux enfin laisser parler ma créativité. J'ai désormais carte blanche pour repenser entièrement la direction artistique.",
-  "description3" : "Revenez dans quelques jours... ",
+  "description2": "Zona est désormais en production, et sa direction artistique a été entièrement repensée. Après plusieurs mois consacrés à l'architecture, au backend et à l'infrastructure, la plateforme possède enfin une identité visuelle à la hauteur de ses ambitions.",
+  "description3": "L'aventure ne fait que commencer. La prochaine étape est consacrée à l'enrichissement du catalogue, aux derniers ajustements de l'expérience utilisateur et au développement de la V3, qui ouvrira la voie à une plateforme toujours plus riche.",
 
   "details": {
     "section1Title": "Contexte du projet",
@@ -51,14 +51,21 @@
     "section10Text1": "Une partie importante du travail porte aussi sur la documentation technique.",
     "section10Text2": "Au fil du développement, j'ai défini des conventions concernant les DTO, les contrôleurs, les services, la sécurité ainsi que différents choix d'architecture. J'ai également mis en place plusieurs inventaires recensant les services, leurs méthodes, leurs responsabilités ainsi que les différents DTO.",
 
-    "section11Title": "Phase actuelle",
-    "section11Text1": "Zona v1.0 est désormais déployé en production. Après plusieurs mois consacrés à l'architecture, au backend, à l'infrastructure et au modèle de données, une nouvelle phase du projet commence.",
-    "section11Text2": "Jusqu'à présent, la priorité était de construire une plateforme robuste et de la mettre rapidement en production. La direction artistique était volontairement très encadrée. Aujourd'hui, j'ai enfin carte blanche pour repenser entièrement l'identité visuelle de Zona. Je reste avant tout développeuse backend, mais je considère qu'un frontend doit être le reflet du travail réalisé en profondeur. Il est temps que Zona ressemble enfin à ce qu'il est devenu. Revenez dans quelques jours... ",
+    "section11Title": "Direction artistique",
+    "section11Text1": "La première version de Zona avait avant tout un objectif fonctionnel.\nL'essentiel du développement a été consacré à l'architecture, au modèle de données, au backend et à l'infrastructure afin de construire une plateforme solide. La direction artistique est volontairement restée sobre pendant cette première phase.",
+    "section11Text2": "Une fois ces fondations en place, j'ai entièrement repensé l'identité visuelle de la plateforme. L'objectif était de concevoir une direction artistique en accord avec le public auquel Zona s'adresse aujourd'hui, principalement les développeurs audio, les musiciens, les sound designers, les artistes, les professionnels et les passionnés du domaine.",
+    "section11Text3": "Cette direction artistique puise ses inspirations dans l'univers du son, mais aussi dans une culture plus orientée Linux, open source et web expérimental. Elle emprunte notamment au terminal, au pixel art, aux ondes, aux cartes SD ainsi qu'au mouvement net.art, avec des références assumées comme Windows93 et hacking.art.",
 
-    "projectImage": "Page du catalogue d’applications de Zona présentant les produits audio et leurs filtres de recherche",
-    "image1Alt": "Organisation du projet via un tableau Trello structuré par phases (backlog, en cours, validé, terminé) et par versions (V1, V2 et suivantes)",
-    "image2Alt": "Diagramme de base de données représentant les relations entre différentes entités",
-    "image3Alt": "Page produit de TidalCycles sur Zona présentant les captures d'écran, les informations du logiciel, les spécifications techniques et les différentes ressources disponibles",
-    "image4Alt": "Documentation des conventions DTO et de la structuration de l’API"
+    "section12Title": "Phase actuelle",
+    "section12Text1": "Les fondations techniques et la nouvelle direction artistique étant en place, le projet entre dans une nouvelle phase de développement.",
+    "section12Text2": "Les prochaines évolutions porteront principalement sur l'enrichissement progressif du catalogue, la correction des derniers détails de l'interface et le développement de la V3. \nCette nouvelle étape permettra d'introduire progressivement de nouvelles fonctionnalités tout en continuant à faire évoluer la plateforme.",
+
+    "projectImage": "Page d'accueil de Zona affichée sur ordinateur et mobile présentant les logiciels mis en avant.",
+    "image1Alt": "Tableau de gestion du projet présentant les différentes phases de développement et les versions planifiées de Zona.",
+    "image2Alt": "Extrait du modèle relationnel PostgreSQL illustrant les relations entre plusieurs entités de la plateforme.",
+    "image3Alt": "Page produit de Tidal Cycles présentant les captures d'écran, les informations du logiciel, les liens officiels et les ressources disponibles.",
+    "image4Alt": "Page produit de Tidal Cycles présentant les captures d'écran, les informations du logiciel, les spécifications techniques et les ressources associées.",
+    "image5Alt": "Documentation technique présentant les règles du système de cache et l'implémentation du request coalescing.",
+    "image6Alt": "Montage présentant différents éléments de la direction artistique de Zona, notamment le logo, la recherche inspirée d'un terminal, les cartes SD et les cartes de catégories."
   }
 }

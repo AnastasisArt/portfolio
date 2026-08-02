@@ -2,7 +2,7 @@ export const PROJECTS = ['zona', 'ntarchi', 'agendapp', 'swapitup'] as const;
 
 export type ProjectSlug = (typeof PROJECTS)[number];
 export const PROJECT_LAST_MODIFIED: Partial<Record<ProjectSlug, string>> = {
-  zona: "2026-07-27",
+  zona: "2026-08-02",
   agendapp: "2026-05-04",
   ntarchi: "2026-07-22",
 };

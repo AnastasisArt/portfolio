@@ -4,6 +4,7 @@ import zona from "@/public/images/zona.png";
 import { Container, Left, Right, Title, Text, Subtitle, ViewDetailsLink } from "../Common.styles";
 import InProgressProjectStacks from "./Stacks";
 import type {Common, ProjectDict} from "@/lib/i18n/dicts";
+import Link from 'next/link';
 
 type Props = {
   dict: ProjectDict<"zona">;
@@ -19,7 +20,16 @@ export default function Zona({ dict, common, detailsHref }: Props) {
       </Left>
 
       <Right>
-        <Title className="no-margin margin-top" as="h3">{dict.title}</Title>
+        <Title className="no-margin margin-top" as="h3">
+            <Link
+              href="https://zonapowered.com/"
+              className="titleLink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {dict.title}
+            </Link>{" "}
+          </Title>
         <Subtitle as="p">{dict.subtitle}</Subtitle>
 
         <Text>{dict.description1}</Text>

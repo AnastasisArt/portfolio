@@ -6,11 +6,16 @@ import js from "@/public/icons/stack/javascript.png";
 import java from "@/public/icons/stack/java.png";
 import php from "@/public/icons/stack/php.png";
 import nest from "@/public/icons/stack/nestjs.png";
-import next from "@/public/icons/stack/nextjs.png";
-import spring from "@/public/icons/stack/spring.png";
 import react from "@/public/icons/stack/react.png";
+import next from "@/public/icons/stack/nextjs.png";
+import betterauth from "@/public/icons/stack/betterauth.png";
+import python from "@/public/icons/stack/python.png";
+import fastapi from "@/public/icons/stack/fastapi.png";
+import pydantic from "@/public/icons/stack/pydantic.png";
+import sqlmodel from "@/public/icons/stack/sqlmodel.png";
+import sqlalchemy from "@/public/icons/stack/sqlalchemy.png"
+import spring from "@/public/icons/stack/spring.png";
 import reactform from "@/public/icons/stack/react-hook-form.png";
-import openapi from "@/public/icons/stack/openapi.png";
 import i18n from "@/public/icons/stack/i18next.png";
 import redux from "@/public/icons/stack/redux.png";
 import styled from "@/public/icons/stack/styled-components.png";
@@ -34,6 +39,7 @@ import stripe from "@/public/icons/stack/stripe.png";
 import illustrator from "@/public/icons/stack/illustrator.png";
 import photoshop from "@/public/icons/stack/photoshop.png";
 import figma from "@/public/icons/stack/figma.png";
+
 
 type LabelPart = {
   text: string;
@@ -110,6 +116,15 @@ export const STACKS: Record<string, Stack> = {
       { text: "JS", accent: true },
     ],
     url: "https://nextjs.org/",
+  },
+  fastapi: {
+    icon: fastapi,
+    label: [
+      { text: "F", accent: true },
+      { text: "AST", accent: false },
+      { text: "API", accent: true },
+    ],
+    url: "https://fastapi.tiangolo.com/",
   },
   spring: {
     icon: spring,
@@ -189,15 +204,6 @@ export const STACKS: Record<string, Stack> = {
     ],
     url: "https://www.i18next.com/",
   },
-  openapi: {
-    icon: openapi,
-    label: [
-      { text: "O", accent: true },
-      { text: "PEN", accent: false },
-      { text: "API", accent: true },
-    ],
-    url: "https://www.openapis.org/",
-  },
   typeorm: {
     icon: typeorm,
     label: [
@@ -214,6 +220,44 @@ export const STACKS: Record<string, Stack> = {
       { text: "IBERNATE", accent: false },
     ],
     url: "https://hibernate.org/",
+  },
+  betterauth: {
+    icon: betterauth,
+    label: [
+      { text: "B", accent: true },
+      { text: "ETTER ", accent: false },
+      { text: "A", accent: true },
+      { text: "UTH", accent: false },
+    ],
+    url: "https://www.better-auth.com/",
+  },
+
+  pydantic: {
+    icon: pydantic,
+    label: [
+      { text: "P", accent: true },
+      { text: "YDANTIC", accent: false },
+    ],
+    url: "https://docs.pydantic.dev/",
+  },
+
+  sqlalchemy: {
+    icon: sqlalchemy,
+    label: [
+      { text: "SQL", accent: true },
+      { text: "A", accent: true },
+      { text: "LCHEMY", accent: false },
+    ],
+    url: "https://www.sqlalchemy.org/",
+  },
+  sqlmodel: {
+    icon: sqlmodel,
+    label: [
+      { text: "SQL", accent: true },
+      { text: "M", accent: true },
+      { text: "ODEL", accent: false },
+    ],
+    url: "https://sqlmodel.tiangolo.com/",
   },
 
   //--- PLATFORMS & DEVOPS ---\\

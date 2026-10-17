@@ -18,7 +18,13 @@ export default function Dropdown({ rendered, open, topPx, leftPx, children, cont
 
   //Render outside the DOM tree to avoid overflow issues
   return createPortal(
-    <DropdownWrap className={open ? "open" : "close"} style={{ top: `${topPx}px`, left: `${leftPx}px` }}>
+    <DropdownWrap className={
+      open ? "open" : "close"}
+      style={{
+        top: `${topPx}px`,
+        left: `clamp(166px, ${leftPx}px, calc(100vw - 166px))`,
+      }}
+    >
       <DropdownContent>
         {children}
 

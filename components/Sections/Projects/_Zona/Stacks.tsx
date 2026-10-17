@@ -32,11 +32,6 @@ export default function InProgressStacks() {
         url={STACKS.redis.url}
       />
       <StackTag
-        icon={<Image src={STACKS.openapi.icon} alt="OpenAPI" />}
-        label={STACKS.openapi.label}
-        url={STACKS.openapi.url}
-      />
-      <StackTag
         icon={<Image src={STACKS.swagger.icon} alt="Swagger" />}
         label={STACKS.swagger.label}
         url={STACKS.swagger.url}

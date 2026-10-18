@@ -10,7 +10,15 @@ export default function useClickOutside(
       if (event.target instanceof Node && !element.current.contains(event.target)) callback()
     }
 
+    function onScroll() {
+      callback()
+    }
+
     document.addEventListener('pointerdown', onPointerDown)
-    return ()=> document.removeEventListener('pointerdown', onPointerDown)
+    window.addEventListener('scroll', onScroll, true)
+    return ()=> {
+      document.removeEventListener('pointerdown', onPointerDown)
+      window.removeEventListener('scroll', onScroll, true)
+    }
   }, [element, callback])
 }

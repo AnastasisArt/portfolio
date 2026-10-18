@@ -1,26 +1,6 @@
-<h1 align="center">Anastasia Vojkic</h1>
+[Developer Portfolio](https://anastasia-vojkic.dev)
 
-<p align="center">
-  <a href="https://anastasia-vojkic.dev"><strong>🌐 Developer Portfolio</strong></a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-black" />&nbsp;
-  <img src="https://img.shields.io/badge/React-61dafb" />&nbsp;
-  <img src="https://img.shields.io/badge/TypeScript-blue" />
-</p>
-
-Personal developer portfolio built with **Next.js** and **TypeScript**.  
-The website presents selected projects, background information, and contact details.
-
----
-
-## Tech Stack
-
-- Next.js
-- React
-- TypeScript
-- Styled Components
+Personal developer portfolio showcasing selected projects, background information, and contact details.
 
 ---
 
@@ -40,4 +20,4 @@ The website presents selected projects, background information, and contact deta
 
 ## Notes
 
-Some projects presented on the website cannot be made public as they were developed for clients.
+Some projects featured in this portfolio are not publicly available due to client confidentiality.

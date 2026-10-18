@@ -9,7 +9,6 @@ import nest from "@/public/icons/stack/nestjs.png";
 import react from "@/public/icons/stack/react.png";
 import next from "@/public/icons/stack/nextjs.png";
 import betterauth from "@/public/icons/stack/betterauth.png";
-import python from "@/public/icons/stack/python.png";
 import fastapi from "@/public/icons/stack/fastapi.png";
 import pydantic from "@/public/icons/stack/pydantic.png";
 import sqlmodel from "@/public/icons/stack/sqlmodel.png";
